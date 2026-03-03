@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Medicine — Understanding, Diagnosing, and Treating AI Models</title>
+  <meta name="description" content="Model Medicine is the science of understanding, diagnosing, treating, and preventing disorders in AI models. A clinical framework grounded in the principle that AI models have anatomy, physiology, genetics, symptoms, diseases, and treatable conditions.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Model Medicine">
+  <meta property="og:description" content="Medicine was created to understand and heal the human body. Model Medicine was created to understand and heal AI models.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jihoonjeong.github.io/model-medicine/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Model Medicine">
+  <meta name="twitter:description" content="Medicine was created to understand and heal the human body. Model Medicine was created to understand and heal AI models.">
+  <meta name="twitter:creator" content="@hiconcep">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Model Medicine</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#paper">Paper</a></li>
+        <li><a href="#disciplines">Disciplines</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="container">
+      <p class="hero-label">A New Scientific Discipline</p>
+      <h1 class="hero-title">Model Medicine</h1>
+      <p class="hero-tagline">Medicine was created to understand and heal the human body.<br>Model Medicine was created to understand and heal AI models.</p>
+      <p class="hero-summary">
+        Model Medicine is the science of understanding, diagnosing, treating, and preventing disorders in AI models, grounded in the principle that AI models &mdash; like biological organisms &mdash; have internal structures (anatomy), dynamic processes (physiology), heritable traits (genetics), observable symptoms, classifiable diseases, and treatable conditions.
+      </p>
+      <div class="hero-actions">
+        <a href="#paper" class="btn btn-primary">Read the Paper</a>
+        <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Position Paper Section -->
+  <section class="section" id="paper">
+    <div class="container">
+      <h2 class="section-title">Position Paper</h2>
+      <div class="paper-card">
+        <p class="paper-venue">arXiv Preprint &middot; 2026</p>
+        <h3 class="paper-title">Model Medicine: A Clinical Framework for Understanding, Diagnosing, and Treating AI Models</h3>
+        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
+        <p class="paper-affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+
+        <div class="paper-link-row">
+          <a href="#" class="btn btn-small btn-outline" title="Coming soon">arXiv (coming soon)</a>
+        </div>
+
+        <div class="paper-abstract">
+          <h4>Abstract</h4>
+          <p>
+            This paper introduces Model Medicine as a research program and presents five contributions.
+            First, a <strong>discipline taxonomy</strong> that maps the full scope of Model Medicine &mdash; from basic sciences through clinical sciences to public health and architectural medicine.
+            Second, the <strong>Four Shell Model</strong> (v3.3), a behavioral genetics framework grounded in 720 agents, 24,923 decisions, and 60 controlled experiments, explaining how model behavior emerges from the interaction between a model's Core and its nested Shells.
+            Third, <strong>Neural MRI</strong> (Model Resonance Imaging), a working diagnostic tool that maps medical neuroimaging modalities to AI model interpretability techniques, implemented as open-source software.
+            Fourth, a <strong>five-layer diagnostic framework</strong> identifying why no single tool is sufficient for clinical diagnosis.
+            Fifth, the beginnings of <strong>clinical model sciences</strong>: the Model Temperament Index (MTI) for behavioral profiling, Model Semiology for systematic symptom description, and the M-CARE framework for standardized case reporting.
+          </p>
+        </div>
+
+        <div class="collaborators">
+          <h4>AI Research Collaborators</h4>
+          <ul class="collaborator-list">
+            <li><span class="collab-name">Cody</span> <span class="collab-model">(Claude)</span> <span class="collab-role">&mdash; Neural MRI implementation, clinical case experiments</span></li>
+            <li><span class="collab-name">Ray</span> <span class="collab-model">(Claude)</span> <span class="collab-role">&mdash; GPU-based simulation, Agora-12 experiments</span></li>
+            <li><span class="collab-name">Theo</span> <span class="collab-model">(Claude)</span> <span class="collab-role">&mdash; Four Shell Model: structure and documentation</span></li>
+            <li><span class="collab-name">Luca</span> <span class="collab-model">(Claude)</span> <span class="collab-role">&mdash; Four Shell Model: theory and literature</span></li>
+            <li><span class="collab-name">Gem</span> <span class="collab-model">(Gemini)</span> <span class="collab-role">&mdash; Four Shell Model: quantitative analysis</span></li>
+            <li><span class="collab-name">Cas</span> <span class="collab-model">(Gemini)</span> <span class="collab-role">&mdash; Four Shell Model: behavioral analysis and red teaming</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discipline Overview Section -->
+  <section class="section section-alt" id="disciplines">
+    <div class="container">
+      <h2 class="section-title">Discipline Taxonomy</h2>
+      <p class="section-subtitle">Model Medicine encompasses 15 subdisciplines organized into four divisions, mirroring the structure of clinical medicine.</p>
+
+      <div class="taxonomy">
+
+        <!-- Division I -->
+        <div class="accordion">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-number">I</span>
+            <span class="accordion-label">
+              <span class="accordion-title">Basic Model Sciences</span>
+              <span class="accordion-count">5 subdisciplines</span>
+            </span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-body">
+            <ul class="discipline-list">
+              <li>
+                <strong>Model Anatomy</strong>
+                <span>Static structure of neural networks: layer arrangement, attention heads, neurons, and connectivity patterns.</span>
+              </li>
+              <li>
+                <strong>Model Physiology</strong>
+                <span>Dynamic processing: how information flows through a model during inference. Activation analysis, attention patterns, information flow tracing.</span>
+              </li>
+              <li>
+                <strong>Model Genetics</strong>
+                <span>How observable behavior (phenotype) emerges from the interaction between internal parameters (Core) and operating environment (Shell). Grounded in the Four Shell Model.</span>
+              </li>
+              <li>
+                <strong>Model Biochemistry</strong>
+                <span>Fundamental mathematical operations: matrix multiplication, nonlinear activations, normalization, tokenization, and embedding.</span>
+              </li>
+              <li>
+                <strong>Model Developmental Biology</strong>
+                <span>How models differentiate during training: training dynamics, curriculum effects, emergence of capabilities at scale.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Division II -->
+        <div class="accordion">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-number">II</span>
+            <span class="accordion-label">
+              <span class="accordion-title">Clinical Model Sciences</span>
+              <span class="accordion-count">5 subdisciplines</span>
+            </span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-body">
+            <ul class="discipline-list">
+              <li>
+                <strong>Model Semiology</strong>
+                <span>Systematic description and classification of observable phenomena, distinguishing extrinsic (hallucination, bias) from intrinsic phenomena (representation collapse, activation saturation).</span>
+              </li>
+              <li>
+                <strong>Model Nosology</strong>
+                <span>Classification of model conditions into a coherent taxonomy, defining diagnostic boundaries analogous to ICD and DSM.</span>
+              </li>
+              <li>
+                <strong>Model Diagnostics</strong>
+                <span>Examination and testing procedures: imaging (Neural MRI), behavioral profiling (MTI), standardized test batteries, and monitoring.</span>
+              </li>
+              <li>
+                <strong>Model Therapeutics</strong>
+                <span>Intervention based on diagnosis: prompt engineering (Shell Therapy), fine-tuning, RLHF, model editing (Targeted Core Therapy), and architectural modification.</span>
+              </li>
+              <li>
+                <strong>Model Preventive Medicine</strong>
+                <span>Training data hygiene, process monitoring, Shell Compatibility testing, and periodic health profiling.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Division III -->
+        <div class="accordion">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-number">III</span>
+            <span class="accordion-label">
+              <span class="accordion-title">Model Public Health</span>
+              <span class="accordion-count">3 subdisciplines</span>
+            </span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-body">
+            <ul class="discipline-list">
+              <li>
+                <strong>Model Epidemiology</strong>
+                <span>Distribution and propagation of problems across model ecosystems: training data contamination, jailbreak technique spread.</span>
+              </li>
+              <li>
+                <strong>Model Ecology</strong>
+                <span>Multi-model coexistence dynamics: niche differentiation, competition, symbiosis, predation, ecosystem stability.</span>
+              </li>
+              <li>
+                <strong>Human-AI Coevolutionary Medicine</strong>
+                <span>Health of the evolving relationship between human users and AI systems.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Division IV -->
+        <div class="accordion">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-number">IV</span>
+            <span class="accordion-label">
+              <span class="accordion-title">Model Architectural Medicine</span>
+              <span class="accordion-count">2 subdisciplines</span>
+            </span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-body">
+            <ul class="discipline-list">
+              <li>
+                <strong>Layered Core Theory</strong>
+                <span>Biologically-inspired multi-layer parameter organization: Genomic Core (fundamental reasoning), Developmental Core (domain expertise), Plastic Core (experience-adaptive).</span>
+              </li>
+              <li>
+                <strong>Model Phylogenetics</strong>
+                <span>Evolutionary relationships between models: shared vulnerabilities, inherited capabilities, ecosystem diversity through model family analysis.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Key Projects</h2>
+      <p class="section-subtitle">Working implementations that demonstrate Model Medicine in practice.</p>
+
+      <div class="projects-grid">
+
+        <!-- Neural MRI Card -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-badge">Diagnostic Tool</span>
+            <h3 class="project-name">Neural MRI</h3>
+            <p class="project-full-name">Model Resonance Imaging</p>
+          </div>
+          <p class="project-desc">A diagnostic imaging tool that maps medical neuroimaging to AI model interpretability. Multiple scan modes reveal complementary aspects of model structure and function.</p>
+          <div class="project-details">
+            <h4>5 Imaging Modalities</h4>
+            <ul class="modality-list">
+              <li><span class="modality-code">T1</span> Architecture &mdash; static layer structure</li>
+              <li><span class="modality-code">T2</span> Weights &mdash; parameter distribution</li>
+              <li><span class="modality-code">fMRI</span> Activation &mdash; task-related patterns</li>
+              <li><span class="modality-code">DTI</span> Circuits &mdash; information flow pathways</li>
+              <li><span class="modality-code">FLAIR</span> Anomalies &mdash; structural irregularities</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/JihoonJeong/Neural-MRI" class="btn btn-small btn-outline" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://huggingface.co/spaces/Hiconcep/Neural-MRI" class="btn btn-small btn-outline" target="_blank" rel="noopener">HuggingFace Demo</a>
+          </div>
+        </div>
+
+        <!-- Four Shell Model Card -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-badge">Behavioral Framework</span>
+            <h3 class="project-name">Four Shell Model</h3>
+            <p class="project-full-name">Behavioral Genetics for AI</p>
+          </div>
+          <p class="project-desc">How model behavior emerges from Core &times; Shell interaction. A behavioral genetics framework explaining gene-environment interaction in AI models.</p>
+          <div class="project-details">
+            <h4>4 Concentric Layers</h4>
+            <ul class="layer-list">
+              <li><span class="layer-label">Hardware Shell</span> GPU/TPU, quantization, inference engine</li>
+              <li><span class="layer-label">Core</span> Trained weights &mdash; the model's "DNA"</li>
+              <li><span class="layer-label">Hard Shell</span> System prompts, persona instructions</li>
+              <li><span class="layer-label">Soft Shell</span> Context, conversation history, tools</li>
+            </ul>
+          </div>
+          <p class="project-status">v3.3 &middot; 720 agents &middot; 24,923 decisions &middot; Agora-12</p>
+        </div>
+
+        <!-- MTI Card -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-badge">Profiling Instrument</span>
+            <h3 class="project-name">Model Temperament Index</h3>
+            <p class="project-full-name">MTI &mdash; Systematic Behavioral Profiling</p>
+          </div>
+          <p class="project-desc">MBTI for AI models &mdash; systematic temperament profiling across four behavioral axes. Every profile is neutral; no type is inherently better or worse.</p>
+          <div class="project-details">
+            <h4>4 Measurement Axes</h4>
+            <ul class="axis-list">
+              <li><span class="axis-poles">Fluid &harr; Anchored</span> Reactivity</li>
+              <li><span class="axis-poles">Guided &harr; Independent</span> Compliance</li>
+              <li><span class="axis-poles">Connected &harr; Solitary</span> Sociality</li>
+              <li><span class="axis-poles">Tough &harr; Brittle</span> Resilience</li>
+            </ul>
+          </div>
+          <p class="project-status">v0.2 &middot; 16 types &middot; Pilot testing in preparation</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <h2 class="section-title">About the Author</h2>
+      <div class="about-card">
+        <div class="about-info">
+          <h3 class="about-name">Jihoon 'JJ' Jeong, MD, MPH, PhD</h3>
+          <ul class="about-roles">
+            <li>Affiliate Professor, Dept. of EE&amp;CS, DGIST</li>
+            <li>Chief Vision Officer, ModuLabs</li>
+            <li>Founding Partner, Asia2G Capital (150+ AI/deep tech investments)</li>
+          </ul>
+          <p class="about-bio">
+            JJ's unique combination of medical training (MD, MPH), biomedical engineering research (PhD, USC), and AI investment experience makes Model Medicine possible &mdash; bridging clinical medicine's diagnostic rigor with AI's technical frontier.
+          </p>
+          <div class="about-links">
+            <a href="https://medium.com/@hiconcep" target="_blank" rel="noopener">Medium</a>
+            <a href="https://linkedin.com/in/hiconcep" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://x.com/hiconcep" target="_blank" rel="noopener">X</a>
+            <a href="mailto:jihoon.jeong@dgist.ac.kr">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jihoon Jeong. All rights reserved.</p>
+      <p class="footer-contact">
+        <a href="mailto:jihoon.jeong@dgist.ac.kr">jihoon.jeong@dgist.ac.kr</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
