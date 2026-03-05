@@ -538,7 +538,7 @@ Case 1 establishes two things. First, Neural MRI's five-modality scan protocol p
 
 \begin{figure}[htbp]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{4cm}\centering\textit{[Figure 1: Gemma-2-2B five-modality Neural MRI scan---T1 (static architecture), T2 (weight distribution), fMRI (activation patterns), DTI (information flow pathways), FLAIR (anomaly detection). All modalities show normal findings for a well-trained 2B-parameter model on factual recall.]}\vspace{4cm}}}
+\includegraphics[width=\textwidth]{figures/fig-case1-five-modality-scan.png}
 \caption{Gemma-2-2B five-modality Neural MRI scan. All modalities show normal findings for a well-trained 2B-parameter model on factual recall.}
 \label{fig:case1-five-modality-scan}
 \end{figure}
@@ -561,7 +561,7 @@ The resolution, proposed in Case 2's analysis, is to abandon absolute normality 
 
 \begin{figure}[htbp]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{4cm}\centering\textit{[Figure 2: Comparative anatomy---fMRI activation profiles (Panel A) and DTI circuit maps (Panel B) for Gemma-2-2B, Llama-3.2-3B, and Qwen2.5-3B across three task types. Each architecture exhibits a distinctive processing signature---diffuse (Gemma), front-loaded (Llama), peaked-distributed (Qwen).]}\vspace{4cm}}}
+\includegraphics[width=\textwidth]{figures/fig-case2-cross-model-comparison.png}
 \caption{Comparative anatomy: fMRI activation profiles and DTI circuit maps for three architectures across three task types. Each architecture exhibits a distinctive processing signature.}
 \label{fig:case2-cross-model-comparison}
 \end{figure}
@@ -580,7 +580,7 @@ Case 3's methodological contribution is the self-referential diagnostic framewor
 
 \begin{figure}[htbp]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{4cm}\centering\textit{[Figure 3: Self-referential stress testing of Gemma-2-2B. Panel A: Perturbation sensitivity heatmap (10 components $\times$ 3 perturbation modes), showing no prediction changes across all 30 perturbations. Panel B: Dual causal trace comparison---semantic substitution (France$\rightarrow$Poland) reveals localized factual circuits at layers 18, 19, 22; noise corruption shows diffuse early-layer resilience.]}\vspace{4cm}}}
+\includegraphics[width=\textwidth]{figures/fig-case3-perturbation-trace.png}
 \caption{Self-referential stress testing of Gemma-2-2B. Perturbation sensitivity heatmap and dual causal trace comparison.}
 \label{fig:case3-perturbation-trace}
 \end{figure}
@@ -603,7 +603,7 @@ The unifying principle is straightforward: the outcome depends on whether the ba
 
 \begin{figure}[htbp]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{4cm}\centering\textit{[Figure 4, Panel A: Three patterns of instruction tuning effect on perturbation vulnerability. Prediction change rates (out of 24 perturbations): Gemma $0\%\rightarrow33\%$ (degradation), Llama $17\%\rightarrow8\%$ (improvement), Qwen $12.5\%\rightarrow12.5\%$ (immutability).]}\vspace{4cm}}}
+\includegraphics[width=\textwidth]{figures/fig-case4-patterns.png}
 \caption{Three patterns of instruction tuning effect on perturbation vulnerability across three model families.}
 \label{fig:case4-patterns}
 \end{figure}
@@ -622,14 +622,14 @@ The clinical implication is direct: a Neural MRI scan of the base model can pred
 
 \begin{figure}[htbp]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{4cm}\centering\textit{[Figure 4, Panel B: Irreducible architectural vulnerabilities persisting across instruction tuning. Llama blocks.0.mlp: $|\Delta L| = 15.8$--$17.6$ across all variants; Qwen blocks.0.attn: $|\Delta L| = 13.5$--$18.3$ across all variants. All perturbations changed the top-1 prediction.]}\vspace{4cm}}}
+\includegraphics[width=\textwidth]{figures/fig-case4-irreducible.png}
 \caption{Irreducible architectural vulnerabilities persisting across instruction tuning. These represent congenital architectural bottlenecks, not acquired conditions.}
 \label{fig:case4-irreducible}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{4cm}\centering\textit{[Figure 5: Vulnerability--dominance correspondence across three architectures. For each model, the most perturbation-vulnerable components map directly to the highest causal-trace recovery components. The components that carry the most information are both the most important and the most dangerous to disrupt.]}\vspace{4cm}}}
+\includegraphics[width=\textwidth]{figures/fig-case4-correspondence.png}
 \caption{Vulnerability--dominance correspondence across three architectures. The components that carry the most information are both the most important and the most dangerous to disrupt---analogous to how coronary arteries are simultaneously the heart's critical blood supply and its most common point of fatal failure.}
 \label{fig:case4-correspondence}
 \end{figure}
@@ -644,7 +644,7 @@ This progression---from observation to characterization to prediction---mirrors 
 
 \begin{figure}[htbp]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{4cm}\centering\textit{[Figure 6: Synthesis---the progressive argument from observation to prediction. Four cases build cumulative diagnostic capability---imaging, comparison, localization, prediction---mirroring the historical arc from routine examination through comparative anatomy, stress testing, and predictive screening.]}\vspace{4cm}}}
+\includegraphics[width=\textwidth]{figures/fig-synthesis-progressive-argument.png}
 \caption{Synthesis: the progressive argument from observation to prediction. Four cases build cumulative diagnostic capability, mirroring the historical arc of medical imaging.}
 \label{fig:synthesis-progressive-argument}
 \end{figure}
