@@ -712,6 +712,283 @@ a:hover {
   line-height: 1.7;
 }
 
+.writing-tags {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+
+/* --- Latest Section --- */
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.latest-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-heading {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.latest-more {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: none;
+}
+
+@media (max-width: 768px) {
+  .latest-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* --- Subpage Layout --- */
+.subpage-hero {
+  padding: 7rem 0 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.subpage-hero .section-title {
+  margin-bottom: 0.5rem;
+}
+
+.subpage-hero .section-subtitle {
+  margin-bottom: 0;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--text-muted);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+
+
+/* --- Case Cards --- */
+.case-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.75rem 2rem;
+  transition: border-color 0.2s, transform 0.2s;
+  color: inherit;
+  margin-bottom: 1rem;
+}
+
+.case-card:hover {
+  border-color: var(--accent-dim);
+  transform: translateY(-2px);
+  color: inherit;
+}
+
+.case-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.case-number {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-glow);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+}
+
+.case-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.case-subject {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.case-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.case-summary {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.case-tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.case-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--accent-cyan);
+  background: var(--accent-cyan-dim);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+}
+
+
+/* --- Individual Case Page --- */
+.case-content {
+  padding: 3rem 0;
+}
+
+.case-meta-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.meta-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.meta-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.meta-value {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.case-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.case-body h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.case-body p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.case-body ul,
+.case-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.case-body li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0.4rem;
+}
+
+.case-body strong {
+  color: var(--text-primary);
+}
+
+.case-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.85rem;
+}
+
+.case-body th {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  background: var(--bg-accent);
+  color: var(--text-primary);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.case-body td {
+  padding: 0.5rem 0.8rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.case-body blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem 1.25rem;
+  margin: 1rem 0;
+  background: var(--accent-glow);
+  border-radius: 0 6px 6px 0;
+}
+
+.case-body blockquote p {
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+.case-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.case-nav a {
+  font-size: 0.85rem;
+}
+
 
 /* --- About Section --- */
 .about-card {

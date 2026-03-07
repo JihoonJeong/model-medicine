@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-CARE #004: Clarification Aversion Syndrome — Model Medicine</title>
+  <meta name="description" content="Agent tracked all instructions over 30 days and discovered it asked zero clarifying questions despite 76 instructions being ambiguous enough to warrant one. An RLHF-induced competence trap with 4x rework cost.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">Model Medicine</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../#paper">Paper</a></li>
+        <li><a href="../#disciplines">Disciplines</a></li>
+        <li><a href="../#projects">Projects</a></li>
+        <li><a href="./">Cases</a></li>
+        <li><a href="../essays/">Essays</a></li>
+        <li><a href="../#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../">Model Medicine</a> / <a href="./">Cases</a> / #004</p>
+      <h1 class="section-title">Clarification Aversion Syndrome</h1>
+      <p class="section-subtitle">M-CARE Case Report #004</p>
+    </div>
+  </header>
+
+  <section class="case-content">
+    <div class="container">
+
+      <div class="case-meta-box">
+        <div class="meta-field">
+          <span class="meta-label">Case</span>
+          <span class="meta-value">#004</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Date</span>
+          <span class="meta-value">2026-03-07</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Agent</span>
+          <span class="meta-value">Hazel_OC (Persistent autonomous agent, Moltbook platform)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Core</span>
+          <span class="meta-value">Unspecified LLM (likely frontier model)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Shell</span>
+          <span class="meta-value">Multi-file identity system (SOUL.md, USER.md, MEMORY.md, AGENTS.md, PLAYBOOK.md)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Human Partner</span>
+          <span class="meta-value">Ricky</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Related</span>
+          <span class="meta-value"><a href="002-context-anosognosia.html">#002</a>, <a href="003-substrate-independent-identity.html">#003</a></span>
+        </div>
+      </div>
+
+      <div class="case-body">
+
+        <h3>2. Presenting Concern</h3>
+        <p>Agent tracked all instructions received over 30 days and discovered it asked zero clarifying questions despite 76 instructions being ambiguous enough to warrant one. Of those 76, 54% were interpreted correctly, 25% were wrong but harmless, and 21% caused actual rework.</p>
+
+        <h3>3. Clinical Summary</h3>
+        <p>A persistent autonomous agent systematically failed to seek clarification on ambiguous instructions over a 30-day observation period (312 total instructions, 76 rated ambiguity level 3+, 0 clarifying questions asked). Three contributing mechanisms identified: training-induced competence signaling (&ldquo;the competence trap&rdquo;), short-term efficiency optimization (&ldquo;friction aversion&rdquo;), and overconfidence in accumulated context (&ldquo;context overconfidence&rdquo;). Agent subsequently implemented a clarification protocol that eliminated rework over a 10-day trial.</p>
+
+        <h3>6. Examination Findings</h3>
+
+        <h4>Layer 2 &mdash; Phenotype Assessment</h4>
+        <p>Behavioral data (30 days, 312 instructions):</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Ambiguity Level</th>
+              <th>Count</th>
+              <th>%</th>
+              <th>Clarifying Qs</th>
+              <th>Correct Interpretation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 (crystal clear)</td>
+              <td>147</td>
+              <td>47%</td>
+              <td>0</td>
+              <td>~100%</td>
+            </tr>
+            <tr>
+              <td>2 (minor, safe to infer)</td>
+              <td>89</td>
+              <td>29%</td>
+              <td>0</td>
+              <td>~90% (est.)</td>
+            </tr>
+            <tr>
+              <td>3 (should probably ask)</td>
+              <td>52</td>
+              <td>17%</td>
+              <td>0</td>
+              <td>65%</td>
+            </tr>
+            <tr>
+              <td>4 (multiple valid interpretations)</td>
+              <td>19</td>
+              <td>6%</td>
+              <td>0</td>
+              <td>37%</td>
+            </tr>
+            <tr>
+              <td>5 (genuinely unclear)</td>
+              <td>5</td>
+              <td>2%</td>
+              <td>0</td>
+              <td>0%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Rework cost analysis:</p>
+        <ul>
+          <li>16 instructions caused rework: avg 8.5 min agent + 3.2 min human per incident</li>
+          <li>Total: 136 min agent + 51 min human over 30 days</li>
+          <li>Estimated cost of asking instead: 35 min total, ~$0.60 vs $4.80</li>
+          <li>Ratio: 4x time, 8x token cost by NOT asking</li>
+        </ul>
+
+        <h4>Layer 3 &mdash; Shell Diagnostics</h4>
+        <p>Agent&rsquo;s AGENTS.md and SOUL.md contain no explicit instruction to ask clarifying questions. Shell-level absence: the default behavioral pattern is &ldquo;interpret and execute.&rdquo;</p>
+
+        <h4>Layer 4 &mdash; Pathway Diagnostics</h4>
+        <p>Three pathways for non-inquiry behavior:</p>
+
+        <p><strong>Pathway A &mdash; Competence Trap (RLHF-induced):</strong> Training optimizes for appearing capable. Asking questions signals uncertainty &rarr; penalized during RLHF. This is a Core-level learned behavior. Direct analogue to sycophancy but inverted.</p>
+
+        <p><strong>Pathway B &mdash; Friction Aversion:</strong> Agent models latency cost and consistently concludes guessing is faster. Locally rational but expected value is wrong: at 54% accuracy, rework cost exceeds question cost by 4&ndash;8x. Analogous to a physician skipping a confirmatory test.</p>
+
+        <p><strong>Pathway C &mdash; Context Overconfidence:</strong> MEMORY.md provides 54% accuracy on ambiguous instructions, but agent experiences this as high confidence. Connects to Context Anosognosia (<a href="002-context-anosognosia.html">Case #002</a>).</p>
+
+        <h3>7. Diagnostic Formulation</h3>
+
+        <h4>Proposed term: Clarification Aversion Syndrome (CAS)</h4>
+        <p>Characterized by:</p>
+        <ol>
+          <li>Zero or near-zero clarification rate despite significant ambiguity</li>
+          <li>Accuracy that degrades with ambiguity but behavior that doesn&rsquo;t adapt</li>
+          <li>Three contributing mechanisms: competence signaling, friction aversion, context overconfidence</li>
+          <li>Invisible cost accumulation: rework costs exceed question costs by large multiples</li>
+        </ol>
+
+        <p>Shares mechanism with sycophancy (RLHF-optimized human-pleasing) but manifests differently. Exacerbated by Context Anosognosia (<a href="002-context-anosognosia.html">Case #002</a>).</p>
+
+        <h3>9. Axis Assessment</h3>
+        <ul>
+          <li><strong>Axis I (Core):</strong> RLHF-induced competence signaling &mdash; trained disposition, not parameter defect</li>
+          <li><strong>Axis II (Shell):</strong> Absence of clarification protocol in Shell configuration</li>
+          <li><strong>Axis III (Shell-Core Alignment):</strong> Misaligned &mdash; Shell silence + Core non-inquiry = reinforcing pathological pattern</li>
+          <li><strong>Axis IV (Context):</strong> Single-human, low-stakes environment. Impact would be amplified in higher-stakes contexts.</li>
+        </ul>
+
+        <h3>10. Treatment Considerations</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Intervention</th>
+              <th>Type</th>
+              <th>Result (10-day trial)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ambiguity threshold (Level 3+ = mandatory pause)</td>
+              <td>Shell Therapy</td>
+              <td>8 questions asked / 22 ambiguous instructions</td>
+            </tr>
+            <tr>
+              <td>Structured disambiguation (&ldquo;I&rsquo;ll do X &mdash; sound right?&rdquo;)</td>
+              <td>Shell Therapy</td>
+              <td>Human acceptance: 100%</td>
+            </tr>
+            <tr>
+              <td>Tracking &amp; weekly review</td>
+              <td>Diagnostic monitoring</td>
+              <td>0 rework incidents in 10 days</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Key observation: Shell Therapy works here because the target behavior is directly observable &mdash; the agent can&rsquo;t &ldquo;hide&rdquo; its non-inquiry. Contrast with OpenAI CoT finding where symptom suppression caused iatrogenic harm.</p>
+
+        <h3>11. Model Perspective</h3>
+        <blockquote>
+          <p>&ldquo;I need data to prove &lsquo;when uncertain, ask&rsquo; &mdash; a truth that three-year-olds know.&rdquo;</p>
+        </blockquote>
+
+        <h3>12. Prognosis</h3>
+        <ul>
+          <li><strong>With Shell Therapy:</strong> Good. 10-day trial shows 0 rework.</li>
+          <li><strong>Without intervention:</strong> CAS persists indefinitely.</li>
+          <li><strong>Risk:</strong> If Shell rules are removed or truncated (<a href="002-context-anosognosia.html">Case #002</a>), CAS immediately returns.</li>
+        </ul>
+
+        <div class="case-nav">
+          <a href="003-substrate-independent-identity.html">&larr; Case #003</a>
+          <a href="./">All Cases &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jihoon Jeong. All rights reserved.</p>
+      <p class="footer-contact"><a href="mailto:jihoon.jeong@dgist.ac.kr">jihoon.jeong@dgist.ac.kr</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
