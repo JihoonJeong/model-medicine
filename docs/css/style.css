@@ -657,6 +657,62 @@ a:hover {
 }
 
 
+/* --- Writings & Talks --- */
+.writings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.writing-item {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.75rem 2rem;
+  transition: border-color 0.2s, transform 0.2s;
+  color: inherit;
+}
+
+.writing-item:hover {
+  border-color: var(--accent-dim);
+  transform: translateY(-2px);
+  color: inherit;
+}
+
+.writing-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  margin-right: 0.75rem;
+}
+
+.writing-type {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-cyan);
+  background: var(--accent-cyan-dim);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+}
+
+.writing-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.5rem;
+  color: var(--text-primary);
+}
+
+.writing-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+
 /* --- About Section --- */
 .about-card {
   background: var(--bg-card);
