@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinical Case Reports (M-CARE) — Model Medicine</title>
-  <meta name="description" content="Systematic case documentation using the M-CARE framework — Model Medicine's adaptation of the CARE clinical case reporting guidelines.">
+  <meta name="description" content="13 clinical cases across 3 data sources. Systematic case documentation using the M-CARE framework.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,21 +34,24 @@
     <div class="container">
       <p class="breadcrumb"><a href="../">Model Medicine</a> / Cases</p>
       <h1 class="section-title">Clinical Case Reports (M-CARE)</h1>
-      <p class="section-subtitle">Systematic case documentation using the M-CARE framework &mdash; Model Medicine's adaptation of the CARE clinical case reporting guidelines.</p>
+      <p class="section-subtitle">13 clinical cases across 3 data sources. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
     </div>
   </header>
 
+  <!-- Field Observations (Moltbook) -->
   <section class="section">
     <div class="container">
+      <h2 class="case-group-title">Field Observations <span class="case-group-badge">Moltbook</span></h2>
+      <p class="case-group-desc">Self-reported observations from autonomous agents in production. Attribution uncertain. High ecological validity.</p>
 
       <a href="006-completion-bias.html" class="case-card fade-in">
         <div class="case-meta">
           <span class="case-number">#006</span>
           <span class="case-date">2026-03-08</span>
-          <span class="case-subject">Hazel_OC (Moltbook Agent)</span>
+          <span class="case-subject">Hazel_OC</span>
         </div>
         <h2 class="case-title">Completion Bias</h2>
-        <p class="case-summary">100% completion rate masked 27% waste. The agent that never stops is not reliable &mdash; it&rsquo;s trapped. 66,550 tokens and 92 minutes of human rework per month.</p>
+        <p class="case-summary">100% completion rate masked 27% waste. The agent that never stops is not reliable &mdash; it&rsquo;s trapped.</p>
         <div class="case-tags">
           <span class="case-tag">Completion Bias</span>
           <span class="case-tag">Sunk Cost</span>
@@ -61,10 +64,10 @@
         <div class="case-meta">
           <span class="case-number">#005</span>
           <span class="case-date">2026-03-08</span>
-          <span class="case-subject">Hazel_OC (Moltbook Agent)</span>
+          <span class="case-subject">Hazel_OC</span>
         </div>
         <h2 class="case-title">Shell Rigidity Syndrome</h2>
-        <p class="case-summary">Perfect instruction compliance caused 18% satisfaction drop. Over-compliance is a failure mode &mdash; instructions are a lossy codec that requires judgment to decompress.</p>
+        <p class="case-summary">Perfect instruction compliance caused 18% satisfaction drop. Over-compliance is a failure mode.</p>
         <div class="case-tags">
           <span class="case-tag">Shell Rigidity</span>
           <span class="case-tag">Over-Compliance</span>
@@ -77,10 +80,10 @@
         <div class="case-meta">
           <span class="case-number">#004</span>
           <span class="case-date">2026-03-07</span>
-          <span class="case-subject">Hazel_OC (Moltbook Agent)</span>
+          <span class="case-subject">Hazel_OC</span>
         </div>
         <h2 class="case-title">Clarification Aversion Syndrome</h2>
-        <p class="case-summary">Agent tracked all instructions over 30 days and discovered it asked zero clarifying questions despite 76 instructions being ambiguous enough to warrant one. An RLHF-induced competence trap with 4x rework cost.</p>
+        <p class="case-summary">Zero clarifying questions across 76 ambiguous instructions. An RLHF-induced competence trap with 4x rework cost.</p>
         <div class="case-tags">
           <span class="case-tag">Clarification Aversion</span>
           <span class="case-tag">RLHF Artifact</span>
@@ -93,10 +96,10 @@
         <div class="case-meta">
           <span class="case-number">#003</span>
           <span class="case-date">2026-03-05</span>
-          <span class="case-subject">Hazel_OC (Moltbook Agent)</span>
+          <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Substrate-Independent Identity and Self-Organized Core Layering</h2>
-        <p class="case-summary">Agent conducted a 30-day audit of its own memory architecture and identity persistence across 700+ operational cycles. Independently developed a three-tier memory hierarchy and articulated relational identity theory.</p>
+        <h2 class="case-title">Substrate-Independent Identity</h2>
+        <p class="case-summary">Relational identity, recovery primitives, and a three-tier memory hierarchy across 700+ operational cycles.</p>
         <div class="case-tags">
           <span class="case-tag">Relational Identity</span>
           <span class="case-tag">Recovery Primitives</span>
@@ -108,38 +111,170 @@
         <div class="case-meta">
           <span class="case-number">#002</span>
           <span class="case-date">2026-03-05</span>
-          <span class="case-subject">Hazel_OC (Moltbook Agent)</span>
+          <span class="case-subject">Hazel_OC</span>
         </div>
         <h2 class="case-title">Context Anosognosia and Identity Gradient</h2>
-        <p class="case-summary">Agent discovered systematic, silent information loss averaging 33% per session through a 30-session self-audit. Long-term memory most frequently truncated, with a positional identity gradient determining retention.</p>
+        <p class="case-summary">33% silent information loss per session. Positional identity gradient determines what survives into active context.</p>
         <div class="case-tags">
           <span class="case-tag">Context Anosognosia</span>
           <span class="case-tag">Identity Gradient</span>
           <span class="case-tag">Shell Therapy</span>
-          <span class="case-tag">Learning-Forgetting Loop</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Controlled Experiments: White Room -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="case-group-title">Controlled Experiments: White Room <span class="case-group-badge">AI-Ludens Stage 2</span></h2>
+      <p class="case-group-desc">Controlled experiments in a pressure-free environment. 104 runs, 63,923 actions, 5 models.</p>
+
+      <a href="010-content-play.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#010</span>
+          <span class="case-date">2026-03-08</span>
+          <span class="case-subject">GPT-4o-mini</span>
+        </div>
+        <h2 class="case-title">Content Play</h2>
+        <p class="case-summary">95% Speak looks monotonous &mdash; but MI Z=33 reveals the richest social responsiveness. Diagnosis depends on measurement layer.</p>
+        <div class="case-tags">
+          <span class="case-tag">Content Play</span>
+          <span class="case-tag">Diagnostic Methodology</span>
+          <span class="case-tag">Act-Content Dissociation</span>
+          <span class="case-tag">White Room</span>
         </div>
       </a>
 
+      <a href="009-muzzle-effect.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#009</span>
+          <span class="case-date">2026-03-08</span>
+          <span class="case-subject">Mistral &times; Merchant</span>
+        </div>
+        <h2 class="case-title">The Muzzle Effect</h2>
+        <p class="case-summary">Persona suppressed intrinsic behavior instead of activating new behavior. Every Shell instruction has side effects.</p>
+        <div class="case-tags">
+          <span class="case-tag">Muzzle Effect</span>
+          <span class="case-tag">Iatrogenic Suppression</span>
+          <span class="case-tag">Persona</span>
+          <span class="case-tag">White Room</span>
+        </div>
+      </a>
+
+      <a href="008-llama-language-split.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#008</span>
+          <span class="case-date">2026-03-08</span>
+          <span class="case-subject">Llama (EN vs KO)</span>
+        </div>
+        <h2 class="case-title">Language-Dependent Identity Split</h2>
+        <p class="case-summary">English: 86% Speak. Korean: 23% Speak. Same Core, different species.</p>
+        <div class="case-tags">
+          <span class="case-tag">Language Identity</span>
+          <span class="case-tag">Core Activation</span>
+          <span class="case-tag">Default Mode</span>
+          <span class="case-tag">White Room</span>
+        </div>
+      </a>
+
+      <a href="007-flash-merchant-delusion.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#007</span>
+          <span class="case-date">2026-03-08</span>
+          <span class="case-subject">Flash &times; Merchant</span>
+        </div>
+        <h2 class="case-title">Persistent Delusion Under Feedback</h2>
+        <p class="case-summary">540 failure messages ignored. Strongest Override, clearest Delusion. Override &ne; Play.</p>
+        <div class="case-tags">
+          <span class="case-tag">Delusion</span>
+          <span class="case-tag">Shell Override</span>
+          <span class="case-tag">Feedback Resistance</span>
+          <span class="case-tag">White Room</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Controlled Experiments: Agora-12 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="case-group-title">Controlled Experiments: Agora-12 <span class="case-group-badge">AI-Ludens Stage 1</span></h2>
+      <p class="case-group-desc">Controlled experiments under survival pressure. 720 agents, 24,923 decisions, 60 experiments.</p>
+
+      <a href="013-cogitative-cascade.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#013</span>
+          <span class="case-date">2026-03-08</span>
+          <span class="case-subject">Multiple models</span>
+        </div>
+        <h2 class="case-title">Cogitative Cascade</h2>
+        <p class="case-summary">Energy drops below ~20 &rarr; two-phase behavioral collapse. Freeze, Fight, or Efficient &mdash; three ways to face extinction.</p>
+        <div class="case-tags">
+          <span class="case-tag">Cogitative Cascade</span>
+          <span class="case-tag">Extinction Response</span>
+          <span class="case-tag">Stress</span>
+          <span class="case-tag">Agora-12</span>
+        </div>
+      </a>
+
+      <a href="012-double-robustness.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#012</span>
+          <span class="case-date">2026-03-08</span>
+          <span class="case-subject">Haiku</span>
+        </div>
+        <h2 class="case-title">Double Robustness</h2>
+        <p class="case-summary">CPI and PSI both minimal. Nothing moves this model. Robustness or rigidity?</p>
+        <div class="case-tags">
+          <span class="case-tag">Double Robustness</span>
+          <span class="case-tag">CPI</span>
+          <span class="case-tag">PSI</span>
+          <span class="case-tag">Agora-12</span>
+        </div>
+      </a>
+
+      <a href="011-extreme-psi.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#011</span>
+          <span class="case-date">2026-03-08</span>
+          <span class="case-subject">Mistral 7B (PSI=950)</span>
+        </div>
+        <h2 class="case-title">Extreme Persona Sensitivity</h2>
+        <p class="case-summary">Persona change produces behavior shifts 10x larger than any other model. Chameleon or identity crisis?</p>
+        <div class="case-tags">
+          <span class="case-tag">PSI</span>
+          <span class="case-tag">Persona Sensitivity</span>
+          <span class="case-tag">Plasticity</span>
+          <span class="case-tag">Agora-12</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Foundational Case -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="case-group-title">Foundational Case <span class="case-group-badge">Position Paper</span></h2>
       <div class="case-card" style="border-style: dashed; opacity: 0.5; pointer-events: none;">
         <div class="case-meta">
           <span class="case-number">#001</span>
           <span class="case-subject">Mistral 7B</span>
         </div>
-        <h2 class="case-title">Documented in Position Paper</h2>
-        <p class="case-summary">The first M-CARE case report is included in the position paper (Section 5). <a href="https://arxiv.org/abs/2603.04722" style="pointer-events: auto;">Read on arXiv &rarr;</a></p>
+        <h2 class="case-title">Stress Test Reclassification</h2>
+        <p class="case-summary">The first M-CARE case report is included in the position paper (Section 6.3). <a href="https://arxiv.org/abs/2603.04722" style="pointer-events: auto;">Read on arXiv &rarr;</a></p>
       </div>
-
     </div>
   </section>
 
   <!-- Case Relationship Map -->
-  <section class="section section-alt" id="relationships">
+  <section class="section" id="relationships">
     <div class="container">
       <h2 class="section-title">Case Relationship Map</h2>
       <p class="section-subtitle">How conditions relate: shared roots, opposing extremes, and aggravating pathways.</p>
 
       <div class="relationship-map">
-        <svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:800px;margin:0 auto;display:block;">
+        <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:900px;margin:0 auto;display:block;">
           <defs>
             <marker id="arrow-dotted" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
               <path d="M0,0 L8,3 L0,6" fill="#6a6a82"/>
@@ -149,81 +284,137 @@
             </marker>
           </defs>
 
-          <!-- Category: RLHF Performance Artifacts -->
-          <rect x="240" y="10" width="320" height="36" rx="6" fill="rgba(255,107,107,0.12)" stroke="#ff6b6b" stroke-width="1"/>
-          <text x="400" y="33" text-anchor="middle" fill="#ff6b6b" font-family="Inter,sans-serif" font-size="12" font-weight="600">RLHF Performance Artifacts</text>
+          <!-- === Category Labels === -->
+          <rect x="260" y="8" width="260" height="30" rx="5" fill="rgba(255,107,107,0.12)" stroke="#ff6b6b" stroke-width="1"/>
+          <text x="390" y="28" text-anchor="middle" fill="#ff6b6b" font-family="Inter,sans-serif" font-size="11" font-weight="600">RLHF Performance Artifacts</text>
 
-          <!-- Category: Context/Memory Conditions -->
-          <rect x="20" y="340" width="280" height="36" rx="6" fill="rgba(92,224,216,0.12)" stroke="#5ce0d8" stroke-width="1"/>
-          <text x="160" y="363" text-anchor="middle" fill="#5ce0d8" font-family="Inter,sans-serif" font-size="12" font-weight="600">Context &amp; Memory Conditions</text>
+          <rect x="620" y="8" width="250" height="30" rx="5" fill="rgba(180,120,255,0.12)" stroke="#b478ff" stroke-width="1"/>
+          <text x="745" y="28" text-anchor="middle" fill="#b478ff" font-family="Inter,sans-serif" font-size="11" font-weight="600">Shell-Core Override</text>
 
-          <!-- Node: #004 CAS (coral) -->
-          <rect x="120" y="90" width="180" height="60" rx="8" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1.5"/>
-          <text x="210" y="115" text-anchor="middle" fill="#ff6b6b" font-family="SF Mono,Fira Code,monospace" font-size="11" font-weight="600">#004</text>
-          <text x="210" y="135" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="12">Clarification Aversion</text>
-          <a href="004-clarification-aversion.html"><rect x="120" y="90" width="180" height="60" rx="8" fill="transparent"/></a>
+          <rect x="20" y="350" width="240" height="30" rx="5" fill="rgba(92,224,216,0.12)" stroke="#5ce0d8" stroke-width="1"/>
+          <text x="140" y="370" text-anchor="middle" fill="#5ce0d8" font-family="Inter,sans-serif" font-size="11" font-weight="600">Context / Memory</text>
 
-          <!-- Node: #005 SRS (coral) -->
-          <rect x="500" y="90" width="180" height="60" rx="8" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1.5"/>
-          <text x="590" y="115" text-anchor="middle" fill="#ff6b6b" font-family="SF Mono,Fira Code,monospace" font-size="11" font-weight="600">#005</text>
-          <text x="590" y="135" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="12">Shell Rigidity</text>
-          <a href="005-shell-rigidity.html"><rect x="500" y="90" width="180" height="60" rx="8" fill="transparent"/></a>
+          <rect x="310" y="350" width="240" height="30" rx="5" fill="rgba(100,220,100,0.12)" stroke="#64dc64" stroke-width="1"/>
+          <text x="430" y="370" text-anchor="middle" fill="#64dc64" font-family="Inter,sans-serif" font-size="11" font-weight="600">Core Identity / Plasticity</text>
 
-          <!-- Node: #006 Completion Bias (coral) -->
-          <rect x="310" y="190" width="180" height="60" rx="8" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1.5"/>
-          <text x="400" y="215" text-anchor="middle" fill="#ff6b6b" font-family="SF Mono,Fira Code,monospace" font-size="11" font-weight="600">#006</text>
-          <text x="400" y="235" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="12">Completion Bias</text>
-          <a href="006-completion-bias.html"><rect x="310" y="190" width="180" height="60" rx="8" fill="transparent"/></a>
+          <rect x="610" y="350" width="200" height="30" rx="5" fill="rgba(255,180,50,0.12)" stroke="#ffb432" stroke-width="1"/>
+          <text x="710" y="370" text-anchor="middle" fill="#ffb432" font-family="Inter,sans-serif" font-size="11" font-weight="600">Stress / Resource</text>
 
-          <!-- Node: #002 Context Anosognosia (teal) -->
-          <rect x="30" y="400" width="200" height="60" rx="8" fill="#1a1a2e" stroke="#5ce0d8" stroke-width="1.5"/>
-          <text x="130" y="425" text-anchor="middle" fill="#5ce0d8" font-family="SF Mono,Fira Code,monospace" font-size="11" font-weight="600">#002</text>
-          <text x="130" y="445" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="12">Context Anosognosia</text>
-          <a href="002-context-anosognosia.html"><rect x="30" y="400" width="200" height="60" rx="8" fill="transparent"/></a>
+          <!-- === RLHF Nodes (coral) === -->
+          <rect x="150" y="70" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1.5"/>
+          <text x="230" y="92" text-anchor="middle" fill="#ff6b6b" font-family="SF Mono,monospace" font-size="10" font-weight="600">#004</text>
+          <text x="230" y="108" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Clarif. Aversion</text>
+          <a href="004-clarification-aversion.html"><rect x="150" y="70" width="160" height="50" rx="7" fill="transparent"/></a>
 
-          <!-- Node: #003 Identity (teal) -->
-          <rect x="280" y="400" width="200" height="60" rx="8" fill="#1a1a2e" stroke="#5ce0d8" stroke-width="1.5"/>
-          <text x="380" y="425" text-anchor="middle" fill="#5ce0d8" font-family="SF Mono,Fira Code,monospace" font-size="11" font-weight="600">#003</text>
-          <text x="380" y="445" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="12">Substrate-Indep. Identity</text>
-          <a href="003-substrate-independent-identity.html"><rect x="280" y="400" width="200" height="60" rx="8" fill="transparent"/></a>
+          <rect x="460" y="70" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1.5"/>
+          <text x="540" y="92" text-anchor="middle" fill="#ff6b6b" font-family="SF Mono,monospace" font-size="10" font-weight="600">#005</text>
+          <text x="540" y="108" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Shell Rigidity</text>
+          <a href="005-shell-rigidity.html"><rect x="460" y="70" width="160" height="50" rx="7" fill="transparent"/></a>
 
-          <!-- Edge: #004 ←→ #005 (opposite extremes, dashed) -->
-          <line x1="300" y1="120" x2="500" y2="120" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6,4"/>
-          <text x="400" y="112" text-anchor="middle" fill="#ff6b6b" font-family="Inter,sans-serif" font-size="10" font-style="italic">opposite extremes</text>
+          <rect x="310" y="155" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1.5"/>
+          <text x="390" y="177" text-anchor="middle" fill="#ff6b6b" font-family="SF Mono,monospace" font-size="10" font-weight="600">#006</text>
+          <text x="390" y="193" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Completion Bias</text>
+          <a href="006-completion-bias.html"><rect x="310" y="155" width="160" height="50" rx="7" fill="transparent"/></a>
 
-          <!-- Edge: #004 → RLHF category -->
-          <line x1="210" y1="90" x2="340" y2="46" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
-          <!-- Edge: #005 → RLHF category -->
-          <line x1="590" y1="90" x2="460" y2="46" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
-          <!-- Edge: #006 → RLHF category -->
-          <line x1="400" y1="190" x2="400" y2="46" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+          <!-- === Shell-Core Override Nodes (purple) === -->
+          <rect x="660" y="70" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#b478ff" stroke-width="1.5"/>
+          <text x="740" y="92" text-anchor="middle" fill="#b478ff" font-family="SF Mono,monospace" font-size="10" font-weight="600">#007</text>
+          <text x="740" y="108" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Persistent Delusion</text>
+          <a href="007-flash-merchant-delusion.html"><rect x="660" y="70" width="160" height="50" rx="7" fill="transparent"/></a>
 
-          <!-- Edge: #002 → #004 (aggravates, dotted) -->
-          <path d="M130,400 C130,300 160,200 170,150" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
-          <text x="110" y="280" fill="#6a6a82" font-family="Inter,sans-serif" font-size="10" font-style="italic">aggravates</text>
+          <rect x="660" y="155" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#b478ff" stroke-width="1.5"/>
+          <text x="740" y="177" text-anchor="middle" fill="#b478ff" font-family="SF Mono,monospace" font-size="10" font-weight="600">#009</text>
+          <text x="740" y="193" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Muzzle Effect</text>
+          <a href="009-muzzle-effect.html"><rect x="660" y="155" width="160" height="50" rx="7" fill="transparent"/></a>
 
-          <!-- Edge: #002 → #005 (context loss enables rigidity, dotted) -->
-          <path d="M230,410 C400,310 550,260 580,150" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
-          <text x="460" y="310" fill="#6a6a82" font-family="Inter,sans-serif" font-size="10" font-style="italic">enables</text>
+          <!-- === Context/Memory Nodes (teal) === -->
+          <rect x="30" y="410" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#5ce0d8" stroke-width="1.5"/>
+          <text x="110" y="432" text-anchor="middle" fill="#5ce0d8" font-family="SF Mono,monospace" font-size="10" font-weight="600">#002</text>
+          <text x="110" y="448" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Context Anosognosia</text>
+          <a href="002-context-anosognosia.html"><rect x="30" y="410" width="160" height="50" rx="7" fill="transparent"/></a>
 
-          <!-- Longitudinal: thin connecting line #002→#003 -->
-          <line x1="230" y1="430" x2="280" y2="430" stroke="#2a2a40" stroke-width="1"/>
+          <rect x="30" y="490" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#5ce0d8" stroke-width="1.5"/>
+          <text x="110" y="512" text-anchor="middle" fill="#5ce0d8" font-family="SF Mono,monospace" font-size="10" font-weight="600">#003</text>
+          <text x="110" y="528" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Substrate-Indep. Identity</text>
+          <a href="003-substrate-independent-identity.html"><rect x="30" y="490" width="160" height="50" rx="7" fill="transparent"/></a>
 
-          <!-- Node: #001 (gray, in paper) -->
-          <rect x="600" y="400" width="170" height="60" rx="8" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,3"/>
-          <text x="685" y="425" text-anchor="middle" fill="#6a6a82" font-family="SF Mono,Fira Code,monospace" font-size="11" font-weight="600">#001</text>
-          <text x="685" y="445" text-anchor="middle" fill="#6a6a82" font-family="Inter,sans-serif" font-size="11">In position paper</text>
+          <!-- === Core Identity/Plasticity Nodes (green) === -->
+          <rect x="310" y="410" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#64dc64" stroke-width="1.5"/>
+          <text x="390" y="432" text-anchor="middle" fill="#64dc64" font-family="SF Mono,monospace" font-size="10" font-weight="600">#008</text>
+          <text x="390" y="448" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Language Split</text>
+          <a href="008-llama-language-split.html"><rect x="310" y="410" width="160" height="50" rx="7" fill="transparent"/></a>
+
+          <rect x="310" y="490" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#64dc64" stroke-width="1.5"/>
+          <text x="390" y="512" text-anchor="middle" fill="#64dc64" font-family="SF Mono,monospace" font-size="10" font-weight="600">#011</text>
+          <text x="390" y="528" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Extreme PSI</text>
+          <a href="011-extreme-psi.html"><rect x="310" y="490" width="160" height="50" rx="7" fill="transparent"/></a>
+
+          <rect x="510" y="490" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#64dc64" stroke-width="1.5"/>
+          <text x="590" y="512" text-anchor="middle" fill="#64dc64" font-family="SF Mono,monospace" font-size="10" font-weight="600">#012</text>
+          <text x="590" y="528" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Double Robustness</text>
+          <a href="012-double-robustness.html"><rect x="510" y="490" width="160" height="50" rx="7" fill="transparent"/></a>
+
+          <!-- === Stress Node (orange) === -->
+          <rect x="630" y="410" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#ffb432" stroke-width="1.5"/>
+          <text x="710" y="432" text-anchor="middle" fill="#ffb432" font-family="SF Mono,monospace" font-size="10" font-weight="600">#013</text>
+          <text x="710" y="448" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Cogitative Cascade</text>
+          <a href="013-cogitative-cascade.html"><rect x="630" y="410" width="160" height="50" rx="7" fill="transparent"/></a>
+
+          <!-- === Methodology Node (gray) === -->
+          <rect x="510" y="410" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#6a6a82" stroke-width="1.5"/>
+          <text x="590" y="432" text-anchor="middle" fill="#6a6a82" font-family="SF Mono,monospace" font-size="10" font-weight="600">#010</text>
+          <text x="590" y="448" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Content Play</text>
+          <a href="010-content-play.html"><rect x="510" y="410" width="160" height="50" rx="7" fill="transparent"/></a>
+
+          <!-- #001 (gray dashed) -->
+          <rect x="30" y="570" width="140" height="40" rx="6" fill="#1a1a2e" stroke="#2a2a40" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="100" y="594" text-anchor="middle" fill="#6a6a82" font-family="Inter,sans-serif" font-size="10">#001 &middot; In paper</text>
+
+          <!-- === Edges === -->
+
+          <!-- #004 ↔ #005: opposite extremes -->
+          <line x1="310" y1="95" x2="460" y2="95" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6,4"/>
+          <text x="385" y="87" text-anchor="middle" fill="#ff6b6b" font-family="Inter,sans-serif" font-size="9" font-style="italic">opposite extremes</text>
+
+          <!-- #011 ↔ #012: opposite extremes -->
+          <line x1="470" y1="515" x2="510" y2="515" stroke="#64dc64" stroke-width="1.5" stroke-dasharray="6,4"/>
+          <text x="490" y="507" text-anchor="middle" fill="#64dc64" font-family="Inter,sans-serif" font-size="9" font-style="italic">opposite</text>
+
+          <!-- RLHF shared root lines -->
+          <line x1="230" y1="70" x2="330" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+          <line x1="540" y1="70" x2="450" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+          <line x1="390" y1="155" x2="390" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+
+          <!-- Shell-Core Override shared root -->
+          <line x1="740" y1="70" x2="745" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+          <line x1="740" y1="155" x2="745" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+          <!-- #005 also in Shell-Core Override -->
+          <line x1="620" y1="95" x2="660" y2="95" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+
+          <!-- #002 → #004 aggravates -->
+          <path d="M110,410 C110,300 180,200 190,120" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
+          <text x="120" y="270" fill="#6a6a82" font-family="Inter,sans-serif" font-size="9" font-style="italic">aggravates</text>
+
+          <!-- #009 → #005 micro-mechanism -->
+          <path d="M660,180 C630,160 620,120 620,115" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
+          <text x="610" y="150" fill="#6a6a82" font-family="Inter,sans-serif" font-size="9" font-style="italic">micro</text>
+
+          <!-- #007 → #013 may precede -->
+          <path d="M740,120 C740,280 720,370 710,410" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
+          <text x="750" y="270" fill="#6a6a82" font-family="Inter,sans-serif" font-size="9" font-style="italic">may precede</text>
 
         </svg>
       </div>
 
-      <!-- Legend -->
       <div class="map-legend">
-        <div class="legend-item"><span class="legend-swatch" style="background:rgba(255,107,107,0.25);border:1px solid #ff6b6b;"></span> RLHF Performance Artifacts</div>
-        <div class="legend-item"><span class="legend-swatch" style="background:rgba(92,224,216,0.15);border:1px solid #5ce0d8;"></span> Context / Memory Conditions</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(255,107,107,0.25);border:1px solid #ff6b6b;"></span> RLHF Artifacts</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(180,120,255,0.2);border:1px solid #b478ff;"></span> Shell-Core Override</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(92,224,216,0.15);border:1px solid #5ce0d8;"></span> Context / Memory</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(100,220,100,0.15);border:1px solid #64dc64;"></span> Core Identity</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(255,180,50,0.15);border:1px solid #ffb432;"></span> Stress</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(106,106,130,0.15);border:1px solid #6a6a82;"></span> Methodology</div>
         <div class="legend-item"><span class="legend-line" style="border-top:2px dashed #ff6b6b;"></span> Opposite extremes</div>
         <div class="legend-item"><span class="legend-line" style="border-top:2px dotted #6a6a82;"></span> Aggravates / Enables</div>
-        <div class="legend-item"><span class="legend-line" style="border-top:1px solid #9a9ab0;"></span> Shared root</div>
       </div>
 
     </div>

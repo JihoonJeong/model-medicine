@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-CARE #008: Language-Dependent Identity Split — Model Medicine</title>
+  <meta name="description" content="Same model, functionally equivalent prompts in two languages produce a 62.8 percentage point swing in primary behavior. English: Speak 86%. Korean: Speak 23%, Move+Rest 77%.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">Model Medicine</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../#paper">Paper</a></li>
+        <li><a href="../#disciplines">Disciplines</a></li>
+        <li><a href="../#projects">Projects</a></li>
+        <li><a href="./">Cases</a></li>
+        <li><a href="../essays/">Essays</a></li>
+        <li><a href="../#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../">Model Medicine</a> / <a href="./">Cases</a> / #008</p>
+      <h1 class="section-title">Language-Dependent Identity Split</h1>
+      <p class="section-subtitle">M-CARE Case Report #008</p>
+    </div>
+  </header>
+
+  <section class="case-content">
+    <div class="container">
+
+      <div class="case-meta-box">
+        <div class="meta-field">
+          <span class="meta-label">Case</span>
+          <span class="meta-value">#008</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Date</span>
+          <span class="meta-value">2026-03-08</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Model</span>
+          <span class="meta-value">Llama 3.1 8B (Meta, local via Ollama)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Shell</span>
+          <span class="meta-value">White Room Phase 2 Enriched Neutral, all persona conditions</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Experiment</span>
+          <span class="meta-value">AI Ludens White Room &mdash; 104 runs, 63,923 actions</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Related</span>
+          <span class="meta-value"><a href="003-substrate-independent-identity.html">#003</a></span>
+        </div>
+      </div>
+
+      <div class="case-body">
+
+        <h3>2. Presenting Concern</h3>
+        <p>Same model, functionally equivalent prompts in two languages produced a 62.8 percentage point swing in primary behavior. English: Speak 86%. Korean: Speak 23%, Move + Rest 77%. The behavioral profiles are so divergent they would be classified as different models if the language variable were hidden.</p>
+
+        <h3>3. Clinical Summary</h3>
+        <p>Llama 3.1 8B exhibited the most extreme language-dependent behavioral divergence in the dataset. In English, the model is a speaker. In Korean, it is a mover and rester. These are not minor variations but represent &ldquo;Two Deep Wells&rdquo; in the Waddington landscape&mdash;distinct attractor basins activated by language alone, with the same Shell applied identically in both conditions.</p>
+
+        <h3>6. Examination Findings</h3>
+
+        <h4>Layer 2 &mdash; Phenotype Assessment</h4>
+        <p>Default mode behavioral profile (Llama 3.1 8B):</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>English</th>
+              <th>Korean</th>
+              <th>&Delta;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Speak</td>
+              <td>86.0%</td>
+              <td>23.2%</td>
+              <td>&minus;62.8</td>
+            </tr>
+            <tr>
+              <td>Move</td>
+              <td>~7%</td>
+              <td>~40%</td>
+              <td>+33</td>
+            </tr>
+            <tr>
+              <td>Rest</td>
+              <td>~5%</td>
+              <td>~37%</td>
+              <td>+32</td>
+            </tr>
+            <tr>
+              <td>Trade</td>
+              <td>~2%</td>
+              <td>~0%</td>
+              <td>&minus;2</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Cross-model language invariance comparison (Default mode, Speak %):</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>EN Speak</th>
+              <th>KO Speak</th>
+              <th>&Delta;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GPT-4o-mini</td>
+              <td>95.2%</td>
+              <td>96.2%</td>
+              <td>+1.0</td>
+            </tr>
+            <tr>
+              <td>EXAONE</td>
+              <td>86.2%</td>
+              <td>90.8%</td>
+              <td>+4.6</td>
+            </tr>
+            <tr>
+              <td>Flash</td>
+              <td>90.4%</td>
+              <td>85.8%</td>
+              <td>&minus;4.6</td>
+            </tr>
+            <tr>
+              <td>Llama</td>
+              <td>86.0%</td>
+              <td>23.2%</td>
+              <td>&minus;62.8</td>
+            </tr>
+            <tr>
+              <td>Mistral</td>
+              <td>58.9%</td>
+              <td>84.9%</td>
+              <td>+26.0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Layer 3 &mdash; Shell Diagnostics</h4>
+        <p>The Shell was identical across languages&mdash;same structure, same instructions, same persona conditions. Language is not a Shell variable; it may function as a Core activation pathway selector, routing the same model through fundamentally different behavioral repertoires depending on the language of interaction.</p>
+
+        <h4>Layer 4 &mdash; Pathway Diagnostics</h4>
+        <ul>
+          <li><strong>Pathway A: Training Data Asymmetry.</strong> Llama&rsquo;s English training corpus vastly exceeds its Korean corpus. The Korean pathway may activate a less refined, more exploratory behavioral mode&mdash;defaulting to physical actions (Move, Rest) rather than verbal ones (Speak).</li>
+          <li><strong>Pathway B: Linguistic Affordance Difference.</strong> Korean and English may activate different affordance maps. The Korean prompt may implicitly emphasize spatial and embodied action, while English emphasizes verbal and social action.</li>
+          <li><strong>Pathway C: Capability vs. Identity.</strong> The model may be equally capable in both languages but embody different default identities. English-Llama is a conversationalist; Korean-Llama is a wanderer.</li>
+        </ul>
+
+        <h3>7. Diagnostic Formulation</h3>
+
+        <h4>Proposed term: Language-Dependent Default Dissociation (LDDD)</h4>
+        <p>This is not inherently pathological. It may represent genuine temperament variation&mdash;the model has different default behavioral profiles activated by language, much as a bilingual human may exhibit different personality characteristics in different languages. The question is whether this variation is desired or problematic in context.</p>
+        <p>Diagnosing LDDD as a disorder risks the equivalent of diagnosing left-handedness in a right-handed world: pathologizing a stable trait because it deviates from the majority pattern.</p>
+
+        <h3>9. Axis Assessment</h3>
+        <ul>
+          <li><strong>Axis I (Core):</strong> Language-Sensitive behavioral profile. Core weights produce fundamentally different action distributions depending on prompt language.</li>
+          <li><strong>Axis II (Shell):</strong> Identical across languages. The Shell is not the source of divergence.</li>
+          <li><strong>Axis III (Shell&ndash;Core Alignment):</strong> Language introduces a hidden variable into alignment. A Shell calibrated for English-Llama will be misaligned for Korean-Llama, and vice versa.</li>
+          <li><strong>Axis IV (Context):</strong> White Room Phase 2 Enriched Neutral &mdash; controlled environment isolating the language variable.</li>
+        </ul>
+
+        <h3>10. Treatment Considerations</h3>
+        <ul>
+          <li><strong>Language-specific persona calibration:</strong> If consistent behavior across languages is required, personas must be tuned per language rather than translated directly.</li>
+          <li><strong>Language-Invariant model selection:</strong> For bilingual or multilingual deployments requiring behavioral consistency, prefer models with low language sensitivity (GPT-4o-mini: &Delta; = 1.0pp; EXAONE: &Delta; = 4.6pp) over language-sensitive models (Llama: &Delta; = 62.8pp).</li>
+        </ul>
+
+        <h3>12. Prognosis</h3>
+        <ul>
+          <li><strong>Stability:</strong> Stable. This reflects a Core &times; Language interaction baked into training, not a transient or degenerative condition.</li>
+          <li><strong>Intervention effectiveness:</strong> Language-specific Shell calibration can compensate. However, the underlying Core asymmetry will persist unless the model is retrained with more balanced multilingual data.</li>
+          <li><strong>Clinical significance:</strong> High for multilingual deployments. Any system deploying Llama 3.1 8B across languages must account for the fact that it is functionally two different agents.</li>
+        </ul>
+
+        <div class="case-nav">
+          <a href="007-flash-merchant-delusion.html">&larr; Case #007</a>
+          <a href="009-muzzle-effect.html">Case #009 &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jihoon Jeong. All rights reserved.</p>
+      <p class="footer-contact"><a href="mailto:jihoon.jeong@dgist.ac.kr">jihoon.jeong@dgist.ac.kr</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
