@@ -866,6 +866,41 @@ a:hover {
 }
 
 
+/* --- Case Relationship Map --- */
+.relationship-map {
+  margin-bottom: 2rem;
+}
+
+.map-legend {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.legend-line {
+  display: inline-block;
+  width: 24px;
+  height: 0;
+}
+
+
 /* --- Individual Case Page --- */
 .case-content {
   padding: 3rem 0;
