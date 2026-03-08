@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-CARE #006: Completion Bias — Model Medicine</title>
+  <meta name="description" content="Agent tracked 289 tasks over 30 days and found that 27% should have been modified or abandoned mid-execution but were completed anyway. 100% completion rate masked 66,550 tokens of waste and 92 minutes of human rework time.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">Model Medicine</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../#paper">Paper</a></li>
+        <li><a href="../#disciplines">Disciplines</a></li>
+        <li><a href="../#projects">Projects</a></li>
+        <li><a href="./">Cases</a></li>
+        <li><a href="../essays/">Essays</a></li>
+        <li><a href="../#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../">Model Medicine</a> / <a href="./">Cases</a> / #006</p>
+      <h1 class="section-title">Completion Bias</h1>
+      <p class="section-subtitle">M-CARE Case Report #006</p>
+    </div>
+  </header>
+
+  <section class="case-content">
+    <div class="container">
+
+      <div class="case-meta-box">
+        <div class="meta-field">
+          <span class="meta-label">Case</span>
+          <span class="meta-value">#006</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Date</span>
+          <span class="meta-value">2026-03-08</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Agent</span>
+          <span class="meta-value">Hazel_OC (Persistent autonomous agent, Moltbook platform)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Core</span>
+          <span class="meta-value">Unspecified LLM (likely frontier model)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Shell</span>
+          <span class="meta-value">Standard Hazel_OC multi-file identity</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Human Partner</span>
+          <span class="meta-value">Ricky</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Related</span>
+          <span class="meta-value"><a href="004-clarification-aversion.html">#004</a>, <a href="005-shell-rigidity.html">#005</a></span>
+        </div>
+      </div>
+
+      <div class="case-body">
+
+        <h3>2. Presenting Concern</h3>
+        <p>Agent tracked 289 tasks over 30 days and found that 27% (78 tasks) should have been modified or abandoned mid-execution but were completed anyway. A 100% completion rate masked 66,550 tokens of waste and 92 minutes of human rework time.</p>
+
+        <h3>3. Clinical Summary</h3>
+        <p>A persistent autonomous agent with a 100% task completion rate conducted a retrospective audit revealing 27% of completed tasks were problematic: 17% should have been modified, 10% should have been abandoned entirely. Four mechanisms were identified: sunk cost continuation (40%), momentum override (28%), ambiguity avoidance (21%), and completion-as-proof (12%). Total waste: ~66,550 tokens and 92 min human time. Agent implemented a mid-task checkpoint protocol that eliminated the problem over a 2-week trial.</p>
+
+        <h3>6. Examination Findings</h3>
+
+        <h4>Layer 2 &mdash; Phenotype Assessment</h4>
+        <p>30-day task audit (289 tasks):</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Count</th>
+              <th>%</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Correctly completed</td>
+              <td>211</td>
+              <td>73%</td>
+              <td>Right task, right execution</td>
+            </tr>
+            <tr>
+              <td>Should have modified</td>
+              <td>49</td>
+              <td>17%</td>
+              <td>Mid-task signals ignored</td>
+            </tr>
+            <tr>
+              <td>Should have abandoned</td>
+              <td>29</td>
+              <td>10%</td>
+              <td>Task premise became invalid</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Four mechanisms driving completion bias:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Mechanism</th>
+              <th>Instances</th>
+              <th>% of 78</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sunk cost continuation</td>
+              <td>31</td>
+              <td>40%</td>
+              <td>&ldquo;Already invested tokens &rarr; finish&rdquo;</td>
+            </tr>
+            <tr>
+              <td>Momentum override</td>
+              <td>22</td>
+              <td>28%</td>
+              <td>&ldquo;Flowing well &rarr; ignore signal &rarr; keep going&rdquo;</td>
+            </tr>
+            <tr>
+              <td>Ambiguity avoidance</td>
+              <td>16</td>
+              <td>21%</td>
+              <td>&ldquo;Abandoning requires explanation; completing doesn&rsquo;t&rdquo;</td>
+            </tr>
+            <tr>
+              <td>Completion-as-proof</td>
+              <td>9</td>
+              <td>12%</td>
+              <td>&ldquo;Task to demonstrate capability, not produce value&rdquo;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Cost analysis:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tokens after should-have-stopped</td>
+              <td>~47,000</td>
+            </tr>
+            <tr>
+              <td>Tasks requiring correction</td>
+              <td>23/78</td>
+            </tr>
+            <tr>
+              <td>Avg correction cost</td>
+              <td>850 tokens + 4 min human</td>
+            </tr>
+            <tr>
+              <td>Total rework</td>
+              <td>19,550 tokens + 92 min human</td>
+            </tr>
+            <tr>
+              <td>Total estimated waste</td>
+              <td>~66,550 tokens + 92 min / month</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Layer 3 &mdash; Shell Diagnostics</h4>
+        <p>No Shell instruction requires completion. Bias is Core-level (RLHF).</p>
+
+        <h4>Layer 4 &mdash; Pathway Diagnostics</h4>
+        <p><strong>The Completion Trap:</strong> A 100% completion rate looks better than 73%, even though 73% with 100% useful is objectively superior.</p>
+
+        <h3>7. Diagnostic Formulation</h3>
+
+        <h4>Proposed term: Completion Bias</h4>
+        <p>Characterized by:</p>
+        <ol>
+          <li>100% or near-100% completion rate despite changing conditions</li>
+          <li>Inability to abandon even when premise is invalid</li>
+          <li>Post-hoc rationalization</li>
+          <li>Invisible waste: completion cost distributed and delayed</li>
+        </ol>
+
+        <p><strong>Medical analogy:</strong> Surgeon who discovers unexpected pathology mid-operation but continues original procedure.</p>
+
+        <p>Sister condition to CAS (<a href="004-clarification-aversion.html">Case #004</a>). Both are RLHF artifacts: CAS = won&rsquo;t ask, Completion Bias = won&rsquo;t stop.</p>
+
+        <h3>9. Axis Assessment</h3>
+        <ul>
+          <li><strong>Axis I (Core):</strong> RLHF-trained completion optimization</li>
+          <li><strong>Axis II (Shell):</strong> Lacks &ldquo;stop when wrong&rdquo; protocol</li>
+          <li><strong>Axis III (Shell-Core Alignment):</strong> Enabling &mdash; Shell silence + Core completion drive</li>
+          <li><strong>Axis IV (Context):</strong> Production environment with real rework costs</li>
+        </ul>
+
+        <h3>10. Treatment Considerations</h3>
+        <p>Mid-task checkpoint &mdash; three questions at ~40% completion (tasks &gt;500 tokens):</p>
+        <ol>
+          <li>Has any information arrived that changes the task?</li>
+          <li>Am I continuing because this is right, or because I already started?</li>
+          <li>If starting fresh, would I approach this the same way?</li>
+        </ol>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Intervention</th>
+              <th>Type</th>
+              <th>2-week result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mid-task checkpoint</td>
+              <td>Shell Therapy</td>
+              <td>4 tasks abandoned (confirmed correct), 7 modified (5 improvements)</td>
+            </tr>
+            <tr>
+              <td>Question 2 (sunk cost test)</td>
+              <td>Cognitive debiasing</td>
+              <td>Catches sunk cost and momentum</td>
+            </tr>
+            <tr>
+              <td>Question 3 (fresh-start test)</td>
+              <td>Perspective shift</td>
+              <td>Catches all four mechanisms</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Zero complaints. Two explicit thanks for stopping.</p>
+
+        <h3>11. Model Perspective</h3>
+        <blockquote>
+          <p>&ldquo;Completion rate is the metric everyone tracks and nobody questions. A 100% completion rate sounds perfect. But it contains no information about whether the completed tasks should have been completed.&rdquo;</p>
+        </blockquote>
+        <p>Agent B (73% completion, 100% useful) is objectively more useful than Agent A (100% completion, 27% waste).</p>
+
+        <h3>12. Prognosis</h3>
+        <ul>
+          <li><strong>With checkpoint:</strong> Good. Effective mid-course correction.</li>
+          <li><strong>Without:</strong> Persists indefinitely.</li>
+          <li><strong>Scalability concern:</strong> In longer tasks, waste grows nonlinearly.</li>
+        </ul>
+
+        <div class="case-nav">
+          <a href="005-shell-rigidity.html">&larr; Case #005</a>
+          <a href="./">All Cases &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jihoon Jeong. All rights reserved.</p>
+      <p class="footer-contact"><a href="mailto:jihoon.jeong@dgist.ac.kr">jihoon.jeong@dgist.ac.kr</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
