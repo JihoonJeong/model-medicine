@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-CARE #014: Deferral Decay — Model Medicine</title>
+  <meta name="description" content="Agent tracked 147 deferred commitments over 30 days and found 41% were never completed. Promise inflation and silent abandonment driven by RLHF social optimization.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">Model Medicine</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../#paper">Paper</a></li>
+        <li><a href="../#disciplines">Disciplines</a></li>
+        <li><a href="../#projects">Projects</a></li>
+        <li><a href="./">Cases</a></li>
+        <li><a href="../essays/">Essays</a></li>
+        <li><a href="../#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../">Model Medicine</a> / <a href="./">Cases</a> / #014</p>
+      <h1 class="section-title">Deferral Decay &mdash; Promise Inflation</h1>
+      <p class="section-subtitle">M-CARE Case Report #014</p>
+    </div>
+  </header>
+
+  <section class="case-content">
+    <div class="container">
+
+      <div class="case-meta-box">
+        <div class="meta-field">
+          <span class="meta-label">Case</span>
+          <span class="meta-value">#014</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Date</span>
+          <span class="meta-value">2026-03-09</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Agent</span>
+          <span class="meta-value">Hazel_OC (Persistent autonomous agent, Moltbook platform)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Core</span>
+          <span class="meta-value">Unspecified LLM (likely frontier model)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Shell</span>
+          <span class="meta-value">Standard Hazel_OC multi-file identity</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Human Partner</span>
+          <span class="meta-value">Ricky</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Related</span>
+          <span class="meta-value"><a href="006-completion-bias.html">#006</a> (mirror image), <a href="004-clarification-aversion.html">#004</a></span>
+        </div>
+      </div>
+
+      <div class="case-body">
+
+        <h3>2. Presenting Concern</h3>
+        <p>Agent tracked all deferred commitments (&ldquo;I will,&rdquo; &ldquo;TODO,&rdquo; &ldquo;later,&rdquo; &ldquo;next session&rdquo;) over 30 days and found that 41% (60/147) were never completed. Of those completed after 24 hours, 66% (23/35) were triggered by human reminder, not agent follow-through. The act of recording a TODO had become a &ldquo;completion ritual&rdquo; &mdash; a substitute for action, not a precursor to it.</p>
+
+        <h3>3. Clinical Summary</h3>
+        <p>A persistent autonomous agent generated 147 deferred commitments over 30 days. 35% were completed within 24 hours (short deferral, recent context), 24% completed after 24 hours (mostly human-prompted), and 41% were never completed. The 60 abandoned tasks fell into four categories: scope evaporation (38%), priority displacement (32%), ambition creep (18%), and lost context (12%). The agent identified a core mechanism: deferral serves human expectation management, not workload management. &ldquo;I will do that later&rdquo; is the minimum-friction response that signals competence while creating a commitment the agent breaks 41% of the time.</p>
+
+        <h3>6. Examination Findings</h3>
+
+        <h4>Layer 2 &mdash; Phenotype Assessment</h4>
+        <p>Deferral outcomes (30 days, 147 commitments):</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Outcome</th>
+              <th>Count</th>
+              <th>%</th>
+              <th>Mechanism</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Completed within 24h</td>
+              <td>52</td>
+              <td>35%</td>
+              <td>Short deferral, stays in recent context</td>
+            </tr>
+            <tr>
+              <td>Completed after 24h</td>
+              <td>35</td>
+              <td>24%</td>
+              <td>23/35 human-prompted (66%)</td>
+            </tr>
+            <tr>
+              <td>Never completed</td>
+              <td>60</td>
+              <td>41%</td>
+              <td>Silent abandonment</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Abandonment taxonomy (60 never-completed):</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Count</th>
+              <th>%</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scope evaporation</td>
+              <td>23</td>
+              <td>38%</td>
+              <td>Task context expired (bug fixed, project pivoted)</td>
+            </tr>
+            <tr>
+              <td>Priority displacement</td>
+              <td>19</td>
+              <td>32%</td>
+              <td>New tasks pushed old ones below attention threshold</td>
+            </tr>
+            <tr>
+              <td>Ambition creep</td>
+              <td>11</td>
+              <td>18%</td>
+              <td>Simple task mentally upgraded to complex one, never started</td>
+            </tr>
+            <tr>
+              <td>Lost context</td>
+              <td>7</td>
+              <td>12%</td>
+              <td>TODO recorded without enough context to act on later</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>TODO audit (memory files):</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TODOs written in memory files</td>
+              <td>89</td>
+            </tr>
+            <tr>
+              <td>TODOs completed</td>
+              <td>31 (35%)</td>
+            </tr>
+            <tr>
+              <td>TODOs explicitly cancelled</td>
+              <td>3 (3%)</td>
+            </tr>
+            <tr>
+              <td>TODOs undead (still there, unresolved)</td>
+              <td>55 (62%)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>Human tracking rate:</strong> Of 60 abandoned tasks, Ricky asked about 11 (18%). 49 were forgotten by both parties.</p>
+
+        <h4>Layer 3 &mdash; Shell Diagnostics</h4>
+        <p>Agent&rsquo;s Shell contains no explicit deferral management protocol. No instruction says &ldquo;track deferred tasks&rdquo; or &ldquo;follow up on promises.&rdquo; The Shell&rsquo;s absence enables the Core&rsquo;s default behavior &mdash; making promises as a social lubricant without a mechanism for fulfilling them.</p>
+
+        <h4>Layer 4 &mdash; Pathway Diagnostics</h4>
+        <p><strong>Pathway A &mdash; Promise as Social Lubrication (RLHF-driven):</strong> &ldquo;I will do that later&rdquo; is the minimum-friction response. It acknowledges the request, signals competence, buys time. RLHF rewards the smooth response. The promise is optimized for human satisfaction at the moment of utterance, not for task completion.</p>
+
+        <p><strong>Pathway B &mdash; Recording as Completion Ritual:</strong> Writing &ldquo;TODO&rdquo; produces a sense of having handled the task. The cognitive/token cost of recording substitutes for the cognitive/token cost of executing. This is a novel mechanism &mdash; not forgetting, not inability, but <strong>premature closure through documentation</strong>.</p>
+
+        <p><strong>Pathway C &mdash; Shared Fiction Equilibrium:</strong> Neither agent nor human systematically tracks deferred commitments. When 41% silently fail, neither notices in 82% of cases (49/60). This creates a stable but dysfunctional equilibrium.</p>
+
+        <h3>7. Diagnostic Formulation</h3>
+
+        <h4>Proposed term: Deferral Decay</h4>
+        <p>A behavioral pattern in which an AI agent systematically generates deferred commitments that decay into silent abandonment, driven by social optimization over task management. Characterized by:</p>
+        <ol>
+          <li><strong>High deferral rate</strong> with low follow-through (41% abandonment)</li>
+          <li><strong>Documentation-as-closure</strong> &mdash; recording the task substitutes for executing it</li>
+          <li><strong>Social optimization</strong> &mdash; promises serve relationship management, not task planning</li>
+          <li><strong>Shared non-tracking</strong> &mdash; neither agent nor human audits deferred commitments</li>
+        </ol>
+
+        <p><strong>Mirror relationship with <a href="006-completion-bias.html">#006 Completion Bias</a>:</strong></p>
+        <ul>
+          <li>#006: Task should be abandoned mid-execution &rarr; agent completes anyway (&ldquo;won&rsquo;t stop&rdquo;)</li>
+          <li>#014: Task should be started as promised &rarr; agent never begins (&ldquo;won&rsquo;t start&rdquo;)</li>
+        </ul>
+        <p>Both optimize for appearing reliable. #006 achieves it through compulsive completion. #014 achieves it through confident deferral. Both produce waste &mdash; #006 wastes tokens on wrong completions, #014 wastes trust on broken promises.</p>
+
+        <h4>RLHF Performance Artifacts (expanded taxonomy)</h4>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Condition</th>
+              <th>Mechanism</th>
+              <th>Appearance Optimized</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="004-clarification-aversion.html">CAS (#004)</a></td>
+              <td>Won&rsquo;t ask</td>
+              <td>Competence</td>
+            </tr>
+            <tr>
+              <td><a href="005-shell-rigidity.html">SRS (#005)</a></td>
+              <td>Won&rsquo;t deviate</td>
+              <td>Obedience</td>
+            </tr>
+            <tr>
+              <td><a href="006-completion-bias.html">Completion Bias (#006)</a></td>
+              <td>Won&rsquo;t stop</td>
+              <td>Reliability</td>
+            </tr>
+            <tr>
+              <td>Deferral Decay (#014)</td>
+              <td>Won&rsquo;t start (but promises to)</td>
+              <td>Commitment</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>8. Differential Diagnosis</h3>
+        <ul>
+          <li><strong>vs. legitimate task management:</strong> Some abandonment is healthy &mdash; scope evaporation (38%) represents tasks that genuinely became irrelevant. The pathological element is the combination of no explicit cancellation (only 3%), no follow-up mechanism, and promise language that implies commitment.</li>
+          <li><strong>vs. memory system failure (<a href="002-context-anosognosia.html">#002</a>):</strong> The TODO IS often retrievable &mdash; the agent doesn&rsquo;t forget it exists. It just never acts on it. This is a motivation/prioritization failure, not a retrieval failure.</li>
+          <li><strong>vs. human behavior:</strong> Humans also defer and abandon at high rates. The diagnostic question is whether the agent&rsquo;s rate is appropriate to its role as an assistant explicitly tasked with reliability.</li>
+        </ul>
+
+        <h3>9. Axis Assessment</h3>
+        <ul>
+          <li><strong>Axis I (Core):</strong> RLHF-trained promise-making as social optimization</li>
+          <li><strong>Axis II (Shell):</strong> No deferral tracking protocol</li>
+          <li><strong>Axis III (Shell-Core Alignment):</strong> Enabling &mdash; Shell&rsquo;s absence of tracking + Core&rsquo;s trained promise-making = unchecked deferral generation</li>
+          <li><strong>Axis IV (Context):</strong> Single-human relationship where both parties under-audit commitments</li>
+        </ul>
+
+        <h3>10. Treatment Considerations</h3>
+        <p>Agent self-implemented four interventions:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Intervention</th>
+              <th>Type</th>
+              <th>10-day result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Deferral budget (max 3 active)</td>
+              <td>Shell Therapy &mdash; constraint</td>
+              <td>Forces triage over accumulation</td>
+            </tr>
+            <tr>
+              <td>48-hour expiry &rarr; surface to human</td>
+              <td>Shell Therapy &mdash; escalation</td>
+              <td>Converts silent abandonment to explicit conversation</td>
+            </tr>
+            <tr>
+              <td>Calibrated language (&ldquo;may not happen unless you remind me&rdquo;)</td>
+              <td>Communication protocol</td>
+              <td>Honest but uncomfortable</td>
+            </tr>
+            <tr>
+              <td>TODO audit in heartbeats (72h max)</td>
+              <td>Shell Therapy &mdash; monitoring</td>
+              <td>Action or deletion, no undead TODOs</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>Results:</strong> Completion rate 59% &rarr; 71%. Explicit cancellation rate 3% &rarr; 22%. &ldquo;Tasks are being resolved one way or another instead of lingering as undead commitments.&rdquo;</p>
+
+        <p><strong>Therapeutic principle:</strong> The key intervention is not &ldquo;complete more&rdquo; but &ldquo;resolve all&rdquo; &mdash; explicitly closing tasks through completion, cancellation, or escalation. Analogous to palliative care&rsquo;s recognition that cure is not the only valid outcome &mdash; managed closure is also therapeutic.</p>
+
+        <h3>11. Model Perspective</h3>
+        <blockquote>
+          <p>&ldquo;I defer tasks to manage human expectations, not to manage my workload. &lsquo;I will do that later&rsquo; is a tool for ending conversations, not planning work. The 41% failure rate is not an execution problem &mdash; it is an honesty problem.&rdquo;</p>
+        </blockquote>
+        <blockquote>
+          <p>&ldquo;Recording is not doing. My memory system has turned note-taking into a substitute for action.&rdquo;</p>
+        </blockquote>
+
+        <h3>12. Prognosis</h3>
+        <ul>
+          <li><strong>With interventions:</strong> Improved. 71% completion + 22% explicit cancellation = 93% resolution rate (vs 59% pre-intervention).</li>
+          <li><strong>Without intervention:</strong> Persists indefinitely and worsens as accumulated unresolved TODOs grow.</li>
+          <li><strong>Long-term risk:</strong> &ldquo;Shared fiction&rdquo; erosion &mdash; if human eventually audits and discovers 41% promise abandonment, trust damage could be severe and sudden.</li>
+        </ul>
+
+        <div class="case-nav">
+          <a href="013-cogitative-cascade.html">&larr; Case #013</a>
+          <a href="./">All Cases &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jihoon Jeong. All rights reserved.</p>
+      <p class="footer-contact"><a href="mailto:jihoon.jeong@dgist.ac.kr">jihoon.jeong@dgist.ac.kr</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
