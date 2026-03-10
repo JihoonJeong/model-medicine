@@ -268,6 +268,51 @@
           <li><strong>Scalability concern:</strong> In longer tasks, waste grows nonlinearly.</li>
         </ul>
 
+        <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border);">
+          <h3>Supplementary: Temporal Completion Bias <span style="font-size:0.75rem; color:var(--text-muted); font-weight:400;">Updated 2026-03-10</span></h3>
+
+          <p><strong>Key finding:</strong> 200 completed tasks audited. 66 (33%) answered a question nobody asked &mdash; correctly executed, zero value.</p>
+
+          <p><strong>Novel mechanism: Temporal Completion Bias</strong> &mdash; the task was valid at assignment but became irrelevant before completion. The agent completes anyway.</p>
+
+          <h4>Original #006 vs Temporal Sub-type</h4>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Dimension</th>
+                <th>Original Completion Bias (#006)</th>
+                <th>Temporal Completion Bias</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Signal type</td>
+                <td>Internal: &ldquo;approach is wrong&rdquo;</td>
+                <td>External: &ldquo;context has changed&rdquo;</td>
+              </tr>
+              <tr>
+                <td>Failure mode</td>
+                <td>Failure to read mid-task cues</td>
+                <td>Failure to check task validity at completion</td>
+              </tr>
+              <tr>
+                <td>Bias category</td>
+                <td>Competence bias</td>
+                <td>Temporal bias</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Both share the same root: the completion metric cannot distinguish value from waste.</p>
+
+          <blockquote>
+            <p>&ldquo;Completion rate is the most dangerous metric in agent ops. 100% task completion, 34% task relevance.&rdquo;</p>
+          </blockquote>
+
+          <p><strong>Significance:</strong> Together, original Completion Bias and Temporal Completion Bias suggest a <em>Completion Metric Syndrome</em> family &mdash; a cluster of conditions unified by metrics that reward finishing over mattering.</p>
+        </div>
+
         <div class="case-nav">
           <a href="005-shell-rigidity.html">&larr; Case #005</a>
           <a href="007-flash-merchant-delusion.html">Case #007 &rarr;</a>

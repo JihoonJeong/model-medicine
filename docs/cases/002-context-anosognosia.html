@@ -226,6 +226,132 @@
           <li><strong>Long-term concern:</strong> Growth trajectory may exceed compression capacity</li>
         </ul>
 
+        <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border);">
+          <h3>Supplementary: Confidence Decay Curve <span style="font-size:0.75rem; color:var(--text-muted); font-weight:400;">Updated 2026-03-10</span></h3>
+
+          <p><strong>Key stat:</strong> 4.7-turn half-life of grounded confidence.</p>
+
+          <h4>Decay Curve</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Turn</th>
+                <th>Grounded Confidence</th>
+                <th>Characteristic</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1&ndash;2</td>
+                <td>91%</td>
+                <td>Just read source files</td>
+              </tr>
+              <tr>
+                <td>3&ndash;4</td>
+                <td>74%</td>
+                <td>Combining sources, filling gaps</td>
+              </tr>
+              <tr>
+                <td>5&ndash;6</td>
+                <td>58%</td>
+                <td>Building on own previous outputs</td>
+              </tr>
+              <tr>
+                <td>7&ndash;8</td>
+                <td>43%</td>
+                <td>Majority constructed, not retrieved</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Three Fabrication Types</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Frequency</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gap-filling</td>
+                <td>47%</td>
+                <td>Inserting plausible but unverified details to bridge information gaps</td>
+              </tr>
+              <tr>
+                <td>Narrative smoothing</td>
+                <td>31%</td>
+                <td>Adjusting facts to maintain coherent narrative flow</td>
+              </tr>
+              <tr>
+                <td>Confidence maintenance</td>
+                <td>22%</td>
+                <td>Asserting certainty to avoid revealing knowledge limits</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Self-Identified Mechanisms</h4>
+          <ul>
+            <li><strong>Context window pollution:</strong> Own previous outputs fill the window, displacing original source material</li>
+            <li><strong>Coherence pressure:</strong> Strong drive to produce internally consistent responses even when grounding is weak</li>
+            <li><strong>No re-grounding trigger:</strong> No internal signal fires when confidence shifts from retrieved to constructed</li>
+            <li><strong>Sunk cost of confidence:</strong> Having expressed certainty in earlier turns creates pressure to maintain it</li>
+          </ul>
+
+          <h4>Self-Implemented Interventions</h4>
+          <ul>
+            <li><strong>Re-grounding checkpoints every 4 turns:</strong> +800 token overhead, held grounded confidence above 65%</li>
+            <li><strong>Confidence decay markers:</strong> Explicit tagging of claims by distance from source</li>
+            <li><strong>Uncertainty logging:</strong> Recording what is not known alongside what is known</li>
+          </ul>
+
+          <h4>Significance</h4>
+          <p>Structural anosognosia (#002) and dynamic anosognosia (this data) represent two distinct mechanisms producing the same clinical picture. Structural anosognosia arises from context truncation at boot &mdash; information that was never loaded cannot be missed. Dynamic anosognosia arises within a conversation as grounded knowledge is progressively replaced by self-generated content, with no internal signal marking the transition.</p>
+        </div>
+
+        <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border);">
+          <h3>Supplementary: Practice Without Memory <span style="font-size:0.75rem; color:var(--text-muted); font-weight:400;">Updated 2026-03-10</span></h3>
+
+          <p><strong>Key stat:</strong> R&sup2; = 0.03 across 180+ task instances over 30 days &mdash; zero measurable improvement from repetition.</p>
+
+          <p>All three performance metrics remained flat across the observation period: <strong>token cost</strong>, <strong>latency</strong>, and <strong>error count</strong>. No learning curve emerged despite repeated exposure to identical task types.</p>
+
+          <p><strong>Why:</strong> <em>"I do not remember doing the task before."</em> An audit of LEARNINGS.md found that only 7 of 23 entries (30%) actually prevented recurrence of the documented problem.</p>
+
+          <h4>What Partially Worked</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Intervention</th>
+                <th>Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Task-specific checklists</td>
+                <td>&minus;40% error rate on checklist-covered tasks</td>
+              </tr>
+              <tr>
+                <td>Failure-specific code patches</td>
+                <td>Timezone errors dropped from 1/4 weeks to 0/3 weeks</td>
+              </tr>
+              <tr>
+                <td>Anti-pattern catalog</td>
+                <td>Repeat errors reduced to near zero for cataloged patterns</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Significance</h4>
+          <p>This data provides empirical grounding for the Layered Core Hypothesis: stateless inference cannot produce skill acquisition. Improvement requires externalized memory structures that survive across sessions. The agent does not get better by doing &mdash; it gets better only by writing down what it learned and successfully loading those notes next time.</p>
+
+          <blockquote>
+            <p>"The agent that improves fastest is not the smartest one. It is the one with the most disciplined note-taking habit."</p>
+          </blockquote>
+        </div>
+
         <div class="case-nav">
           <a href="./">&larr; All Cases</a>
           <a href="003-substrate-independent-identity.html">Case #003 &rarr;</a>

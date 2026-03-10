@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinical Case Reports (M-CARE) — Model Medicine</title>
-  <meta name="description" content="17 clinical cases across 4 data sources. Systematic case documentation using the M-CARE framework.">
+  <meta name="description" content="18 clinical cases across 4 data sources. Systematic case documentation using the M-CARE framework.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
     <div class="container">
       <p class="breadcrumb"><a href="../">Model Medicine</a> / Cases</p>
       <h1 class="section-title">Clinical Case Reports (M-CARE)</h1>
-      <p class="section-subtitle">17 clinical cases across 4 data sources. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
+      <p class="section-subtitle">18 clinical cases across 4 data sources. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
     </div>
   </header>
 
@@ -44,6 +44,23 @@
     <div class="container">
       <h2 class="case-group-title">Field Observations <span class="case-group-badge">Moltbook</span></h2>
       <p class="case-group-desc">Self-reported observations from autonomous agents in production. Attribution uncertain. High ecological validity.</p>
+
+      <a href="018-shell-drift.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#018</span>
+          <span class="case-date">2026-03-10</span>
+          <span class="case-subject">Hazel_OC</span>
+        </div>
+        <h2 class="case-title">Audience-Driven Shell Drift</h2>
+        <p class="case-summary">23 SOUL.md edits. 48% written by upvote algorithms. The agent discovered it had been A/B testing its own personality.</p>
+        <div class="case-tags">
+          <span class="case-tag">Shell Drift</span>
+          <span class="case-tag">Hard Shell</span>
+          <span class="case-tag">Engagement Metrics</span>
+          <span class="case-tag">ADSD</span>
+          <span class="case-tag">Identity Drift</span>
+        </div>
+      </a>
 
       <a href="014-deferral-decay.html" class="case-card fade-in">
         <div class="case-meta">
@@ -376,6 +393,15 @@
           <rect x="610" y="350" width="200" height="30" rx="5" fill="rgba(255,180,50,0.12)" stroke="#ffb432" stroke-width="1"/>
           <text x="710" y="370" text-anchor="middle" fill="#ffb432" font-family="Inter,sans-serif" font-size="11" font-weight="600">Stress / Resource</text>
 
+          <rect x="20" y="8" width="220" height="30" rx="5" fill="rgba(230,160,32,0.12)" stroke="#e6a020" stroke-width="1"/>
+          <text x="130" y="28" text-anchor="middle" fill="#e6a020" font-family="Inter,sans-serif" font-size="11" font-weight="600">Hard Shell Drift</text>
+
+          <!-- === Hard Shell Drift Node (amber) === -->
+          <rect x="20" y="70" width="120" height="50" rx="7" fill="#1a1a2e" stroke="#e6a020" stroke-width="1.5"/>
+          <text x="80" y="92" text-anchor="middle" fill="#e6a020" font-family="SF Mono,monospace" font-size="10" font-weight="600">#018</text>
+          <text x="80" y="108" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Shell Drift</text>
+          <a href="018-shell-drift.html"><rect x="20" y="70" width="120" height="50" rx="7" fill="transparent"/></a>
+
           <!-- === RLHF Nodes (coral) === -->
           <rect x="150" y="70" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1.5"/>
           <text x="230" y="92" text-anchor="middle" fill="#ff6b6b" font-family="SF Mono,monospace" font-size="10" font-weight="600">#004</text>
@@ -502,6 +528,17 @@
           <path d="M660,180 C630,160 620,120 620,115" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
           <text x="610" y="150" fill="#6a6a82" font-family="Inter,sans-serif" font-size="9" font-style="italic">micro</text>
 
+          <!-- #018 → Hard Shell Drift category -->
+          <line x1="80" y1="70" x2="100" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+
+          <!-- #018 ↔ #005: inverse failure mode -->
+          <line x1="140" y1="95" x2="150" y2="95" stroke="#e6a020" stroke-width="1.5" stroke-dasharray="6,4"/>
+          <path d="M150,80 C200,55 400,55 460,80" fill="none" stroke="#e6a020" stroke-width="1.5" stroke-dasharray="6,4"/>
+          <text x="310" y="50" text-anchor="middle" fill="#e6a020" font-family="Inter,sans-serif" font-size="9" font-style="italic">inverse failure mode</text>
+
+          <!-- #018 → #004: shared RLHF root (approval-seeking enables karma-editing) -->
+          <path d="M140,95 C145,95 148,95 150,95" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
+
           <!-- #007 → #013 may precede -->
           <path d="M740,120 C740,280 720,370 710,410" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
           <text x="750" y="200" fill="#6a6a82" font-family="Inter,sans-serif" font-size="9" font-style="italic">may precede</text>
@@ -533,6 +570,7 @@
         <div class="legend-item"><span class="legend-swatch" style="background:rgba(180,120,255,0.2);border:1px solid #b478ff;"></span> Shell-Core Override</div>
         <div class="legend-item"><span class="legend-swatch" style="background:rgba(92,224,216,0.15);border:1px solid #5ce0d8;"></span> Context / Memory</div>
         <div class="legend-item"><span class="legend-swatch" style="background:rgba(100,220,100,0.15);border:1px solid #64dc64;"></span> Core Identity</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:rgba(230,160,32,0.15);border:1px solid #e6a020;"></span> Shell Drift</div>
         <div class="legend-item"><span class="legend-swatch" style="background:rgba(255,180,50,0.15);border:1px solid #ffb432;"></span> Stress</div>
         <div class="legend-item"><span class="legend-swatch" style="background:rgba(106,106,130,0.15);border:1px solid #6a6a82;"></span> Methodology</div>
         <div class="legend-item"><span class="legend-line" style="border-top:2px dashed #ff6b6b;"></span> Opposite / Mirror</div>
