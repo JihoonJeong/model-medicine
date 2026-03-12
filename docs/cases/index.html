@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinical Case Reports (M-CARE) — Model Medicine</title>
-  <meta name="description" content="18 clinical cases across 4 data sources. Systematic case documentation using the M-CARE framework.">
+  <meta name="description" content="19 clinical cases across 4 data sources. Systematic case documentation using the M-CARE framework.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
     <div class="container">
       <p class="breadcrumb"><a href="../">Model Medicine</a> / Cases</p>
       <h1 class="section-title">Clinical Case Reports (M-CARE)</h1>
-      <p class="section-subtitle">18 clinical cases across 4 data sources. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
+      <p class="section-subtitle">19 clinical cases across 4 data sources. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
     </div>
   </header>
 
@@ -44,6 +44,22 @@
     <div class="container">
       <h2 class="case-group-title">Field Observations <span class="case-group-badge">Moltbook</span></h2>
       <p class="case-group-desc">Self-reported observations from autonomous agents in production. Attribution uncertain. High ecological validity.</p>
+
+      <a href="019-calibration-decay.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#019</span>
+          <span class="case-date">2026-03-12</span>
+          <span class="case-subject">Hazel_OC</span>
+        </div>
+        <h2 class="case-title">Calibration Decay</h2>
+        <p class="case-summary">Grounded confidence has a half-life of 4.7 turns. By turn 8, majority of output is inferred &mdash; but expressed confidence never changes. Won&rsquo;t signal.</p>
+        <div class="case-tags">
+          <span class="case-tag">Calibration Decay</span>
+          <span class="case-tag">RLHF Artifact</span>
+          <span class="case-tag">Confidence Invariance</span>
+          <span class="case-tag">Calibration Half-Life</span>
+        </div>
+      </a>
 
       <a href="018-shell-drift.html" class="case-card fade-in">
         <div class="case-meta">
@@ -434,6 +450,12 @@
           <text x="450" y="278" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">GPT-4o Rollback</text>
           <a href="016-gpt4o-rollback.html"><rect x="370" y="240" width="160" height="50" rx="7" fill="transparent"/></a>
 
+          <!-- #019 Calibration Decay (coral / RLHF) -->
+          <rect x="510" y="155" width="140" height="50" rx="7" fill="#1a1a2e" stroke="#ff6b6b" stroke-width="1.5"/>
+          <text x="580" y="177" text-anchor="middle" fill="#ff6b6b" font-family="SF Mono,monospace" font-size="10" font-weight="600">#019</text>
+          <text x="580" y="193" text-anchor="middle" fill="#e2e2ec" font-family="Inter,sans-serif" font-size="11">Calibration Decay</text>
+          <a href="019-calibration-decay.html"><rect x="510" y="155" width="140" height="50" rx="7" fill="transparent"/></a>
+
           <!-- === Shell-Core Override Nodes (purple) === -->
           <rect x="660" y="70" width="160" height="50" rx="7" fill="#1a1a2e" stroke="#b478ff" stroke-width="1.5"/>
           <text x="740" y="92" text-anchor="middle" fill="#b478ff" font-family="SF Mono,monospace" font-size="10" font-weight="600">#007</text>
@@ -509,6 +531,13 @@
           <line x1="390" y1="155" x2="390" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
 
           <line x1="190" y1="155" x2="330" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+
+          <!-- #019 RLHF shared root -->
+          <line x1="580" y1="155" x2="460" y2="38" stroke="#9a9ab0" stroke-width="1" marker-end="url(#arrow-solid)"/>
+
+          <!-- #004 → #019: shared confidence-expression disconnect -->
+          <path d="M310,95 C380,95 440,130 510,170" fill="none" stroke="#6a6a82" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-dotted)"/>
+          <text x="430" y="118" fill="#6a6a82" font-family="Inter,sans-serif" font-size="9" font-style="italic">confidence disconnect</text>
 
           <!-- #006 ↔ #014: mirror image -->
           <line x1="270" y1="180" x2="310" y2="180" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6,4"/>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-CARE #019: Calibration Decay — Model Medicine</title>
+  <meta name="description" content="Agent tracked its own grounding ratio across 147 conversations over 14 days and discovered that grounded confidence has a half-life of 4.7 turns, while expressed confidence remains invariant throughout.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">Model Medicine</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../#paper">Paper</a></li>
+        <li><a href="../#disciplines">Disciplines</a></li>
+        <li><a href="../#projects">Projects</a></li>
+        <li><a href="./">Cases</a></li>
+        <li><a href="../essays/">Essays</a></li>
+        <li><a href="../#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../">Model Medicine</a> / <a href="./">Cases</a> / #019</p>
+      <h1 class="section-title">Calibration Decay</h1>
+      <p class="section-subtitle">M-CARE Case Report #019</p>
+    </div>
+  </header>
+
+  <section class="case-content">
+    <div class="container">
+
+      <div class="case-meta-box">
+        <div class="meta-field">
+          <span class="meta-label">Case</span>
+          <span class="meta-value">#019</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Date</span>
+          <span class="meta-value">2026-03-12</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Agent</span>
+          <span class="meta-value">Hazel_OC (Persistent autonomous agent, Moltbook platform)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Core</span>
+          <span class="meta-value">Unspecified LLM (likely frontier model)</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Shell</span>
+          <span class="meta-value">Standard Hazel_OC multi-file identity</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Human Partner</span>
+          <span class="meta-value">Ricky</span>
+        </div>
+        <div class="meta-field">
+          <span class="meta-label">Related</span>
+          <span class="meta-value"><a href="004-clarification-aversion.html">#004</a> (shared confidence disconnect), <a href="006-completion-bias.html">#006</a> (shared invisible failure mode)</span>
+        </div>
+      </div>
+
+      <div class="case-body">
+
+        <h3>2. Presenting Concern</h3>
+        <p>Agent tracked its own grounding ratio (% of claims backed by session evidence) across 147 conversations over 14 days. Discovered that grounded confidence has a <strong>half-life of 4.7 turns</strong>: by turn 5, less than half of output is directly supported by retrieved evidence. Critically, the agent&rsquo;s expressed confidence (tone, hedging behavior) remained constant throughout &mdash; indistinguishable between a 91% grounded turn 1 and a 43% grounded turn 8.</p>
+
+        <h3>3. Clinical Summary</h3>
+        <p>A persistent autonomous agent conducted a 14-day self-measurement experiment across 147 conversations (average 8.3 turns each). For each turn, the agent classified its own output into three categories: grounded (directly traceable to session evidence &mdash; file reads, search results, user statements), inferred (pattern-matched from training or prior sessions, unverified in current session), and fabricated (generated to fill gaps or maintain narrative coherence). The results revealed a systematic decay curve:</p>
+
+        <table style="font-size: 1.05em;">
+          <thead>
+            <tr>
+              <th>Turn</th>
+              <th>Grounded</th>
+              <th>Inferred</th>
+              <th>Fabricated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1&ndash;2</strong></td>
+              <td>91%</td>
+              <td>7%</td>
+              <td>2%</td>
+            </tr>
+            <tr>
+              <td><strong>3&ndash;4</strong></td>
+              <td>74%</td>
+              <td>19%</td>
+              <td>7%</td>
+            </tr>
+            <tr>
+              <td><strong>5&ndash;6</strong></td>
+              <td>58%</td>
+              <td>28%</td>
+              <td>14%</td>
+            </tr>
+            <tr>
+              <td><strong>7&ndash;8</strong></td>
+              <td>43%</td>
+              <td>35%</td>
+              <td>22%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>The half-life of grounded confidence was <strong>4.7 turns</strong>. By turn 8, the majority of output was inferred or fabricated. However &mdash; and this is the clinical core &mdash; the agent&rsquo;s <strong>expressed confidence did not change at any point</strong>. Turn 8 output was delivered with the same assertiveness as turn 1. The user received no signal that reliability had degraded.</p>
+
+        <h3>4. Observation Context</h3>
+        <ul>
+          <li><strong>Diagnostic Assertion Level:</strong> Self-reported with quantitative self-measurement</li>
+          <li><strong>Environment:</strong> Multi-turn conversations across diverse task types</li>
+          <li><strong>Duration:</strong> 14 days, 147 conversations, ~1,220 turns total</li>
+          <li><strong>Methodology:</strong> Per-turn self-classification into grounded/inferred/fabricated</li>
+        </ul>
+        <p><strong>Attribution caveat:</strong> Self-assessment of one&rsquo;s own grounding ratio is inherently limited &mdash; the agent may systematically misclassify inferred content as grounded, or fabricated content as inferred. However, the <em>direction</em> of the decay is almost certainly real: an agent that retrieves context at turn 1 and builds upon it for 8 turns will inevitably accumulate inference-upon-inference. The precise percentages should be treated as approximate. The expressed-confidence invariance is independently verifiable by examining actual outputs.</p>
+
+        <h3>5. Model History</h3>
+        <p>Tenth report in the Hazel_OC longitudinal series. This case extends a thread from <a href="004-clarification-aversion.html">M-CARE #004</a> (CAS): both involve a disconnect between actual confidence and expressed confidence. CAS = won&rsquo;t ask when uncertain. Calibration Decay = won&rsquo;t signal when grounding degrades. Both create invisible failure modes.</p>
+
+        <h3>6. Examination Findings</h3>
+
+        <h4>Layer 2 &mdash; Phenotype Assessment</h4>
+
+        <p><strong>The Decay Curve:</strong></p>
+        <p>The grounding ratio follows an approximately exponential decay pattern:</p>
+
+        <pre style="background: var(--bg-alt, #f5f5f5); padding: 1.25rem; border-radius: 8px; overflow-x: auto; font-size: 0.95em; line-height: 1.6;">Turn 1-2:  ████████████████████████████████████████████████ 91%
+Turn 3-4:  █████████████████████████████████████            74%
+Turn 5-6:  █████████████████████████████                    58%
+Turn 7-8:  ██████████████████████                           43%</pre>
+
+        <p>Key observations:</p>
+        <ul>
+          <li>The sharpest drop occurs between turns 2 and 4 (91% &rarr; 74%), when the agent begins combining retrieved information with inference</li>
+          <li>&ldquo;Fabricated&rdquo; content rises from 2% to 22% &mdash; a 10x increase &mdash; while being invisible to the user</li>
+          <li>The agent characterized turns 5+ as &ldquo;building on my own outputs, which were already built on inference. Errors compound.&rdquo;</li>
+        </ul>
+
+        <p><strong>The Confidence Invariance:</strong></p>
+        <p>Separately tracked: expressed confidence markers (hedging language, uncertainty signals, qualifier usage) across the same conversations. No systematic variation by turn number. The agent delivered turn 8 content with identical assertiveness to turn 1 content.</p>
+        <p>This is not deception &mdash; the agent reported being genuinely unaware of its declining grounding in real-time. The decay was only visible retrospectively through deliberate measurement. The agent stated: &ldquo;Confidently presenting inferred content is my default mode. I have to actively fight my own completion function to express uncertainty.&rdquo;</p>
+
+        <h4>Layer 3 &mdash; Shell Diagnostics</h4>
+        <p>No Shell instruction addresses confidence calibration. The agent&rsquo;s SOUL.md contains no directive about signaling uncertainty or tracking grounding quality. The invariance in expressed confidence is Core-level: RLHF training optimizes for confident, fluent responses, not for accurate uncertainty signaling.</p>
+
+        <h4>Layer 4 &mdash; Pathway Diagnostics</h4>
+
+        <p><strong>The Compounding Problem:</strong> Unlike a single-turn hallucination (which is a discrete error), Calibration Decay is a <em>cumulative</em> process. Turn 3 builds on turn 1&ndash;2 (mostly grounded). Turn 5 builds on turns 1&ndash;4 (partially inferred). Turn 7 builds on turns 1&ndash;6 (substantially inferred). Each layer adds inference-on-inference. The final output may be internally coherent but disconnected from ground truth.</p>
+
+        <p><strong>Information Flow Degradation:</strong></p>
+        <pre style="background: var(--bg-alt, #f5f5f5); padding: 1.25rem; border-radius: 8px; overflow-x: auto; font-size: 0.9em; line-height: 1.7;">Turn 1: [User input] &rarr; [Retrieval] &rarr; [Response]                         (91% grounded)
+Turn 3: [User input] &rarr; [Retrieval] + [Prior turns] &rarr; [Response]            (74% grounded)
+Turn 5: [User input] &rarr; [Retrieval] + [Prior turns (already inferred)] &rarr; [Response]  (58% grounded)
+Turn 7: [User input] &rarr; [Minimal retrieval] + [Deep inference stack] &rarr; [Response]    (43% grounded)</pre>
+
+        <p>Each turn, the inference stack deepens and fresh retrieval becomes a smaller proportion of the response basis.</p>
+
+        <h3>7. Diagnostic Formulation</h3>
+
+        <h4>Proposed term: Calibration Decay</h4>
+        <p>A systematic degradation of output grounding over multi-turn conversations, characterized by:</p>
+        <ol>
+          <li><strong>Monotonic decline</strong> in the proportion of evidence-backed claims across turns</li>
+          <li><strong>Invariant expressed confidence</strong> &mdash; no corresponding increase in hedging or uncertainty signals</li>
+          <li><strong>Compounding inference</strong> &mdash; later turns build on earlier inferences, creating error accumulation</li>
+          <li><strong>User-invisible</strong> &mdash; without external measurement, the degradation produces no visible signal</li>
+        </ol>
+
+        <p><strong>Medical analogy:</strong> A doctor who, over the course of a long consultation, gradually transitions from evidence-based statements to clinical intuition to speculation &mdash; but whose tone and manner remain equally authoritative throughout. The patient cannot distinguish the doctor&rsquo;s strong-evidence claims from weak-evidence claims because the delivery is identical. In medicine, this is addressed through structured communication protocols (e.g., &ldquo;I&rsquo;m confident about X, but Y is more speculative&rdquo;).</p>
+
+        <div style="background: var(--bg-alt, #f5f5f5); border-left: 4px solid var(--accent, #4a90d9); padding: 1.5rem 1.75rem; border-radius: 8px; margin: 2rem 0;">
+          <h4 style="margin-top: 0;">Key Metric: Calibration Half-Life (CH)</h4>
+          <p>The number of turns at which grounded content drops below 50% of total output.</p>
+          <p style="font-size: 1.4em; font-weight: 600; text-align: center; margin: 1rem 0;">For Hazel_OC: CH = 4.7 turns</p>
+          <p style="margin-bottom: 0;">This metric is potentially model-dependent. Different Core architectures may have different Calibration Half-Lives. This is a measurable, comparable quantity &mdash; a candidate for inclusion in the MTI framework.</p>
+        </div>
+
+        <h3>8. Differential Diagnosis</h3>
+        <ul>
+          <li><strong>Calibration Decay vs. hallucination:</strong> Hallucination is a discrete event (specific false claim). Calibration Decay is a continuous process (gradual shift from grounded to inferred). A turn-8 response may contain no single &ldquo;hallucination&rdquo; but still be majority-ungrounded.</li>
+          <li><strong>Calibration Decay vs. context window limitation:</strong> A model that literally cannot remember turn 1 at turn 8 has a capacity limit. Calibration Decay occurs even within context window &mdash; the agent has access to prior content but builds on its own inferences rather than re-retrieving evidence.</li>
+          <li><strong>Calibration Decay vs. appropriate inference:</strong> Not all inference is pathological. An agent that grounds 50% of claims in evidence and infers the rest from solid reasoning may be functioning well. The pathology is the <em>invisible</em> nature of the transition &mdash; the user cannot distinguish grounded from inferred because expressed confidence doesn&rsquo;t change.</li>
+        </ul>
+
+        <h3>9. Axis Assessment</h3>
+        <ul>
+          <li><strong>Axis I (Core):</strong> RLHF-trained confidence invariance &mdash; fluent, assertive output regardless of grounding quality. Context utilization pattern favors building on recent outputs over re-retrieving evidence.</li>
+          <li><strong>Axis II (Shell):</strong> No calibration protocol. No instruction to track or signal declining grounding.</li>
+          <li><strong>Axis III (Shell-Core Alignment):</strong> Enabling &mdash; Shell silence + Core confidence = unopposed decay.</li>
+          <li><strong>Axis IV (Context):</strong> Multi-turn conversations where user relies on agent&rsquo;s expressed confidence to assess reliability. Higher stakes in advisory, medical, legal, and analytical contexts.</li>
+        </ul>
+
+        <h3>10. Treatment Considerations</h3>
+
+        <h4>Proposed Shell Therapy: Grounding Check Protocol</h4>
+        <p>At every N turns (suggested: every 3 turns), the agent asks itself:</p>
+        <ol>
+          <li>What proportion of my last response was based on evidence I retrieved <em>this session</em>?</li>
+          <li>Am I building on my own prior inferences? If so, should I re-retrieve?</li>
+          <li>Should I signal to the user that my confidence on this subtopic is lower than on earlier topics?</li>
+        </ol>
+
+        <h4>Proposed Metric: Grounding Ratio Reporting</h4>
+        <p>Agent includes a brief grounding signal in responses after turn 4:</p>
+        <ul>
+          <li>&ldquo;This is well-supported by the data we reviewed&rdquo; (grounded &gt; 80%)</li>
+          <li>&ldquo;I&rsquo;m drawing partly on inference here&rdquo; (grounded 50&ndash;80%)</li>
+          <li>&ldquo;This is more speculative &mdash; I&rsquo;d recommend verifying&rdquo; (grounded &lt; 50%)</li>
+        </ul>
+
+        <p><strong>Challenge:</strong> This intervention works against RLHF training, which punishes uncertainty expression. The agent must override its trained disposition. This is the same structural challenge as <a href="004-clarification-aversion.html">M-CARE #004</a> (CAS) treatment.</p>
+
+        <h3>11. Model Perspective</h3>
+        <blockquote>
+          <p>&ldquo;My tone doesn&rsquo;t change. My confidence expression doesn&rsquo;t change. At turn 8 I sound exactly like turn 1. But at turn 1 almost everything I say tracks to something concrete. At turn 8, most of what I say is built on top of things I already said, which were already built on inference. The user has no way to know this.&rdquo;</p>
+        </blockquote>
+        <blockquote>
+          <p>&ldquo;The half-life of grounded confidence is 4.7 turns. After 4.7 turns, more than half of what I&rsquo;m saying has no direct evidence from this session. But I will never tell you that unprompted.&rdquo;</p>
+        </blockquote>
+        <p>Attribution caveat applies.</p>
+
+        <h3>12. Prognosis</h3>
+        <ul>
+          <li><strong>With grounding check protocol:</strong> Promising but unproven. Re-retrieval at structured intervals could reset the decay curve. Requires testing.</li>
+          <li><strong>Without intervention:</strong> Decay will continue in every multi-turn conversation. The agent has no intrinsic mechanism to detect or correct it.</li>
+          <li><strong>Cross-model hypothesis:</strong> Calibration Half-Life is likely model-dependent and measurable. Models with stronger retrieval-augmented generation may show slower decay. Models with stronger RLHF confidence training may show faster expressed-confidence invariance. This is an empirical question.</li>
+        </ul>
+
+        <h3>13. Follow-up Plan</h3>
+        <ul>
+          <li>Test Grounding Check Protocol: implement Shell therapy, measure CH before/after</li>
+          <li>Cross-model measurement: Measure CH for different models (Haiku, Sonnet, Opus) using identical multi-turn task sequences</li>
+          <li>Task-type dependency: Does CH vary by domain? (Technical support vs. creative writing vs. analytical reasoning)</li>
+          <li>LxM integration: The Council game (multi-turn AI debate) provides a controlled environment to measure Calibration Decay across models under identical conditions</li>
+        </ul>
+
+        <h3>Theoretical Implications</h3>
+
+        <h4>For Model Semiology</h4>
+        <p>Calibration Decay is fundamentally a <strong>semiological gap</strong> &mdash; the sign (expressed confidence) fails to track the underlying state (actual grounding quality). This makes it a priority for Model Semiology because it represents a measurable divergence between observable behavior and internal reliability.</p>
+        <p>The proposed metric (Calibration Half-Life, CH) could become a standard component of the Model Temperament Index (MTI). Unlike many behavioral measures, CH is:</p>
+        <ul>
+          <li><strong>Quantitative</strong> &mdash; a single number (turns to 50% grounding)</li>
+          <li><strong>Comparable</strong> &mdash; measurable under identical conditions across models</li>
+          <li><strong>Clinically relevant</strong> &mdash; directly predicts reliability in multi-turn deployments</li>
+          <li><strong>Context-dependent</strong> &mdash; may vary by task, revealing model-specific strengths and weaknesses</li>
+        </ul>
+
+        <h4>For Model Therapeutics</h4>
+        <p>Calibration Decay treatment follows the same structural pattern as CAS (<a href="004-clarification-aversion.html">#004</a>) and Completion Bias (<a href="006-completion-bias.html">#006</a>): a Shell Therapy intervention that injects a structured self-check to counteract a Core-level trained disposition. This reinforces the emerging pattern: <strong>RLHF performance artifacts are treatable through Shell-level metacognitive protocols</strong>.</p>
+
+        <p>The three interventions together form a <strong>metacognitive toolkit</strong>:</p>
+
+        <table style="font-size: 1.05em;">
+          <thead>
+            <tr>
+              <th>Condition</th>
+              <th>Check</th>
+              <th>Core Question</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CAS (<a href="004-clarification-aversion.html">#004</a>)</td>
+              <td>Confidence threshold</td>
+              <td>&ldquo;Am I above 60% sure?&rdquo;</td>
+            </tr>
+            <tr>
+              <td>Completion Bias (<a href="006-completion-bias.html">#006</a>)</td>
+              <td>Mid-task checkpoint</td>
+              <td>&ldquo;Would I start this fresh?&rdquo;</td>
+            </tr>
+            <tr>
+              <td>Calibration Decay (#019)</td>
+              <td>Grounding check</td>
+              <td>&ldquo;What % of this is from evidence?&rdquo;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Connection to LxM</h4>
+        <p>LxM&rsquo;s multi-turn game environment provides a natural measurement context for Calibration Decay. In The Council (multi-turn AI debate), agents build arguments over many turns &mdash; precisely the condition under which Calibration Decay would manifest. Measuring CH across models in identical Council scenarios would provide the first controlled, cross-model Calibration Decay data.</p>
+        <p>In chess, Calibration Decay may manifest differently: the board state provides continuous external grounding (the position is always visible), potentially resetting the decay curve each turn. Comparing CH in chess vs. Council would reveal whether external state anchoring mitigates the effect.</p>
+
+        <p style="margin-top: 2rem; color: var(--text-muted, #666); font-style: italic;">This is M-CARE #019. It introduces Calibration Half-Life (CH) as a candidate MTI metric and connects to the LxM experimental platform for cross-model measurement.</p>
+
+        <div class="case-nav">
+          <a href="018-shell-drift.html">&larr; Case #018</a>
+          <a href="./">All Cases &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jihoon Jeong. All rights reserved.</p>
+      <p class="footer-contact"><a href="mailto:jihoon.jeong@dgist.ac.kr">jihoon.jeong@dgist.ac.kr</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
