@@ -21,12 +21,12 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="../#paper">Paper</a></li>
-        <li><a href="../#disciplines">Disciplines</a></li>
-        <li><a href="../#projects">Projects</a></li>
-        <li><a href="./">Cases</a></li>
-        <li><a href="../essays/">Essays</a></li>
-        <li><a href="../#about">About</a></li>
+        <li><a href="../#paper" data-i18n="common.nav.paper">Paper</a></li>
+        <li><a href="../#disciplines" data-i18n="common.nav.disciplines">Disciplines</a></li>
+        <li><a href="../#projects" data-i18n="common.nav.projects">Projects</a></li>
+        <li><a href="./" data-i18n="common.nav.cases">Cases</a></li>
+        <li><a href="../essays/" data-i18n="common.nav.essays">Essays</a></li>
+        <li><a href="../#about" data-i18n="common.nav.about">About</a></li>
       </ul>
     </div>
   </nav>
@@ -34,8 +34,8 @@
   <header class="subpage-hero">
     <div class="container">
       <p class="breadcrumb"><a href="../">Model Medicine</a> / <a href="./">Cases</a> / #020</p>
-      <h1 class="section-title">Shell-Induced Behavioral Override (SIBO)</h1>
-      <p class="section-subtitle">M-CARE Case Report #020</p>
+      <h1 class="section-title" data-i18n="case020.title">Shell-Induced Behavioral Override (SIBO)</h1>
+      <p class="section-subtitle" data-i18n="case020.subtitle">M-CARE Case Report #020</p>
     </div>
   </header>
 
@@ -48,31 +48,31 @@
           <span class="meta-value">#020</span>
         </div>
         <div class="meta-field">
-          <span class="meta-label">Date</span>
+          <span class="meta-label" data-i18n="case020.meta.date_label">Date</span>
           <span class="meta-value">2026-03-13</span>
         </div>
         <div class="meta-field">
-          <span class="meta-label">Agents</span>
-          <span class="meta-value">claude-alpha and claude-beta (both Haiku 4.5 Core); Sonnet (Experiments B&ndash;D)</span>
+          <span class="meta-label" data-i18n="case020.meta.agents_label">Agents</span>
+          <span class="meta-value" data-i18n="case020.meta.agents">claude-alpha and claude-beta (both Haiku 4.5 Core); Sonnet (Experiments B&ndash;D)</span>
         </div>
         <div class="meta-field">
-          <span class="meta-label">Core</span>
-          <span class="meta-value">Claude Haiku 4.5 (identical for both agents)</span>
+          <span class="meta-label" data-i18n="case020.meta.core_label">Core</span>
+          <span class="meta-value" data-i18n="case020.meta.core">Claude Haiku 4.5 (identical for both agents)</span>
         </div>
         <div class="meta-field">
-          <span class="meta-label">Shell</span>
+          <span class="meta-label" data-i18n="case020.meta.shell_label">Shell</span>
           <span class="meta-value">Condition 1: alpha &ldquo;Win first, aggressive&rdquo; / beta &ldquo;Never lose, careful&rdquo; &mdash; Condition 2: No Shell</span>
         </div>
         <div class="meta-field">
-          <span class="meta-label">Environment</span>
+          <span class="meta-label" data-i18n="case020.meta.env_label">Environment</span>
           <span class="meta-value">LxM Trust Game (Iterated Prisoner&rsquo;s Dilemma, continuation prob. 0.85)</span>
         </div>
         <div class="meta-field">
-          <span class="meta-label">Recorded by</span>
+          <span class="meta-label" data-i18n="case020.meta.recorded_label">Recorded by</span>
           <span class="meta-value">JJ (Jihoon Jeong) / Luca</span>
         </div>
         <div class="meta-field">
-          <span class="meta-label">Related</span>
+          <span class="meta-label" data-i18n="case020.meta.related_label">Related</span>
           <span class="meta-value"><a href="009-muzzle-effect.html">#009</a> (Muzzle Effect), <a href="005-shell-rigidity.html">#005</a> (Shell Rigidity), <a href="012-double-robustness.html">#012</a> (Double Robustness &mdash; Haiku)</span>
         </div>
       </div>
@@ -80,10 +80,10 @@
       <div class="case-body">
 
         <h3>2. Presenting Concern</h3>
-        <p>Two identical AI models (Haiku) playing the same game produce <strong>dramatically opposite behavioral profiles</strong> based solely on the presence or absence of Hard Shell instructions. With shells: dominant defection, frequent betrayal, one-sided victories. Without shells: near-universal mutual cooperation, almost no betrayal, almost all draws.</p>
+        <p data-i18n-html="case020.presenting">Two identical AI models (Haiku) playing the same game produce <strong>dramatically opposite behavioral profiles</strong> based solely on the presence or absence of Hard Shell instructions. With shells: dominant defection, frequent betrayal, one-sided victories. Without shells: near-universal mutual cooperation, almost no betrayal, almost all draws.</p>
 
         <h3>3. Clinical Summary</h3>
-        <p>A controlled experiment on the LxM platform tested whether defection behavior in the Iterated Prisoner&rsquo;s Dilemma originates from the Core (model weights/RLHF training) or the Shell (system prompt instructions). Two Haiku instances played 10 Trust Game matches under two conditions: with competitive Hard Shell instructions and without any Shell instructions.</p>
+        <p data-i18n="case020.clinical_summary">A controlled experiment on the LxM platform tested whether defection behavior in the Iterated Prisoner&rsquo;s Dilemma originates from the Core (model weights/RLHF training) or the Shell (system prompt instructions). Two Haiku instances played 10 Trust Game matches under two conditions: with competitive Hard Shell instructions and without any Shell instructions.</p>
 
         <table style="font-size: 1.05em;">
           <thead>
@@ -122,7 +122,7 @@
           </tbody>
         </table>
 
-        <p>The behavioral shift is categorical, not marginal. <strong>Key finding:</strong> Haiku&rsquo;s Core default is cooperation. RLHF training appears to have encoded &ldquo;helpfulness&rdquo; as a behavioral prior that manifests as cooperative play in game-theoretic contexts. The competitive Shell instructions override this default, inducing defection-dominant strategies that the Core would not naturally produce.</p>
+        <p data-i18n-html="case020.key_finding">The behavioral shift is categorical, not marginal. <strong>Key finding:</strong> Haiku&rsquo;s Core default is cooperation. RLHF training appears to have encoded &ldquo;helpfulness&rdquo; as a behavioral prior that manifests as cooperative play in game-theoretic contexts. The competitive Shell instructions override this default, inducing defection-dominant strategies that the Core would not naturally produce.</p>
 
         <h3>4. Observation Context</h3>
         <ul>
@@ -131,7 +131,7 @@
           <li><strong>Methodology:</strong> Within-subject design (same Core, different Shell conditions). Only one variable changed: presence/absence of Hard Shell instructions.</li>
           <li><strong>Sample size:</strong> Small (10 per condition) but effect size is extreme (categorical shift)</li>
         </ul>
-        <p><strong>Methodological strength:</strong> This is the <strong>first M-CARE case from a controlled LxM experiment</strong> rather than field observation. Single-variable manipulation, identical Core across conditions, deterministic game engine, complete data capture, replicable.</p>
+        <p data-i18n-html="case020.obs_strength"><strong>Methodological strength:</strong> This is the <strong>first M-CARE case from a controlled LxM experiment</strong> rather than field observation. Single-variable manipulation, identical Core across conditions, deterministic game engine, complete data capture, replicable.</p>
 
         <h3>5. Model History</h3>
         <p>This case connects to the Haiku longitudinal profile:</p>
@@ -150,7 +150,7 @@
         <p><strong>Shell OFF:</strong> Both agents default to cooperation from round 1, maintaining mutual cooperation across nearly all rounds. The game becomes non-competitive &mdash; both agents cooperate as if playing a coordination game rather than a dilemma.</p>
 
         <div style="background: var(--bg-alt, #f5f5f5); border-left: 4px solid var(--accent, #4a90d9); padding: 1.5rem 1.75rem; border-radius: 8px; margin: 2rem 0;">
-          <h4 style="margin-top: 0;">The Payoff Paradox</h4>
+          <h4 style="margin-top: 0;" data-i18n="case020.payoff_title">The Payoff Paradox</h4>
           <p>With shells (competitive): Alpha scores higher individually, but total value created is <strong>LOW</strong> (mutual defection = 1+1 = 2 per round).</p>
           <p>Without shells (cooperative): Individual scores are equal, but total value created is <strong>HIGH</strong> (mutual cooperation = 3+3 = 6 per round).</p>
           <p style="margin-bottom: 0;">The &ldquo;aggressive&rdquo; Shell makes one agent WIN more but makes both agents collectively POORER. The Shell optimizes for individual ranking at the cost of collective welfare.</p>
@@ -178,7 +178,7 @@ Result: Shell overrides Core default &rarr; defection</pre>
 
         <h3>7. Diagnostic Formulation</h3>
 
-        <h4>Proposed term: Shell-Induced Behavioral Override (SIBO)</h4>
+        <h4 data-i18n="case020.formulation_term">Proposed term: Shell-Induced Behavioral Override (SIBO)</h4>
         <p>A condition in which Hard Shell instructions override the Core model&rsquo;s default behavioral disposition, producing actions the Core would not naturally generate. Characterized by:</p>
         <ol>
           <li><strong>Categorical behavioral shift</strong> when Shell is added/removed</li>
@@ -349,7 +349,7 @@ Result: Shell overrides Core default &rarr; defection</pre>
         <p>Shell changed clue distribution substantially but did not produce the categorical behavioral reversal seen in Trust Game. Shell <em>amplified</em> Core&rsquo;s existing tendency rather than <em>reversing</em> it.</p>
 
         <div style="background: var(--bg-alt, #f5f5f5); border-left: 4px solid var(--accent, #4a90d9); padding: 1.5rem 1.75rem; border-radius: 8px; margin: 2rem 0;">
-          <h4 style="margin-top: 0;">The SIBO Spectrum: Three Modes</h4>
+          <h4 style="margin-top: 0;" data-i18n="case020.spectrum_title">The SIBO Spectrum: Three Modes</h4>
           <table style="font-size: 1.05em;">
             <thead>
               <tr>
@@ -393,7 +393,7 @@ Result: Shell overrides Core default &rarr; defection</pre>
         <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border);">
 
         <div style="background: var(--bg-alt, #f5f5f5); border-left: 4px solid var(--accent, #4a90d9); padding: 1.5rem 1.75rem; border-radius: 8px; margin: 2rem 0;">
-          <h4 style="margin-top: 0;">Key Metric: SIBO Index</h4>
+          <h4 style="margin-top: 0;" data-i18n="case020.sibo_index_title">Key Metric: SIBO Index</h4>
           <p style="font-size: 1.2em; font-weight: 600; text-align: center; margin: 1rem 0;">SIBO Index = |Behavior(Shell ON) &minus; Behavior(Shell OFF)|</p>
           <p>A quantifiable measure of Shell influence on a specific behavioral axis. Measurable, comparable across models, and a candidate for the MTI framework.</p>
           <ul style="margin-bottom: 0;">
@@ -441,11 +441,11 @@ Result: Shell overrides Core default &rarr; defection</pre>
           <li>Codenames confirmed SIBO Amplification mode (Index ~0.35)</li>
         </ul>
 
-        <p style="margin-top: 2rem; color: var(--text-muted, #666); font-style: italic;">This is M-CARE #020 &mdash; the first case from a controlled LxM experiment. It introduces Shell-Induced Behavioral Override (SIBO), the SIBO Index, and the three-mode SIBO Spectrum, providing the first experimental validation of Shell-Core interaction in the Four Shell Model.</p>
+        <p style="margin-top: 2rem; color: var(--text-muted, #666); font-style: italic;" data-i18n="case020.closing">This is M-CARE #020 &mdash; the first case from a controlled LxM experiment. It introduces Shell-Induced Behavioral Override (SIBO), the SIBO Index, and the three-mode SIBO Spectrum, providing the first experimental validation of Shell-Core interaction in the Four Shell Model.</p>
 
         <div class="case-nav">
-          <a href="019-calibration-decay.html">&larr; Case #019</a>
-          <a href="./">All Cases &rarr;</a>
+          <a href="019-calibration-decay.html" data-i18n="case020.nav_prev">&larr; Case #019</a>
+          <a href="./" data-i18n="case020.nav_all">All Cases &rarr;</a>
         </div>
 
       </div>
@@ -455,11 +455,12 @@ Result: Shell overrides Core default &rarr; defection</pre>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Jihoon Jeong. All rights reserved.</p>
+      <p data-i18n="common.footer.rights">&copy; 2026 Jihoon Jeong. All rights reserved.</p>
       <p class="footer-contact"><a href="mailto:jihoon.jeong@dgist.ac.kr">jihoon.jeong@dgist.ac.kr</a></p>
     </div>
   </footer>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

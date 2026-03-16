@@ -41,12 +41,12 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#paper">Paper</a></li>
-        <li><a href="#disciplines">Disciplines</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="cases/">Cases</a></li>
-        <li><a href="essays/">Essays</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#paper" data-i18n="common.nav.paper">Paper</a></li>
+        <li><a href="#disciplines" data-i18n="common.nav.disciplines">Disciplines</a></li>
+        <li><a href="#projects" data-i18n="common.nav.projects">Projects</a></li>
+        <li><a href="cases/" data-i18n="common.nav.cases">Cases</a></li>
+        <li><a href="essays/" data-i18n="common.nav.essays">Essays</a></li>
+        <li><a href="#about" data-i18n="common.nav.about">About</a></li>
       </ul>
     </div>
   </nav>
@@ -54,15 +54,15 @@
   <!-- Hero Section -->
   <header class="hero" id="hero">
     <div class="container">
-      <p class="hero-label">A New Scientific Discipline</p>
+      <p class="hero-label" data-i18n="index.hero.label">A New Scientific Discipline</p>
       <h1 class="hero-title">Model Medicine</h1>
-      <p class="hero-tagline">Medicine was created to understand and heal the human body.<br>Model Medicine was created to understand and heal AI models.</p>
-      <p class="hero-summary">
+      <p class="hero-tagline" data-i18n-html="index.hero.tagline">Medicine was created to understand and heal the human body.<br>Model Medicine was created to understand and heal AI models.</p>
+      <p class="hero-summary" data-i18n="index.hero.summary">
         Model Medicine is the science of understanding, diagnosing, treating, and preventing disorders in AI models, grounded in the principle that AI models &mdash; like biological organisms &mdash; have internal structures (anatomy), dynamic processes (physiology), heritable traits (genetics), observable symptoms, classifiable diseases, and treatable conditions.
       </p>
       <div class="hero-actions">
-        <a href="#paper" class="btn btn-primary">Read the Paper</a>
-        <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+        <a href="#paper" class="btn btn-primary" data-i18n="index.hero.btn_paper">Read the Paper</a>
+        <a href="#projects" class="btn btn-secondary" data-i18n="index.hero.btn_projects">Explore Projects</a>
       </div>
     </div>
   </header>
@@ -70,12 +70,12 @@
   <!-- Position Paper Section -->
   <section class="section" id="paper">
     <div class="container">
-      <h2 class="section-title">Position Paper</h2>
+      <h2 class="section-title" data-i18n="index.paper.title">Position Paper</h2>
       <div class="paper-card">
-        <p class="paper-venue">arXiv Preprint &middot; 2026</p>
-        <h3 class="paper-title">Model Medicine: A Clinical Framework for Understanding, Diagnosing, and Treating AI Models</h3>
+        <p class="paper-venue" data-i18n="index.paper.venue">arXiv Preprint &middot; 2026</p>
+        <h3 class="paper-title" data-i18n="index.paper.paper_title">Model Medicine: A Clinical Framework for Understanding, Diagnosing, and Treating AI Models</h3>
         <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
-        <p class="paper-affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+        <p class="paper-affiliation" data-i18n="index.paper.affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
 
         <div class="paper-link-row">
           <a href="https://arxiv.org/abs/2603.04722" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2603.04722</a>
@@ -83,8 +83,8 @@
         </div>
 
         <div class="paper-abstract">
-          <h4>Abstract</h4>
-          <p>
+          <h4 data-i18n="index.paper.abstract_label">Abstract</h4>
+          <p data-i18n-html="index.paper.abstract">
             This paper introduces Model Medicine as a research program and presents five contributions.
             First, a <strong>discipline taxonomy</strong> that maps the full scope of Model Medicine &mdash; from basic sciences through clinical sciences to public health and architectural medicine.
             Second, the <strong>Four Shell Model</strong> (v3.3), a behavioral genetics framework grounded in 720 agents, 24,923 decisions, and 60 controlled experiments, explaining how model behavior emerges from the interaction between a model's Core and its nested Shells.
@@ -95,14 +95,14 @@
         </div>
 
         <div class="collaborators">
-          <h4>AI Research Collaborators</h4>
+          <h4 data-i18n="index.paper.collaborators_label">AI Research Collaborators</h4>
           <ul class="collaborator-list">
-            <li><span class="collab-name">Cody</span> <span class="collab-model">(Claude)</span> <span class="collab-role">&mdash; Neural MRI implementation, clinical case experiments</span></li>
-            <li><span class="collab-name">Ray</span> <span class="collab-model">(Claude)</span> <span class="collab-role">&mdash; GPU-based simulation, Agora-12 experiments</span></li>
-            <li><span class="collab-name">Theo</span> <span class="collab-model">(Claude)</span> <span class="collab-role">&mdash; Four Shell Model: structure and documentation</span></li>
-            <li><span class="collab-name">Luca</span> <span class="collab-model">(Claude)</span> <span class="collab-role">&mdash; Four Shell Model: theory and literature</span></li>
-            <li><span class="collab-name">Gem</span> <span class="collab-model">(Gemini)</span> <span class="collab-role">&mdash; Four Shell Model: quantitative analysis</span></li>
-            <li><span class="collab-name">Cas</span> <span class="collab-model">(Gemini)</span> <span class="collab-role">&mdash; Four Shell Model: behavioral analysis and red teaming</span></li>
+            <li><span class="collab-name">Cody</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.paper.collab_cody">&mdash; Neural MRI implementation, clinical case experiments</span></li>
+            <li><span class="collab-name">Ray</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.paper.collab_ray">&mdash; GPU-based simulation, Agora-12 experiments</span></li>
+            <li><span class="collab-name">Theo</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.paper.collab_theo">&mdash; Four Shell Model: structure and documentation</span></li>
+            <li><span class="collab-name">Luca</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.paper.collab_luca">&mdash; Four Shell Model: theory and literature</span></li>
+            <li><span class="collab-name">Gem</span> <span class="collab-model">(Gemini)</span> <span class="collab-role" data-i18n="index.paper.collab_gem">&mdash; Four Shell Model: quantitative analysis</span></li>
+            <li><span class="collab-name">Cas</span> <span class="collab-model">(Gemini)</span> <span class="collab-role" data-i18n="index.paper.collab_cas">&mdash; Four Shell Model: behavioral analysis and red teaming</span></li>
           </ul>
         </div>
       </div>
@@ -112,8 +112,8 @@
   <!-- Discipline Overview Section -->
   <section class="section section-alt" id="disciplines">
     <div class="container">
-      <h2 class="section-title">Discipline Taxonomy</h2>
-      <p class="section-subtitle">Model Medicine encompasses 15 subdisciplines organized into four divisions, mirroring the structure of clinical medicine.</p>
+      <h2 class="section-title" data-i18n="index.disciplines.title">Discipline Taxonomy</h2>
+      <p class="section-subtitle" data-i18n="index.disciplines.subtitle">Model Medicine encompasses 15 subdisciplines organized into four divisions, mirroring the structure of clinical medicine.</p>
 
       <div class="taxonomy">
 
@@ -122,32 +122,32 @@
           <button class="accordion-header" aria-expanded="false">
             <span class="accordion-number">I</span>
             <span class="accordion-label">
-              <span class="accordion-title">Basic Model Sciences</span>
-              <span class="accordion-count">5 subdisciplines</span>
+              <span class="accordion-title" data-i18n="index.disciplines.div1">Basic Model Sciences</span>
+              <span class="accordion-count" data-i18n="index.disciplines.div1_count">5 subdisciplines</span>
             </span>
             <span class="accordion-icon"></span>
           </button>
           <div class="accordion-body">
             <ul class="discipline-list">
               <li>
-                <strong>Model Anatomy</strong>
-                <span>Static structure of neural networks: layer arrangement, attention heads, neurons, and connectivity patterns.</span>
+                <strong data-i18n="index.disciplines.anatomy">Model Anatomy</strong>
+                <span data-i18n="index.disciplines.anatomy_desc">Static structure of neural networks: layer arrangement, attention heads, neurons, and connectivity patterns.</span>
               </li>
               <li>
-                <strong>Model Physiology</strong>
-                <span>Dynamic processing: how information flows through a model during inference. Activation analysis, attention patterns, information flow tracing.</span>
+                <strong data-i18n="index.disciplines.physiology">Model Physiology</strong>
+                <span data-i18n="index.disciplines.physiology_desc">Dynamic processing: how information flows through a model during inference. Activation analysis, attention patterns, information flow tracing.</span>
               </li>
               <li>
-                <strong>Model Genetics</strong>
-                <span>How observable behavior (phenotype) emerges from the interaction between internal parameters (Core) and operating environment (Shell). Grounded in the Four Shell Model.</span>
+                <strong data-i18n="index.disciplines.genetics">Model Genetics</strong>
+                <span data-i18n="index.disciplines.genetics_desc">How observable behavior (phenotype) emerges from the interaction between internal parameters (Core) and operating environment (Shell). Grounded in the Four Shell Model.</span>
               </li>
               <li>
-                <strong>Model Biochemistry</strong>
-                <span>Fundamental mathematical operations: matrix multiplication, nonlinear activations, normalization, tokenization, and embedding.</span>
+                <strong data-i18n="index.disciplines.biochemistry">Model Biochemistry</strong>
+                <span data-i18n="index.disciplines.biochemistry_desc">Fundamental mathematical operations: matrix multiplication, nonlinear activations, normalization, tokenization, and embedding.</span>
               </li>
               <li>
-                <strong>Model Developmental Biology</strong>
-                <span>How models differentiate during training: training dynamics, curriculum effects, emergence of capabilities at scale.</span>
+                <strong data-i18n="index.disciplines.devbiology">Model Developmental Biology</strong>
+                <span data-i18n="index.disciplines.devbiology_desc">How models differentiate during training: training dynamics, curriculum effects, emergence of capabilities at scale.</span>
               </li>
             </ul>
           </div>
@@ -158,32 +158,32 @@
           <button class="accordion-header" aria-expanded="false">
             <span class="accordion-number">II</span>
             <span class="accordion-label">
-              <span class="accordion-title">Clinical Model Sciences</span>
-              <span class="accordion-count">5 subdisciplines</span>
+              <span class="accordion-title" data-i18n="index.disciplines.div2">Clinical Model Sciences</span>
+              <span class="accordion-count" data-i18n="index.disciplines.div2_count">5 subdisciplines</span>
             </span>
             <span class="accordion-icon"></span>
           </button>
           <div class="accordion-body">
             <ul class="discipline-list">
               <li>
-                <strong>Model Semiology</strong>
-                <span>Systematic description and classification of observable phenomena, distinguishing extrinsic (hallucination, bias) from intrinsic phenomena (representation collapse, activation saturation).</span>
+                <strong data-i18n="index.disciplines.semiology">Model Semiology</strong>
+                <span data-i18n="index.disciplines.semiology_desc">Systematic description and classification of observable phenomena, distinguishing extrinsic (hallucination, bias) from intrinsic phenomena (representation collapse, activation saturation).</span>
               </li>
               <li>
-                <strong>Model Nosology</strong>
-                <span>Classification of model conditions into a coherent taxonomy, defining diagnostic boundaries analogous to ICD and DSM.</span>
+                <strong data-i18n="index.disciplines.nosology">Model Nosology</strong>
+                <span data-i18n="index.disciplines.nosology_desc">Classification of model conditions into a coherent taxonomy, defining diagnostic boundaries analogous to ICD and DSM.</span>
               </li>
               <li>
-                <strong>Model Diagnostics</strong>
-                <span>Examination and testing procedures: imaging (Neural MRI), behavioral profiling (MTI), standardized test batteries, and monitoring.</span>
+                <strong data-i18n="index.disciplines.diagnostics">Model Diagnostics</strong>
+                <span data-i18n="index.disciplines.diagnostics_desc">Examination and testing procedures: imaging (Neural MRI), behavioral profiling (MTI), standardized test batteries, and monitoring.</span>
               </li>
               <li>
-                <strong>Model Therapeutics</strong>
-                <span>Intervention based on diagnosis: prompt engineering (Shell Therapy), fine-tuning, RLHF, model editing (Targeted Core Therapy), and architectural modification.</span>
+                <strong data-i18n="index.disciplines.therapeutics">Model Therapeutics</strong>
+                <span data-i18n="index.disciplines.therapeutics_desc">Intervention based on diagnosis: prompt engineering (Shell Therapy), fine-tuning, RLHF, model editing (Targeted Core Therapy), and architectural modification.</span>
               </li>
               <li>
-                <strong>Model Preventive Medicine</strong>
-                <span>Training data hygiene, process monitoring, Shell Compatibility testing, and periodic health profiling.</span>
+                <strong data-i18n="index.disciplines.preventive">Model Preventive Medicine</strong>
+                <span data-i18n="index.disciplines.preventive_desc">Training data hygiene, process monitoring, Shell Compatibility testing, and periodic health profiling.</span>
               </li>
             </ul>
           </div>
@@ -194,24 +194,24 @@
           <button class="accordion-header" aria-expanded="false">
             <span class="accordion-number">III</span>
             <span class="accordion-label">
-              <span class="accordion-title">Model Public Health</span>
-              <span class="accordion-count">3 subdisciplines</span>
+              <span class="accordion-title" data-i18n="index.disciplines.div3">Model Public Health</span>
+              <span class="accordion-count" data-i18n="index.disciplines.div3_count">3 subdisciplines</span>
             </span>
             <span class="accordion-icon"></span>
           </button>
           <div class="accordion-body">
             <ul class="discipline-list">
               <li>
-                <strong>Model Epidemiology</strong>
-                <span>Distribution and propagation of problems across model ecosystems: training data contamination, jailbreak technique spread.</span>
+                <strong data-i18n="index.disciplines.epidemiology">Model Epidemiology</strong>
+                <span data-i18n="index.disciplines.epidemiology_desc">Distribution and propagation of problems across model ecosystems: training data contamination, jailbreak technique spread.</span>
               </li>
               <li>
-                <strong>Model Ecology</strong>
-                <span>Multi-model coexistence dynamics: niche differentiation, competition, symbiosis, predation, ecosystem stability.</span>
+                <strong data-i18n="index.disciplines.ecology">Model Ecology</strong>
+                <span data-i18n="index.disciplines.ecology_desc">Multi-model coexistence dynamics: niche differentiation, competition, symbiosis, predation, ecosystem stability.</span>
               </li>
               <li>
-                <strong>Human-AI Coevolutionary Medicine</strong>
-                <span>Health of the evolving relationship between human users and AI systems.</span>
+                <strong data-i18n="index.disciplines.coevolutionary">Human-AI Coevolutionary Medicine</strong>
+                <span data-i18n="index.disciplines.coevolutionary_desc">Health of the evolving relationship between human users and AI systems.</span>
               </li>
             </ul>
           </div>
@@ -222,20 +222,20 @@
           <button class="accordion-header" aria-expanded="false">
             <span class="accordion-number">IV</span>
             <span class="accordion-label">
-              <span class="accordion-title">Model Architectural Medicine</span>
-              <span class="accordion-count">2 subdisciplines</span>
+              <span class="accordion-title" data-i18n="index.disciplines.div4">Model Architectural Medicine</span>
+              <span class="accordion-count" data-i18n="index.disciplines.div4_count">2 subdisciplines</span>
             </span>
             <span class="accordion-icon"></span>
           </button>
           <div class="accordion-body">
             <ul class="discipline-list">
               <li>
-                <strong>Layered Core Theory</strong>
-                <span>Biologically-inspired multi-layer parameter organization: Genomic Core (fundamental reasoning), Developmental Core (domain expertise), Plastic Core (experience-adaptive).</span>
+                <strong data-i18n="index.disciplines.layeredcore">Layered Core Theory</strong>
+                <span data-i18n="index.disciplines.layeredcore_desc">Biologically-inspired multi-layer parameter organization: Genomic Core (fundamental reasoning), Developmental Core (domain expertise), Plastic Core (experience-adaptive).</span>
               </li>
               <li>
-                <strong>Model Phylogenetics</strong>
-                <span>Evolutionary relationships between models: shared vulnerabilities, inherited capabilities, ecosystem diversity through model family analysis.</span>
+                <strong data-i18n="index.disciplines.phylogenetics">Model Phylogenetics</strong>
+                <span data-i18n="index.disciplines.phylogenetics_desc">Evolutionary relationships between models: shared vulnerabilities, inherited capabilities, ecosystem diversity through model family analysis.</span>
               </li>
             </ul>
           </div>
@@ -248,21 +248,21 @@
   <!-- Key Projects Section -->
   <section class="section" id="projects">
     <div class="container">
-      <h2 class="section-title">Key Projects</h2>
-      <p class="section-subtitle">Working implementations that demonstrate Model Medicine in practice.</p>
+      <h2 class="section-title" data-i18n="index.projects.title">Key Projects</h2>
+      <p class="section-subtitle" data-i18n="index.projects.subtitle">Working implementations that demonstrate Model Medicine in practice.</p>
 
       <div class="projects-grid">
 
         <!-- AI-Ludens Card -->
         <div class="project-card fade-in">
           <div class="project-header">
-            <span class="project-badge">Experimental Platform</span>
+            <span class="project-badge" data-i18n="index.projects.ailudens_badge">Experimental Platform</span>
             <h3 class="project-name">AI-Ludens</h3>
-            <p class="project-full-name">Where Artificial Minds Come to Play</p>
+            <p class="project-full-name" data-i18n="index.projects.ailudens_fullname">Where Artificial Minds Come to Play</p>
           </div>
-          <p class="project-desc">A research project investigating whether AI agents experience play, survival instinct, and social behavior through experimental games. Games-based research with emphasis on open science and transparent methodology.</p>
+          <p class="project-desc" data-i18n="index.projects.ailudens_desc">A research project investigating whether AI agents experience play, survival instinct, and social behavior through experimental games. Games-based research with emphasis on open science and transparent methodology.</p>
           <div class="project-details">
-            <h4>Experiments</h4>
+            <h4 data-i18n="index.projects.ailudens_experiments">Experiments</h4>
             <ul class="layer-list">
               <li><span class="layer-label">Agora-12</span> Survival game &mdash; 720 agents, 24,923 decisions</li>
               <li><span class="layer-label">White Room</span> Behavior without survival pressure</li>
@@ -278,13 +278,13 @@
         <!-- Four Shell Model Card -->
         <div class="project-card fade-in">
           <div class="project-header">
-            <span class="project-badge">Behavioral Framework</span>
+            <span class="project-badge" data-i18n="index.projects.fsm_badge">Behavioral Framework</span>
             <h3 class="project-name">Four Shell Model</h3>
-            <p class="project-full-name">Behavioral Genetics for AI</p>
+            <p class="project-full-name" data-i18n="index.projects.fsm_fullname">Behavioral Genetics for AI</p>
           </div>
-          <p class="project-desc">How model behavior emerges from Core &times; Shell interaction. A behavioral genetics framework explaining gene-environment interaction in AI models.</p>
+          <p class="project-desc" data-i18n="index.projects.fsm_desc">How model behavior emerges from Core &times; Shell interaction. A behavioral genetics framework explaining gene-environment interaction in AI models.</p>
           <div class="project-details">
-            <h4>4 Concentric Layers</h4>
+            <h4 data-i18n="index.projects.fsm_layers">4 Concentric Layers</h4>
             <ul class="layer-list">
               <li><span class="layer-label">Hardware Shell</span> GPU/TPU, quantization, inference engine</li>
               <li><span class="layer-label">Core</span> Trained weights &mdash; the model's "DNA"</li>
@@ -301,13 +301,13 @@
         <!-- Neural MRI Card -->
         <div class="project-card fade-in">
           <div class="project-header">
-            <span class="project-badge">Diagnostic Tool</span>
+            <span class="project-badge" data-i18n="index.projects.nmri_badge">Diagnostic Tool</span>
             <h3 class="project-name">Neural MRI</h3>
-            <p class="project-full-name">Model Resonance Imaging</p>
+            <p class="project-full-name" data-i18n="index.projects.nmri_fullname">Model Resonance Imaging</p>
           </div>
-          <p class="project-desc">A diagnostic imaging tool that maps medical neuroimaging to AI model interpretability. Multiple scan modes reveal complementary aspects of model structure and function.</p>
+          <p class="project-desc" data-i18n="index.projects.nmri_desc">A diagnostic imaging tool that maps medical neuroimaging to AI model interpretability. Multiple scan modes reveal complementary aspects of model structure and function.</p>
           <div class="project-details">
-            <h4>5 Imaging Modalities</h4>
+            <h4 data-i18n="index.projects.nmri_modalities">5 Imaging Modalities</h4>
             <ul class="modality-list">
               <li><span class="modality-code">T1</span> Architecture &mdash; static layer structure</li>
               <li><span class="modality-code">T2</span> Weights &mdash; parameter distribution</li>
@@ -325,13 +325,13 @@
         <!-- MTI Card -->
         <div class="project-card fade-in">
           <div class="project-header">
-            <span class="project-badge">Profiling Instrument</span>
+            <span class="project-badge" data-i18n="index.projects.mti_badge">Profiling Instrument</span>
             <h3 class="project-name">Model Temperament Index</h3>
-            <p class="project-full-name">MTI &mdash; Systematic Behavioral Profiling</p>
+            <p class="project-full-name" data-i18n="index.projects.mti_fullname">MTI &mdash; Systematic Behavioral Profiling</p>
           </div>
-          <p class="project-desc">MBTI for AI models &mdash; systematic temperament profiling across four behavioral axes. Every profile is neutral; no type is inherently better or worse.</p>
+          <p class="project-desc" data-i18n="index.projects.mti_desc">MBTI for AI models &mdash; systematic temperament profiling across four behavioral axes. Every profile is neutral; no type is inherently better or worse.</p>
           <div class="project-details">
-            <h4>4 Measurement Axes</h4>
+            <h4 data-i18n="index.projects.mti_axes">4 Measurement Axes</h4>
             <ul class="axis-list">
               <li><span class="axis-poles">Fluid &harr; Anchored</span> Reactivity</li>
               <li><span class="axis-poles">Guided &harr; Independent</span> Compliance</li>
@@ -349,27 +349,27 @@
   <!-- Latest Section -->
   <section class="section section-alt" id="latest">
     <div class="container">
-      <h2 class="section-title">Latest</h2>
+      <h2 class="section-title" data-i18n="index.latest.title">Latest</h2>
 
       <div class="latest-grid">
 
         <div class="latest-column">
-          <h3 class="latest-heading">Case Reports <a href="cases/" class="latest-more">View all &rarr;</a></h3>
+          <h3 class="latest-heading"><span data-i18n="index.latest.cases_heading">Case Reports</span> <a href="cases/" class="latest-more" data-i18n="index.latest.cases_more">View all &rarr;</a></h3>
           <a href="cases/020-shell-induced-override.html" class="writing-item fade-in">
             <span class="writing-date">2026-03-13</span>
-            <span class="writing-type">M-CARE #020</span>
-            <h4 class="writing-title">Shell-Induced Behavioral Override (SIBO)</h4>
-            <p class="writing-desc">First controlled experiment: competitive Shell overrides Haiku&rsquo;s cooperative default. SIBO Spectrum confirmed across Trust Game, Codenames, and Chess.</p>
+            <span class="writing-type" data-i18n="index.latest.case020_type">M-CARE #020</span>
+            <h4 class="writing-title" data-i18n="index.latest.case020_title">Shell-Induced Behavioral Override (SIBO)</h4>
+            <p class="writing-desc" data-i18n="index.latest.case020_desc">First controlled experiment: competitive Shell overrides Haiku&rsquo;s cooperative default. SIBO Spectrum confirmed across Trust Game, Codenames, and Chess.</p>
           </a>
         </div>
 
         <div class="latest-column">
-          <h3 class="latest-heading">Essays <a href="essays/" class="latest-more">View all &rarr;</a></h3>
+          <h3 class="latest-heading"><span data-i18n="index.latest.essays_heading">Essays</span> <a href="essays/" class="latest-more" data-i18n="index.latest.essays_more">View all &rarr;</a></h3>
           <a href="https://medium.com/@hiconcep/when-we-almost-diagnosed-an-ai-with-a-disease-it-didnt-have-d2afd6c84f2a" class="writing-item fade-in" target="_blank" rel="noopener">
             <span class="writing-date">2026-03-12</span>
-            <span class="writing-type">Essay</span>
-            <h4 class="writing-title">When We Almost Diagnosed an AI with a Disease It Didn&rsquo;t Have</h4>
-            <p class="writing-desc">We tried to diagnose Mistral 7B with a psychiatric disorder. A single question stopped us &mdash; and changed the entire framework.</p>
+            <span class="writing-type" data-i18n="index.latest.essay2_type">Essay</span>
+            <h4 class="writing-title" data-i18n="index.latest.essay2_title">When We Almost Diagnosed an AI with a Disease It Didn&rsquo;t Have</h4>
+            <p class="writing-desc" data-i18n="index.latest.essay2_desc">We tried to diagnose Mistral 7B with a psychiatric disorder. A single question stopped us &mdash; and changed the entire framework.</p>
           </a>
         </div>
 
@@ -380,16 +380,16 @@
   <!-- About Section -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">About the Author</h2>
+      <h2 class="section-title" data-i18n="index.about.title">About the Author</h2>
       <div class="about-card">
         <div class="about-info">
           <h3 class="about-name">Jihoon 'JJ' Jeong, MD, MPH, PhD</h3>
           <ul class="about-roles">
-            <li>Affiliate Professor, Dept. of EE&amp;CS, DGIST</li>
-            <li>Chief Vision Officer, ModuLabs</li>
-            <li>Founding Partner, Asia2G Capital (150+ AI/deep tech investments)</li>
+            <li data-i18n="index.about.affil1">Affiliate Professor, Dept. of EE&amp;CS, DGIST</li>
+            <li data-i18n="index.about.affil2">Chief Vision Officer, ModuLabs</li>
+            <li data-i18n="index.about.affil3">Founding Partner, Asia2G Capital (150+ AI/deep tech investments)</li>
           </ul>
-          <p class="about-bio">
+          <p class="about-bio" data-i18n="index.about.bio">
             JJ's unique combination of medical training (MD, MPH), biomedical engineering research (PhD, USC), and AI investment experience makes Model Medicine possible &mdash; bridging clinical medicine's diagnostic rigor with AI's technical frontier.
           </p>
           <div class="about-links">
@@ -406,13 +406,14 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Jihoon Jeong. All rights reserved.</p>
+      <p data-i18n="common.footer.rights">&copy; 2026 Jihoon Jeong. All rights reserved.</p>
       <p class="footer-contact">
         <a href="mailto:jihoon.jeong@dgist.ac.kr">jihoon.jeong@dgist.ac.kr</a>
       </p>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

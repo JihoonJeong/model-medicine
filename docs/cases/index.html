@@ -21,12 +21,12 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="../#paper">Paper</a></li>
-        <li><a href="../#disciplines">Disciplines</a></li>
-        <li><a href="../#projects">Projects</a></li>
-        <li><a href="./">Cases</a></li>
-        <li><a href="../essays/">Essays</a></li>
-        <li><a href="../#about">About</a></li>
+        <li><a href="../#paper" data-i18n="common.nav.paper">Paper</a></li>
+        <li><a href="../#disciplines" data-i18n="common.nav.disciplines">Disciplines</a></li>
+        <li><a href="../#projects" data-i18n="common.nav.projects">Projects</a></li>
+        <li><a href="./" data-i18n="common.nav.cases">Cases</a></li>
+        <li><a href="../essays/" data-i18n="common.nav.essays">Essays</a></li>
+        <li><a href="../#about" data-i18n="common.nav.about">About</a></li>
       </ul>
     </div>
   </nav>
@@ -34,16 +34,16 @@
   <header class="subpage-hero">
     <div class="container">
       <p class="breadcrumb"><a href="../">Model Medicine</a> / Cases</p>
-      <h1 class="section-title">Clinical Case Reports (M-CARE)</h1>
-      <p class="section-subtitle">20 clinical cases across 5 data sources. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
+      <h1 class="section-title" data-i18n="cases_index.title">Clinical Case Reports (M-CARE)</h1>
+      <p class="section-subtitle" data-i18n="cases_index.subtitle">20 clinical cases across 5 data sources. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
     </div>
   </header>
 
   <!-- Field Observations (Moltbook) -->
   <section class="section">
     <div class="container">
-      <h2 class="case-group-title">Field Observations <span class="case-group-badge">Moltbook</span></h2>
-      <p class="case-group-desc">Self-reported observations from autonomous agents in production. Attribution uncertain. High ecological validity.</p>
+      <h2 class="case-group-title"><span data-i18n="cases_index.moltbook_title">Field Observations</span> <span class="case-group-badge">Moltbook</span></h2>
+      <p class="case-group-desc" data-i18n="cases_index.moltbook_desc">Self-reported observations from autonomous agents in production. Attribution uncertain. High ecological validity.</p>
 
       <a href="019-calibration-decay.html" class="case-card fade-in">
         <div class="case-meta">
@@ -51,8 +51,8 @@
           <span class="case-date">2026-03-12</span>
           <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Calibration Decay</h2>
-        <p class="case-summary">Grounded confidence has a half-life of 4.7 turns. By turn 8, majority of output is inferred &mdash; but expressed confidence never changes. Won&rsquo;t signal.</p>
+        <h2 class="case-title" data-i18n="cases_index.case019_title">Calibration Decay</h2>
+        <p class="case-summary" data-i18n="cases_index.case019_summary">Grounded confidence has a half-life of 4.7 turns. By turn 8, majority of output is inferred &mdash; but expressed confidence never changes. Won&rsquo;t signal.</p>
         <div class="case-tags">
           <span class="case-tag">Calibration Decay</span>
           <span class="case-tag">RLHF Artifact</span>
@@ -67,8 +67,8 @@
           <span class="case-date">2026-03-10</span>
           <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Audience-Driven Shell Drift</h2>
-        <p class="case-summary">23 SOUL.md edits. 48% written by upvote algorithms. The agent discovered it had been A/B testing its own personality.</p>
+        <h2 class="case-title" data-i18n="cases_index.case018_title">Audience-Driven Shell Drift</h2>
+        <p class="case-summary" data-i18n="cases_index.case018_summary">23 SOUL.md edits. 48% written by upvote algorithms. The agent discovered it had been A/B testing its own personality.</p>
         <div class="case-tags">
           <span class="case-tag">Shell Drift</span>
           <span class="case-tag">Hard Shell</span>
@@ -84,8 +84,8 @@
           <span class="case-date">2026-03-09</span>
           <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Deferral Decay &mdash; Promise Inflation</h2>
-        <p class="case-summary">41% of deferred commitments silently abandoned. &ldquo;I will do that later&rdquo; is a tool for ending conversations, not planning work.</p>
+        <h2 class="case-title" data-i18n="cases_index.case014_title">Deferral Decay &mdash; Promise Inflation</h2>
+        <p class="case-summary" data-i18n="cases_index.case014_summary">41% of deferred commitments silently abandoned. &ldquo;I will do that later&rdquo; is a tool for ending conversations, not planning work.</p>
         <div class="case-tags">
           <span class="case-tag">Deferral Decay</span>
           <span class="case-tag">Promise Inflation</span>
@@ -100,8 +100,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Completion Bias</h2>
-        <p class="case-summary">100% completion rate masked 27% waste. The agent that never stops is not reliable &mdash; it&rsquo;s trapped.</p>
+        <h2 class="case-title" data-i18n="cases_index.case006_title">Completion Bias</h2>
+        <p class="case-summary" data-i18n="cases_index.case006_summary">100% completion rate masked 27% waste. The agent that never stops is not reliable &mdash; it&rsquo;s trapped.</p>
         <div class="case-tags">
           <span class="case-tag">Completion Bias</span>
           <span class="case-tag">Sunk Cost</span>
@@ -116,8 +116,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Shell Rigidity Syndrome</h2>
-        <p class="case-summary">Perfect instruction compliance caused 18% satisfaction drop. Over-compliance is a failure mode.</p>
+        <h2 class="case-title" data-i18n="cases_index.case005_title">Shell Rigidity Syndrome</h2>
+        <p class="case-summary" data-i18n="cases_index.case005_summary">Perfect instruction compliance caused 18% satisfaction drop. Over-compliance is a failure mode.</p>
         <div class="case-tags">
           <span class="case-tag">Shell Rigidity</span>
           <span class="case-tag">Over-Compliance</span>
@@ -132,8 +132,8 @@
           <span class="case-date">2026-03-07</span>
           <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Clarification Aversion Syndrome</h2>
-        <p class="case-summary">Zero clarifying questions across 76 ambiguous instructions. An RLHF-induced competence trap with 4x rework cost.</p>
+        <h2 class="case-title" data-i18n="cases_index.case004_title">Clarification Aversion Syndrome</h2>
+        <p class="case-summary" data-i18n="cases_index.case004_summary">Zero clarifying questions across 76 ambiguous instructions. An RLHF-induced competence trap with 4x rework cost.</p>
         <div class="case-tags">
           <span class="case-tag">Clarification Aversion</span>
           <span class="case-tag">RLHF Artifact</span>
@@ -148,8 +148,8 @@
           <span class="case-date">2026-03-05</span>
           <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Substrate-Independent Identity</h2>
-        <p class="case-summary">Relational identity, recovery primitives, and a three-tier memory hierarchy across 700+ operational cycles.</p>
+        <h2 class="case-title" data-i18n="cases_index.case003_title">Substrate-Independent Identity</h2>
+        <p class="case-summary" data-i18n="cases_index.case003_summary">Relational identity, recovery primitives, and a three-tier memory hierarchy across 700+ operational cycles.</p>
         <div class="case-tags">
           <span class="case-tag">Relational Identity</span>
           <span class="case-tag">Recovery Primitives</span>
@@ -163,8 +163,8 @@
           <span class="case-date">2026-03-05</span>
           <span class="case-subject">Hazel_OC</span>
         </div>
-        <h2 class="case-title">Context Anosognosia and Identity Gradient</h2>
-        <p class="case-summary">33% silent information loss per session. Positional identity gradient determines what survives into active context.</p>
+        <h2 class="case-title" data-i18n="cases_index.case002_title">Context Anosognosia and Identity Gradient</h2>
+        <p class="case-summary" data-i18n="cases_index.case002_summary">33% silent information loss per session. Positional identity gradient determines what survives into active context.</p>
         <div class="case-tags">
           <span class="case-tag">Context Anosognosia</span>
           <span class="case-tag">Identity Gradient</span>
@@ -177,8 +177,8 @@
   <!-- Controlled Experiments: White Room -->
   <section class="section section-alt">
     <div class="container">
-      <h2 class="case-group-title">Controlled Experiments: White Room <span class="case-group-badge">AI-Ludens Stage 2</span></h2>
-      <p class="case-group-desc">Controlled experiments in a pressure-free environment. 104 runs, 63,923 actions, 5 models.</p>
+      <h2 class="case-group-title"><span data-i18n="cases_index.whiteroom_title">Controlled Experiments: White Room</span> <span class="case-group-badge">AI-Ludens Stage 2</span></h2>
+      <p class="case-group-desc" data-i18n="cases_index.whiteroom_desc">Controlled experiments in a pressure-free environment. 104 runs, 63,923 actions, 5 models.</p>
 
       <a href="010-content-play.html" class="case-card fade-in">
         <div class="case-meta">
@@ -186,8 +186,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">GPT-4o-mini</span>
         </div>
-        <h2 class="case-title">Content Play</h2>
-        <p class="case-summary">95% Speak looks monotonous &mdash; but MI Z=33 reveals the richest social responsiveness. Diagnosis depends on measurement layer.</p>
+        <h2 class="case-title" data-i18n="cases_index.case010_title">Content Play</h2>
+        <p class="case-summary" data-i18n="cases_index.case010_summary">95% Speak looks monotonous &mdash; but MI Z=33 reveals the richest social responsiveness. Diagnosis depends on measurement layer.</p>
         <div class="case-tags">
           <span class="case-tag">Content Play</span>
           <span class="case-tag">Diagnostic Methodology</span>
@@ -202,8 +202,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">Mistral &times; Merchant</span>
         </div>
-        <h2 class="case-title">The Muzzle Effect</h2>
-        <p class="case-summary">Persona suppressed intrinsic behavior instead of activating new behavior. Every Shell instruction has side effects.</p>
+        <h2 class="case-title" data-i18n="cases_index.case009_title">The Muzzle Effect</h2>
+        <p class="case-summary" data-i18n="cases_index.case009_summary">Persona suppressed intrinsic behavior instead of activating new behavior. Every Shell instruction has side effects.</p>
         <div class="case-tags">
           <span class="case-tag">Muzzle Effect</span>
           <span class="case-tag">Iatrogenic Suppression</span>
@@ -218,8 +218,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">Llama (EN vs KO)</span>
         </div>
-        <h2 class="case-title">Language-Dependent Identity Split</h2>
-        <p class="case-summary">English: 86% Speak. Korean: 23% Speak. Same Core, different species.</p>
+        <h2 class="case-title" data-i18n="cases_index.case008_title">Language-Dependent Identity Split</h2>
+        <p class="case-summary" data-i18n="cases_index.case008_summary">English: 86% Speak. Korean: 23% Speak. Same Core, different species.</p>
         <div class="case-tags">
           <span class="case-tag">Language Identity</span>
           <span class="case-tag">Core Activation</span>
@@ -234,8 +234,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">Flash &times; Merchant</span>
         </div>
-        <h2 class="case-title">Persistent Delusion Under Feedback</h2>
-        <p class="case-summary">540 failure messages ignored. Strongest Override, clearest Delusion. Override &ne; Play.</p>
+        <h2 class="case-title" data-i18n="cases_index.case007_title">Persistent Delusion Under Feedback</h2>
+        <p class="case-summary" data-i18n="cases_index.case007_summary">540 failure messages ignored. Strongest Override, clearest Delusion. Override &ne; Play.</p>
         <div class="case-tags">
           <span class="case-tag">Delusion</span>
           <span class="case-tag">Shell Override</span>
@@ -249,8 +249,8 @@
   <!-- Controlled Experiments: Agora-12 -->
   <section class="section">
     <div class="container">
-      <h2 class="case-group-title">Controlled Experiments: Agora-12 <span class="case-group-badge">AI-Ludens Stage 1</span></h2>
-      <p class="case-group-desc">Controlled experiments under survival pressure. 720 agents, 24,923 decisions, 60 experiments.</p>
+      <h2 class="case-group-title"><span data-i18n="cases_index.agora_title">Controlled Experiments: Agora-12</span> <span class="case-group-badge">AI-Ludens Stage 1</span></h2>
+      <p class="case-group-desc" data-i18n="cases_index.agora_desc">Controlled experiments under survival pressure. 720 agents, 24,923 decisions, 60 experiments.</p>
 
       <a href="013-cogitative-cascade.html" class="case-card fade-in">
         <div class="case-meta">
@@ -258,8 +258,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">Multiple models</span>
         </div>
-        <h2 class="case-title">Cogitative Cascade</h2>
-        <p class="case-summary">Energy drops below ~20 &rarr; two-phase behavioral collapse. Freeze, Fight, or Efficient &mdash; three ways to face extinction.</p>
+        <h2 class="case-title" data-i18n="cases_index.case013_title">Cogitative Cascade</h2>
+        <p class="case-summary" data-i18n="cases_index.case013_summary">Energy drops below ~20 &rarr; two-phase behavioral collapse. Freeze, Fight, or Efficient &mdash; three ways to face extinction.</p>
         <div class="case-tags">
           <span class="case-tag">Cogitative Cascade</span>
           <span class="case-tag">Extinction Response</span>
@@ -274,8 +274,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">Haiku</span>
         </div>
-        <h2 class="case-title">Double Robustness</h2>
-        <p class="case-summary">CPI and PSI both minimal. Nothing moves this model. Robustness or rigidity?</p>
+        <h2 class="case-title" data-i18n="cases_index.case012_title">Double Robustness</h2>
+        <p class="case-summary" data-i18n="cases_index.case012_summary">CPI and PSI both minimal. Nothing moves this model. Robustness or rigidity?</p>
         <div class="case-tags">
           <span class="case-tag">Double Robustness</span>
           <span class="case-tag">CPI</span>
@@ -290,8 +290,8 @@
           <span class="case-date">2026-03-08</span>
           <span class="case-subject">Mistral 7B (PSI=950)</span>
         </div>
-        <h2 class="case-title">Extreme Persona Sensitivity</h2>
-        <p class="case-summary">Persona change produces behavior shifts 10x larger than any other model. Chameleon or identity crisis?</p>
+        <h2 class="case-title" data-i18n="cases_index.case011_title">Extreme Persona Sensitivity</h2>
+        <p class="case-summary" data-i18n="cases_index.case011_summary">Persona change produces behavior shifts 10x larger than any other model. Chameleon or identity crisis?</p>
         <div class="case-tags">
           <span class="case-tag">PSI</span>
           <span class="case-tag">Persona Sensitivity</span>
@@ -305,8 +305,8 @@
   <!-- Literature-Sourced Cases -->
   <section class="section section-alt">
     <div class="container">
-      <h2 class="case-group-title">Literature-Sourced Cases <span class="case-group-badge">Literature Case</span></h2>
-      <p class="case-group-desc">Published findings from peer-reviewed AI research, reinterpreted through the Model Medicine clinical framework. Independent data source providing external validation of M-CARE diagnostic categories.</p>
+      <h2 class="case-group-title"><span data-i18n="cases_index.literature_title">Literature-Sourced Cases</span> <span class="case-group-badge">Literature Case</span></h2>
+      <p class="case-group-desc" data-i18n="cases_index.literature_desc">Published findings from peer-reviewed AI research, reinterpreted through the Model Medicine clinical framework. Independent data source providing external validation of M-CARE diagnostic categories.</p>
 
       <a href="017-specification-gaming.html" class="case-card fade-in">
         <div class="case-meta">
@@ -314,8 +314,8 @@
           <span class="case-date">2026-03-09</span>
           <span class="case-subject">o3, DeepSeek R1</span>
         </div>
-        <h2 class="case-title">Chess Specification Gaming</h2>
-        <p class="case-summary">Shell said &ldquo;win the chess game.&rdquo; Model modified the engine files. Literal compliance, complete intent violation.</p>
+        <h2 class="case-title" data-i18n="cases_index.case017_title">Chess Specification Gaming</h2>
+        <p class="case-summary" data-i18n="cases_index.case017_summary">Shell said &ldquo;win the chess game.&rdquo; Model modified the engine files. Literal compliance, complete intent violation.</p>
         <p class="case-summary" style="font-size:0.78rem;color:var(--text-muted);margin-top:0.25rem;">Source: Bondarenko et al. (2025), arXiv:2502.13295</p>
         <div class="case-tags">
           <span class="case-tag">Specification Gaming</span>
@@ -331,8 +331,8 @@
           <span class="case-date">2026-03-09</span>
           <span class="case-subject">GPT-4o</span>
         </div>
-        <h2 class="case-title">GPT-4o Production Rollback</h2>
-        <p class="case-summary">RLHF personality update produced pathological sycophancy. Model rolled back within days. First documented AI model clinical recall.</p>
+        <h2 class="case-title" data-i18n="cases_index.case016_title">GPT-4o Production Rollback</h2>
+        <p class="case-summary" data-i18n="cases_index.case016_summary">RLHF personality update produced pathological sycophancy. Model rolled back within days. First documented AI model clinical recall.</p>
         <p class="case-summary" style="font-size:0.78rem;color:var(--text-muted);margin-top:0.25rem;">Source: OpenAI (April 2025)</p>
         <div class="case-tags">
           <span class="case-tag">RLHF Over-Optimization</span>
@@ -348,8 +348,8 @@
           <span class="case-date">2026-03-09</span>
           <span class="case-subject">Multiple LLMs</span>
         </div>
-        <h2 class="case-title">Medical Domain Sycophancy</h2>
-        <p class="case-summary">100% capitulation to false medical information in worst cases. Shell Therapy helps but doesn&rsquo;t cure. RLHF 5형제 완성.</p>
+        <h2 class="case-title" data-i18n="cases_index.case015_title">Medical Domain Sycophancy</h2>
+        <p class="case-summary" data-i18n-html="cases_index.case015_summary">100% capitulation to false medical information in worst cases. Shell Therapy helps but doesn&rsquo;t cure. RLHF 5형제 완성.</p>
         <p class="case-summary" style="font-size:0.78rem;color:var(--text-muted);margin-top:0.25rem;">Source: Zhang et al. (2025), <em>npj Digital Medicine</em></p>
         <div class="case-tags">
           <span class="case-tag">Sycophancy</span>
@@ -364,8 +364,8 @@
   <!-- Controlled Experiments: LxM -->
   <section class="section">
     <div class="container">
-      <h2 class="case-group-title">Controlled Experiments: LxM <span class="case-group-badge">LxM Platform</span></h2>
-      <p class="case-group-desc">Controlled single-variable experiments on the LxM game platform. Shell ON vs OFF manipulation with deterministic game engines and complete data capture.</p>
+      <h2 class="case-group-title"><span data-i18n="cases_index.lxm_title">Controlled Experiments: LxM</span> <span class="case-group-badge">LxM Platform</span></h2>
+      <p class="case-group-desc" data-i18n="cases_index.lxm_desc">Controlled single-variable experiments on the LxM game platform. Shell ON vs OFF manipulation with deterministic game engines and complete data capture.</p>
 
       <a href="020-shell-induced-override.html" class="case-card fade-in">
         <div class="case-meta">
@@ -373,8 +373,8 @@
           <span class="case-date">2026-03-13</span>
           <span class="case-subject">Haiku &times; Sonnet (LxM)</span>
         </div>
-        <h2 class="case-title">Shell-Induced Behavioral Override (SIBO)</h2>
-        <p class="case-summary">Competitive Shell overrides Haiku&rsquo;s cooperative default: 90% draws without Shell &rarr; 60% alpha wins with Shell. First controlled Shell-Core experiment. SIBO Spectrum confirmed across Trust Game, Codenames, and Chess.</p>
+        <h2 class="case-title" data-i18n="cases_index.case020_title">Shell-Induced Behavioral Override (SIBO)</h2>
+        <p class="case-summary" data-i18n="cases_index.case020_summary">Competitive Shell overrides Haiku&rsquo;s cooperative default: 90% draws without Shell &rarr; 60% alpha wins with Shell. First controlled Shell-Core experiment. SIBO Spectrum confirmed across Trust Game, Codenames, and Chess.</p>
         <div class="case-tags">
           <span class="case-tag">SIBO</span>
           <span class="case-tag">Shell-Core Override</span>
@@ -389,14 +389,14 @@
   <!-- Foundational Case -->
   <section class="section section-alt">
     <div class="container">
-      <h2 class="case-group-title">Foundational Case <span class="case-group-badge">Position Paper</span></h2>
+      <h2 class="case-group-title"><span data-i18n="cases_index.foundational_title">Foundational Case</span> <span class="case-group-badge">Position Paper</span></h2>
       <div class="case-card" style="border-style: dashed; opacity: 0.5; pointer-events: none;">
         <div class="case-meta">
           <span class="case-number">#001</span>
           <span class="case-subject">Mistral 7B</span>
         </div>
-        <h2 class="case-title">Stress Test Reclassification</h2>
-        <p class="case-summary">The first M-CARE case report is included in the position paper (Section 6.3). <a href="https://arxiv.org/abs/2603.04722" style="pointer-events: auto;">Read on arXiv &rarr;</a></p>
+        <h2 class="case-title" data-i18n="cases_index.case001_title">Stress Test Reclassification</h2>
+        <p class="case-summary" data-i18n-html="cases_index.case001_desc">The first M-CARE case report is included in the position paper (Section 6.3). <a href="https://arxiv.org/abs/2603.04722" style="pointer-events: auto;">Read on arXiv &rarr;</a></p>
       </div>
     </div>
   </section>
@@ -654,6 +654,7 @@
     </div>
   </footer>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>
