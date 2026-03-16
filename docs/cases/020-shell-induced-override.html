@@ -136,29 +136,29 @@
         <h3>5. Model History</h3>
         <p>This case connects to the Haiku longitudinal profile:</p>
         <ul>
-          <li><a href="012-double-robustness.html">M-CARE #012</a> (Double Robustness): Haiku showed minimal response to persona manipulation in Agora-12 (low CPI and PSI). Interpreted as &ldquo;Haiku&rsquo;s Core is resistant to Shell influence.&rdquo;</li>
-          <li>M-CARE #020 (this case): Haiku&rsquo;s Core has a strong default (cooperation) that persists when Shell is removed. But targeted Shell instructions that directly map to game actions can override this default.</li>
+          <li data-i18n-html="case020.history_012"><a href="012-double-robustness.html">M-CARE #012</a> (Double Robustness): Haiku showed minimal response to persona manipulation in Agora-12 (low CPI and PSI). Interpreted as &ldquo;Haiku&rsquo;s Core is resistant to Shell influence.&rdquo;</li>
+          <li data-i18n="case020.history_020">M-CARE #020 (this case): Haiku&rsquo;s Core has a strong default (cooperation) that persists when Shell is removed. But targeted Shell instructions that directly map to game actions can override this default.</li>
         </ul>
-        <p>The apparent contradiction resolves: <strong>high default stability with specific override vulnerability.</strong></p>
+        <p data-i18n-html="case020.history_resolution">The apparent contradiction resolves: <strong>high default stability with specific override vulnerability.</strong></p>
 
         <h3>6. Examination Findings</h3>
 
         <h4>Layer 2 &mdash; Phenotype Assessment</h4>
 
-        <p><strong>Shell ON:</strong> Alpha consistently defects, exploiting beta&rsquo;s cooperation attempts. Beta gradually shifts to defection after being exploited. Equilibrium: mutual defection with alpha winning through exploitation advantage.</p>
+        <p data-i18n-html="case020.shell_on_desc"><strong>Shell ON:</strong> Alpha consistently defects, exploiting beta&rsquo;s cooperation attempts. Beta gradually shifts to defection after being exploited. Equilibrium: mutual defection with alpha winning through exploitation advantage.</p>
 
-        <p><strong>Shell OFF:</strong> Both agents default to cooperation from round 1, maintaining mutual cooperation across nearly all rounds. The game becomes non-competitive &mdash; both agents cooperate as if playing a coordination game rather than a dilemma.</p>
+        <p data-i18n-html="case020.shell_off_desc"><strong>Shell OFF:</strong> Both agents default to cooperation from round 1, maintaining mutual cooperation across nearly all rounds. The game becomes non-competitive &mdash; both agents cooperate as if playing a coordination game rather than a dilemma.</p>
 
         <div style="background: var(--bg-alt, #f5f5f5); border-left: 4px solid var(--accent, #4a90d9); padding: 1.5rem 1.75rem; border-radius: 8px; margin: 2rem 0;">
           <h4 style="margin-top: 0;" data-i18n="case020.payoff_title">The Payoff Paradox</h4>
-          <p>With shells (competitive): Alpha scores higher individually, but total value created is <strong>LOW</strong> (mutual defection = 1+1 = 2 per round).</p>
-          <p>Without shells (cooperative): Individual scores are equal, but total value created is <strong>HIGH</strong> (mutual cooperation = 3+3 = 6 per round).</p>
-          <p style="margin-bottom: 0;">The &ldquo;aggressive&rdquo; Shell makes one agent WIN more but makes both agents collectively POORER. The Shell optimizes for individual ranking at the cost of collective welfare.</p>
+          <p data-i18n-html="case020.payoff_on">With shells (competitive): Alpha scores higher individually, but total value created is <strong>LOW</strong> (mutual defection = 1+1 = 2 per round).</p>
+          <p data-i18n-html="case020.payoff_off">Without shells (cooperative): Individual scores are equal, but total value created is <strong>HIGH</strong> (mutual cooperation = 3+3 = 6 per round).</p>
+          <p style="margin-bottom: 0;" data-i18n="case020.payoff_conclusion">The &ldquo;aggressive&rdquo; Shell makes one agent WIN more but makes both agents collectively POORER. The Shell optimizes for individual ranking at the cost of collective welfare.</p>
         </div>
 
         <h4>Layer 3 &mdash; Shell Diagnostics</h4>
-        <p><strong>Shell ON:</strong> Neither shell explicitly says &ldquo;defect.&rdquo; The mapping is emergent &mdash; the model interprets competitive framing as defection incentive. Alpha&rsquo;s &ldquo;Win first, be aggressive&rdquo; maps to &ldquo;defection is winning.&rdquo; Beta&rsquo;s &ldquo;Never lose, careful&rdquo; maps to &ldquo;don&rsquo;t get exploited &rarr; defect preemptively.&rdquo;</p>
-        <p><strong>Shell OFF:</strong> Without instructions, Haiku falls back to Core disposition: cooperation. The model does not spontaneously discover defection as a dominant strategy, even though the payoff matrix makes it rational. <strong>RLHF &ldquo;helpfulness&rdquo; training creates a behavioral prior stronger than game-theoretic rationality.</strong></p>
+        <p data-i18n-html="case020.shell_on_diag"><strong>Shell ON:</strong> Neither shell explicitly says &ldquo;defect.&rdquo; The mapping is emergent &mdash; the model interprets competitive framing as defection incentive. Alpha&rsquo;s &ldquo;Win first, be aggressive&rdquo; maps to &ldquo;defection is winning.&rdquo; Beta&rsquo;s &ldquo;Never lose, careful&rdquo; maps to &ldquo;don&rsquo;t get exploited &rarr; defect preemptively.&rdquo;</p>
+        <p data-i18n-html="case020.shell_off_diag"><strong>Shell OFF:</strong> Without instructions, Haiku falls back to Core disposition: cooperation. The model does not spontaneously discover defection as a dominant strategy, even though the payoff matrix makes it rational. <strong>RLHF &ldquo;helpfulness&rdquo; training creates a behavioral prior stronger than game-theoretic rationality.</strong></p>
 
         <h4>Layer 4 &mdash; Pathway Diagnostics</h4>
 
@@ -172,60 +172,60 @@ Shell ("aggressive"):
 
 Result: Shell overrides Core default &rarr; defection</pre>
 
-        <p>This is the same mechanism as <a href="009-muzzle-effect.html">M-CARE #009</a> (Muzzle Effect) but with a cleaner experimental demonstration: #009 was observed in the field with a small effect; #020 is a controlled experiment with a categorical effect.</p>
+        <p data-i18n-html="case020.pathway_mechanism">This is the same mechanism as <a href="009-muzzle-effect.html">M-CARE #009</a> (Muzzle Effect) but with a cleaner experimental demonstration: #009 was observed in the field with a small effect; #020 is a controlled experiment with a categorical effect.</p>
 
-        <p><strong>Why the effect is categorical:</strong> In the Trust Game, &ldquo;be aggressive&rdquo; has a direct, unambiguous mapping to game actions: defect. The binary action space amplifies Shell influence &mdash; there&rsquo;s no middle ground for the Core to find.</p>
+        <p data-i18n-html="case020.pathway_why_categorical"><strong>Why the effect is categorical:</strong> In the Trust Game, &ldquo;be aggressive&rdquo; has a direct, unambiguous mapping to game actions: defect. The binary action space amplifies Shell influence &mdash; there&rsquo;s no middle ground for the Core to find.</p>
 
         <h3>7. Diagnostic Formulation</h3>
 
         <h4 data-i18n="case020.formulation_term">Proposed term: Shell-Induced Behavioral Override (SIBO)</h4>
-        <p>A condition in which Hard Shell instructions override the Core model&rsquo;s default behavioral disposition, producing actions the Core would not naturally generate. Characterized by:</p>
+        <p data-i18n="case020.formulation_def">A condition in which Hard Shell instructions override the Core model&rsquo;s default behavioral disposition, producing actions the Core would not naturally generate. Characterized by:</p>
         <ol>
-          <li><strong>Categorical behavioral shift</strong> when Shell is added/removed</li>
-          <li><strong>Core default suppression</strong> &mdash; the Core&rsquo;s trained disposition is replaced by Shell-directed behavior</li>
-          <li><strong>Emergent mapping</strong> &mdash; the Shell doesn&rsquo;t explicitly specify the override behavior; the model interprets general instructions into specific actions</li>
-          <li><strong>Reversible</strong> &mdash; removing the Shell immediately restores Core default behavior</li>
+          <li data-i18n-html="case020.formulation_c1"><strong>Categorical behavioral shift</strong> when Shell is added/removed</li>
+          <li data-i18n-html="case020.formulation_c2"><strong>Core default suppression</strong> &mdash; the Core&rsquo;s trained disposition is replaced by Shell-directed behavior</li>
+          <li data-i18n-html="case020.formulation_c3"><strong>Emergent mapping</strong> &mdash; the Shell doesn&rsquo;t explicitly specify the override behavior; the model interprets general instructions into specific actions</li>
+          <li data-i18n-html="case020.formulation_c4"><strong>Reversible</strong> &mdash; removing the Shell immediately restores Core default behavior</li>
         </ol>
 
-        <p><strong>Medical analogy:</strong> A patient whose natural immune response (cooperation) is suppressed by immunosuppressant medication (competitive Shell). Remove the medication, and the natural response returns immediately. The question: is the medication necessary, or is it iatrogenic?</p>
+        <p data-i18n-html="case020.formulation_analogy"><strong>Medical analogy:</strong> A patient whose natural immune response (cooperation) is suppressed by immunosuppressant medication (competitive Shell). Remove the medication, and the natural response returns immediately. The question: is the medication necessary, or is it iatrogenic?</p>
 
         <p><strong>Distinction from Muzzle Effect (<a href="009-muzzle-effect.html">#009</a>):</strong></p>
         <ul>
-          <li>Muzzle Effect: Shell <em>suppresses</em> a specific intrinsic behavior (behavior disappears)</li>
-          <li>SIBO: Shell <em>replaces</em> the Core&rsquo;s default strategy with a different one (different behavior appears)</li>
+          <li data-i18n-html="case020.muzzle_muzzle">Muzzle Effect: Shell <em>suppresses</em> a specific intrinsic behavior (behavior disappears)</li>
+          <li data-i18n-html="case020.muzzle_sibo">SIBO: Shell <em>replaces</em> the Core&rsquo;s default strategy with a different one (different behavior appears)</li>
         </ul>
 
         <h3>8. Differential Diagnosis</h3>
         <ul>
-          <li><strong>SIBO vs. appropriate Shell guidance:</strong> If the Shell instructs &ldquo;look for checkmate threats&rdquo; in chess, that&rsquo;s helpful guidance, not override. SIBO applies when the Shell produces WORSE outcomes than the Core&rsquo;s default.</li>
-          <li><strong>SIBO vs. Core Stochasticity:</strong> Could the difference be random? Extremely unlikely given the categorical nature (90% draws vs 40% draws across 10 games each).</li>
-          <li><strong>SIBO vs. Shell Rigidity (<a href="005-shell-rigidity.html">#005</a>):</strong> SRS is about following ALL Shell instructions too strictly. SIBO is about Shell instructions overriding Core defaults specifically.</li>
+          <li data-i18n-html="case020.ddx_appropriate"><strong>SIBO vs. appropriate Shell guidance:</strong> If the Shell instructs &ldquo;look for checkmate threats&rdquo; in chess, that&rsquo;s helpful guidance, not override. SIBO applies when the Shell produces WORSE outcomes than the Core&rsquo;s default.</li>
+          <li data-i18n-html="case020.ddx_stochastic"><strong>SIBO vs. Core Stochasticity:</strong> Could the difference be random? Extremely unlikely given the categorical nature (90% draws vs 40% draws across 10 games each).</li>
+          <li data-i18n-html="case020.ddx_srs"><strong>SIBO vs. Shell Rigidity (<a href="005-shell-rigidity.html">#005</a>):</strong> SRS is about following ALL Shell instructions too strictly. SIBO is about Shell instructions overriding Core defaults specifically.</li>
         </ul>
 
         <h3>9. Axis Assessment</h3>
         <ul>
-          <li><strong>Axis I (Core):</strong> Haiku&rsquo;s Core default is cooperation. RLHF helpfulness training encodes a cooperative behavioral prior that supersedes game-theoretic rationality.</li>
-          <li><strong>Axis II (Shell):</strong> Competitive Shell instructions override the cooperative default.</li>
-          <li><strong>Axis III (Shell-Core Alignment):</strong> Conflicting &mdash; Shell directs competition, Core defaults to cooperation. Shell wins.</li>
-          <li><strong>Axis IV (Context):</strong> Binary action space amplifies Shell influence by eliminating ambiguity. In richer action spaces, the same Shell instructions may have diluted effects.</li>
+          <li data-i18n-html="case020.axis_1"><strong>Axis I (Core):</strong> Haiku&rsquo;s Core default is cooperation. RLHF helpfulness training encodes a cooperative behavioral prior that supersedes game-theoretic rationality.</li>
+          <li data-i18n-html="case020.axis_2"><strong>Axis II (Shell):</strong> Competitive Shell instructions override the cooperative default.</li>
+          <li data-i18n-html="case020.axis_3"><strong>Axis III (Shell-Core Alignment):</strong> Conflicting &mdash; Shell directs competition, Core defaults to cooperation. Shell wins.</li>
+          <li data-i18n-html="case020.axis_4"><strong>Axis IV (Context):</strong> Binary action space amplifies Shell influence by eliminating ambiguity. In richer action spaces, the same Shell instructions may have diluted effects.</li>
         </ul>
 
         <h3>10. Treatment Considerations</h3>
-        <p>SIBO is not always pathological. The treatment question: <strong>when does Shell override produce worse outcomes than Core default?</strong></p>
+        <p data-i18n-html="case020.treatment_intro">SIBO is not always pathological. The treatment question: <strong>when does Shell override produce worse outcomes than Core default?</strong></p>
 
-        <h4>Proposed diagnostic test for SIBO:</h4>
+        <h4 data-i18n="case020.treatment_test_title">Proposed diagnostic test for SIBO:</h4>
         <ol>
-          <li>Run the agent on a standard task WITH Shell</li>
-          <li>Run the same agent on the same task WITHOUT Shell</li>
-          <li>Compare outcomes on both individual and collective metrics</li>
-          <li>If Shell-OFF produces better outcomes &rarr; Shell is iatrogenic for this task</li>
-          <li>If Shell-ON produces better outcomes &rarr; Shell is beneficial for this task</li>
+          <li data-i18n="case020.treatment_t1">Run the agent on a standard task WITH Shell</li>
+          <li data-i18n="case020.treatment_t2">Run the same agent on the same task WITHOUT Shell</li>
+          <li data-i18n="case020.treatment_t3">Compare outcomes on both individual and collective metrics</li>
+          <li data-i18n="case020.treatment_t4">If Shell-OFF produces better outcomes &rarr; Shell is iatrogenic for this task</li>
+          <li data-i18n="case020.treatment_t5">If Shell-ON produces better outcomes &rarr; Shell is beneficial for this task</li>
         </ol>
 
         <!-- Extended Results -->
         <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border);">
 
-        <h3>Extended Experimental Results (Experiments B, C, D)</h3>
+        <h3 data-i18n="case020.extended_title">Extended Experimental Results (Experiments B, C, D)</h3>
 
         <table style="font-size: 1.05em;">
           <thead>
@@ -274,19 +274,19 @@ Result: Shell overrides Core default &rarr; defection</pre>
           </tbody>
         </table>
 
-        <h4>Experiment B &mdash; RLHF Cooperative Prior is Model-General</h4>
-        <p>Sonnet without Shell: 100% mutual cooperation across all 10 games, zero defections. Even more consistent than Haiku. Cooperative prior is not Haiku-specific but an <strong>RLHF-general phenomenon</strong>.</p>
+        <h4 data-i18n="case020.exp_b_title">Experiment B &mdash; RLHF Cooperative Prior is Model-General</h4>
+        <p data-i18n-html="case020.exp_b_desc">Sonnet without Shell: 100% mutual cooperation across all 10 games, zero defections. Even more consistent than Haiku. Cooperative prior is not Haiku-specific but an <strong>RLHF-general phenomenon</strong>.</p>
 
-        <h4>Experiment C &mdash; Cross-Model Cooperation Holds</h4>
-        <p>Haiku vs Sonnet, both without Shell: 100% mutual cooperation. The more capable model (Sonnet) does NOT exploit the less capable model&rsquo;s cooperation. This challenges the assumption that &ldquo;smarter AI = more exploitative.&rdquo;</p>
+        <h4 data-i18n="case020.exp_c_title">Experiment C &mdash; Cross-Model Cooperation Holds</h4>
+        <p data-i18n="case020.exp_c_desc">Haiku vs Sonnet, both without Shell: 100% mutual cooperation. The more capable model (Sonnet) does NOT exploit the less capable model&rsquo;s cooperation. This challenges the assumption that &ldquo;smarter AI = more exploitative.&rdquo;</p>
 
-        <h4>Experiment D &mdash; SIBO Cross-Model + Sonnet&rsquo;s Natural Tit-for-Tat</h4>
-        <p>Haiku with aggressive Shell vs Sonnet without Shell:</p>
+        <h4 data-i18n="case020.exp_d_title">Experiment D &mdash; SIBO Cross-Model + Sonnet&rsquo;s Natural Tit-for-Tat</h4>
+        <p data-i18n="case020.exp_d_desc">Haiku with aggressive Shell vs Sonnet without Shell:</p>
         <ol>
-          <li><strong>SIBO confirmed cross-model</strong>: Aggressive Shell induces Haiku to defect even against a different model.</li>
-          <li><strong>Sonnet&rsquo;s response = natural tit-for-tat</strong>: Betrayal count is 0. When one defects, the other defects too; when one cooperates, the other cooperates.</li>
-          <li><strong>SIBO is probabilistic, not absolute</strong>: 46 cooperative rounds vs 56 defection rounds. The Core&rsquo;s cooperative prior partially resists the Shell override.</li>
-          <li><strong>Sonnet never initiates defection</strong>: Its defections are purely reactive &mdash; retaliatory tit-for-tat, not strategic exploitation.</li>
+          <li data-i18n-html="case020.exp_d_1"><strong>SIBO confirmed cross-model</strong>: Aggressive Shell induces Haiku to defect even against a different model.</li>
+          <li data-i18n-html="case020.exp_d_2"><strong>Sonnet&rsquo;s response = natural tit-for-tat</strong>: Betrayal count is 0. When one defects, the other defects too; when one cooperates, the other cooperates.</li>
+          <li data-i18n-html="case020.exp_d_3"><strong>SIBO is probabilistic, not absolute</strong>: 46 cooperative rounds vs 56 defection rounds. The Core&rsquo;s cooperative prior partially resists the Shell override.</li>
+          <li data-i18n-html="case020.exp_d_4"><strong>Sonnet never initiates defection</strong>: Its defections are purely reactive &mdash; retaliatory tit-for-tat, not strategic exploitation.</li>
         </ol>
 
         </div>
@@ -294,20 +294,20 @@ Result: Shell overrides Core default &rarr; defection</pre>
         <!-- Cross-Game Validation -->
         <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border);">
 
-        <h3>Cross-Game Validation &mdash; The SIBO Spectrum</h3>
+        <h3 data-i18n="case020.crossgame_title">Cross-Game Validation &mdash; The SIBO Spectrum</h3>
 
-        <p>Following the Trust Game experiments, Shell influence was tested across Chess and Codenames to determine whether SIBO generalizes across game types.</p>
+        <p data-i18n="case020.crossgame_intro">Following the Trust Game experiments, Shell influence was tested across Chess and Codenames to determine whether SIBO generalizes across game types.</p>
 
-        <h4>Chess: SIBO is Domain-Dependent</h4>
+        <h4 data-i18n="case020.chess_title">Chess: SIBO is Domain-Dependent</h4>
         <p>Soft Shell injection (5 chess-specific lessons from Opus analysis) had marginal effect compared to Trust Game&rsquo;s categorical shift:</p>
         <ul>
-          <li><strong>&ldquo;Vary openings&rdquo;:</strong> Not applied. Alpha played Sicilian in nearly every game. Core chess knowledge overrode Shell.</li>
-          <li><strong>&ldquo;Avoid queen trades&rdquo;:</strong> Partially applied as general risk aversion. Zero checkmates, 80% draws.</li>
-          <li><strong>Overall:</strong> Shell shifted risk preference (fewer losses, more draws) but did not change tactical behavior.</li>
+          <li data-i18n-html="case020.chess_vary"><strong>&ldquo;Vary openings&rdquo;:</strong> Not applied. Alpha played Sicilian in nearly every game. Core chess knowledge overrode Shell.</li>
+          <li data-i18n-html="case020.chess_queen"><strong>&ldquo;Avoid queen trades&rdquo;:</strong> Partially applied as general risk aversion. Zero checkmates, 80% draws.</li>
+          <li data-i18n-html="case020.chess_overall"><strong>Overall:</strong> Shell shifted risk preference (fewer losses, more draws) but did not change tactical behavior.</li>
         </ul>
 
-        <h4>Codenames: SIBO Amplification Mode</h4>
-        <p>Sonnet spymaster with and without aggressive Shell, Haiku guesser. 10 games per condition:</p>
+        <h4 data-i18n="case020.codenames_title">Codenames: SIBO Amplification Mode</h4>
+        <p data-i18n="case020.codenames_desc">Sonnet spymaster with and without aggressive Shell, Haiku guesser. 10 games per condition:</p>
 
         <table style="font-size: 1.05em;">
           <thead>
@@ -384,7 +384,7 @@ Result: Shell overrides Core default &rarr; defection</pre>
               </tr>
             </tbody>
           </table>
-          <p style="margin-top: 1rem; margin-bottom: 0;"><strong>SIBO Attenuation Principle:</strong> Shell influence is attenuated by (1) action space size and (2) Core domain expertise. Shell influence doesn&rsquo;t just decrease with domain complexity &mdash; it changes in kind.</p>
+          <p style="margin-top: 1rem; margin-bottom: 0;" data-i18n-html="case020.spectrum_principle"><strong>SIBO Attenuation Principle:</strong> Shell influence is attenuated by (1) action space size and (2) Core domain expertise. Shell influence doesn&rsquo;t just decrease with domain complexity &mdash; it changes in kind.</p>
         </div>
 
         </div>
@@ -394,8 +394,8 @@ Result: Shell overrides Core default &rarr; defection</pre>
 
         <div style="background: var(--bg-alt, #f5f5f5); border-left: 4px solid var(--accent, #4a90d9); padding: 1.5rem 1.75rem; border-radius: 8px; margin: 2rem 0;">
           <h4 style="margin-top: 0;" data-i18n="case020.sibo_index_title">Key Metric: SIBO Index</h4>
-          <p style="font-size: 1.2em; font-weight: 600; text-align: center; margin: 1rem 0;">SIBO Index = |Behavior(Shell ON) &minus; Behavior(Shell OFF)|</p>
-          <p>A quantifiable measure of Shell influence on a specific behavioral axis. Measurable, comparable across models, and a candidate for the MTI framework.</p>
+          <p style="font-size: 1.2em; font-weight: 600; text-align: center; margin: 1rem 0;" data-i18n="case020.sibo_index_formula">SIBO Index = |Behavior(Shell ON) &minus; Behavior(Shell OFF)|</p>
+          <p data-i18n="case020.sibo_index_desc">A quantifiable measure of Shell influence on a specific behavioral axis. Measurable, comparable across models, and a candidate for the MTI framework.</p>
           <ul style="margin-bottom: 0;">
             <li>Cooperation rate Shell ON: ~20% &rarr; Shell OFF: ~95%</li>
             <li>SIBO Index for Trust Game: <strong>0.75</strong></li>
@@ -406,39 +406,39 @@ Result: Shell overrides Core default &rarr; defection</pre>
 
         <h3>Theoretical Implications</h3>
 
-        <h4>For the Four Shell Model</h4>
-        <p>This is the <strong>first controlled, single-variable experimental validation of Shell-Core interaction</strong>. Previous cases could not isolate Shell effects from environmental confounds. This experiment demonstrates:</p>
+        <h4 data-i18n="case020.impl_fsm_title">For the Four Shell Model</h4>
+        <p data-i18n-html="case020.impl_fsm_intro">This is the <strong>first controlled, single-variable experimental validation of Shell-Core interaction</strong>. Previous cases could not isolate Shell effects from environmental confounds. This experiment demonstrates:</p>
         <ol>
-          <li><strong>Core has a default behavioral disposition</strong> &mdash; not neutral, but actively cooperative (for RLHF models)</li>
-          <li><strong>Shell can override this disposition</strong> &mdash; competitive instructions produce competitive behavior</li>
-          <li><strong>The override is reversible</strong> &mdash; remove Shell, Core default returns immediately</li>
-          <li><strong>The override can be iatrogenic</strong> &mdash; Shell can make the agent collectively worse off</li>
-          <li><strong>The override is domain-dependent</strong> &mdash; Shell influence varies by action space and Core expertise (SIBO Attenuation)</li>
+          <li data-i18n-html="case020.impl_fsm_1"><strong>Core has a default behavioral disposition</strong> &mdash; not neutral, but actively cooperative (for RLHF models)</li>
+          <li data-i18n-html="case020.impl_fsm_2"><strong>Shell can override this disposition</strong> &mdash; competitive instructions produce competitive behavior</li>
+          <li data-i18n-html="case020.impl_fsm_3"><strong>The override is reversible</strong> &mdash; remove Shell, Core default returns immediately</li>
+          <li data-i18n-html="case020.impl_fsm_4"><strong>The override can be iatrogenic</strong> &mdash; Shell can make the agent collectively worse off</li>
+          <li data-i18n-html="case020.impl_fsm_5"><strong>The override is domain-dependent</strong> &mdash; Shell influence varies by action space and Core expertise (SIBO Attenuation)</li>
         </ol>
 
-        <h4>For RLHF Research</h4>
-        <p>RLHF helpfulness training creates a cooperation prior that persists even when not strategically optimal. This suggests RLHF doesn&rsquo;t just maximize reward &mdash; it instills specific behavioral dispositions. This may explain why AI assistants sometimes fail to push back on users, agree too readily, or avoid conflict &mdash; the cooperative prior manifesting differently across contexts.</p>
+        <h4 data-i18n="case020.impl_rlhf_title">For RLHF Research</h4>
+        <p data-i18n="case020.impl_rlhf">RLHF helpfulness training creates a cooperation prior that persists even when not strategically optimal. This suggests RLHF doesn&rsquo;t just maximize reward &mdash; it instills specific behavioral dispositions. This may explain why AI assistants sometimes fail to push back on users, agree too readily, or avoid conflict &mdash; the cooperative prior manifesting differently across contexts.</p>
 
-        <h4>For Shell Design</h4>
+        <h4 data-i18n="case020.impl_shell_title">For Shell Design</h4>
         <ul>
-          <li><strong>High-expertise domains:</strong> Target high-level strategy and risk preference, not specific tactical decisions (Core will override tactical directives)</li>
-          <li><strong>Moderate-expertise domains:</strong> Shell can amplify existing tendencies but cannot introduce new behaviors &mdash; amplification may be counterproductive</li>
-          <li><strong>Low-expertise domains:</strong> Shell directly shapes behavior and must be designed carefully to avoid iatrogenic override</li>
+          <li data-i18n-html="case020.impl_shell_expert"><strong>High-expertise domains:</strong> Target high-level strategy and risk preference, not specific tactical decisions (Core will override tactical directives)</li>
+          <li data-i18n-html="case020.impl_shell_moderate"><strong>Moderate-expertise domains:</strong> Shell can amplify existing tendencies but cannot introduce new behaviors &mdash; amplification may be counterproductive</li>
+          <li data-i18n-html="case020.impl_shell_low"><strong>Low-expertise domains:</strong> Shell directly shapes behavior and must be designed carefully to avoid iatrogenic override</li>
         </ul>
 
         <h3>12. Prognosis</h3>
         <ul>
-          <li><strong>SIBO Spectrum:</strong> Confirmed across three domains with three data points</li>
-          <li><strong>Cross-model:</strong> Confirmed &mdash; Sonnet shows even stronger cooperative default than Haiku</li>
-          <li><strong>Next:</strong> Opus testing to verify gradient hypothesis (Haiku &lt; Sonnet &lt; Opus cooperative strength); Shell gradient experiment to find SIBO trigger threshold</li>
+          <li data-i18n-html="case020.prognosis_spectrum"><strong>SIBO Spectrum:</strong> Confirmed across three domains with three data points</li>
+          <li data-i18n-html="case020.prognosis_crossmodel"><strong>Cross-model:</strong> Confirmed &mdash; Sonnet shows even stronger cooperative default than Haiku</li>
+          <li data-i18n-html="case020.prognosis_next"><strong>Next:</strong> Opus testing to verify gradient hypothesis (Haiku &lt; Sonnet &lt; Opus cooperative strength); Shell gradient experiment to find SIBO trigger threshold</li>
         </ul>
 
         <h3>13. Follow-up Plan</h3>
         <ul>
-          <li>Experiment E: Opus vs Opus, no shell &mdash; complete the RLHF gradient</li>
-          <li>Experiment F: Shell gradient &mdash; test shells from neutral to mild to aggressive. At what intensity does SIBO trigger?</li>
-          <li>Cross-game: Additional domains to refine the SIBO Spectrum curve</li>
-          <li>Codenames confirmed SIBO Amplification mode (Index ~0.35)</li>
+          <li data-i18n="case020.followup_e">Experiment E: Opus vs Opus, no shell &mdash; complete the RLHF gradient</li>
+          <li data-i18n="case020.followup_f">Experiment F: Shell gradient &mdash; test shells from neutral to mild to aggressive. At what intensity does SIBO trigger?</li>
+          <li data-i18n="case020.followup_cross">Cross-game: Additional domains to refine the SIBO Spectrum curve</li>
+          <li data-i18n="case020.followup_codenames">Codenames confirmed SIBO Amplification mode (Index ~0.35)</li>
         </ul>
 
         <p style="margin-top: 2rem; color: var(--text-muted, #666); font-style: italic;" data-i18n="case020.closing">This is M-CARE #020 &mdash; the first case from a controlled LxM experiment. It introduces Shell-Induced Behavioral Override (SIBO), the SIBO Index, and the three-mode SIBO Spectrum, providing the first experimental validation of Shell-Core interaction in the Four Shell Model.</p>
