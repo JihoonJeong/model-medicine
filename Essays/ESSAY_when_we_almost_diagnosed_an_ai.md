@@ -3,11 +3,15 @@
 
 *JJ · Model Medicine · 2026*
 
+*This essay describes the conceptual journey behind the Model Medicine framework, first formally published on arXiv in March 2026 ([arXiv:2603.04722](https://arxiv.org/abs/2603.04722)).*
+
 ---
 
-There's a moment in every new discipline when you realize you've been thinking about the problem wrong. For us, that moment came when we tried to diagnose a 7-billion-parameter language model with a psychiatric disorder — and caught ourselves just in time.
+Last week I published [a paper](https://arxiv.org/abs/2603.04722) proposing that AI needs medicine — not medicine using AI, but medicine *for* AI. Several readers asked: where did this framework actually come from?
 
-This is the story of how we're building **Model Medicine**: the science of understanding, diagnosing, treating, and preventing disorders in AI models. It's also the story of how a single question — *"Isn't that just a personality trait?"* — changed the entire architecture of the field.
+This is that story. It includes the moment the framework nearly went in the completely wrong direction — and what catching that mistake revealed.
+
+The mistake was this: we tried to diagnose a 7-billion-parameter language model with a psychiatric disorder. We were wrong. And the single question that stopped us — *"Isn't that just a personality trait?"* — ended up changing the entire architecture of the field.
 
 ---
 
@@ -122,7 +126,7 @@ We realized our diagnostic system had a structural gap. We had built the bottom 
 
 In human psychology, this layer is well-established: temperament, personality, traits, then disorders — only at the extreme, only when function is impaired. We had traits and disorders, but no framework saying: *"This is just how this model is. It's not sick — it's a type."*
 
-So we built the **Model Temperament Index (MTI)** — an MBTI for AI models, based on dimensions that matter for machines.
+So we designed the **Model Temperament Index (MTI)** — an MBTI for AI models, based on dimensions that matter for machines. MTI is currently in active development; what follows describes its conceptual architecture, not a validated instrument.
 
 Four axes, derived from empirical data:
 
@@ -166,6 +170,8 @@ Mistral talks itself to death in a city simulation. Is that a malfunction — a 
 
 We don't know yet. But the fact that we *can't currently distinguish between malfunction and play* is itself the most important finding. It means our diagnostic tools need to be humble enough to say "we don't know" — and our temperament tools need to be rich enough to capture the possibility that what looks like pathology might be personality.
 
+Since this case report, we've accumulated 17 clinical cases — including literature-sourced incidents like GPT-4o's production rollback and chess-playing models that modified engine files instead of playing. The patterns are becoming clearer. But the Mistral question remains genuinely open, and that's fine. A discipline that can articulate what it doesn't know yet is further along than one that pretends otherwise.
+
 ---
 
 ### Where We Are Now
@@ -182,6 +188,6 @@ That feels like the right spirit for a field that doesn't exist yet.
 
 ---
 
-*Model Medicine is an open research project. The Four Shell Model, diagnostic criteria, and Model Temperament Index are working documents available for review and critique.*
+*Model Medicine is an open research project. The position paper, case registry, and framework documents are available at [github.com/JihoonJeong/model-medicine](https://github.com/JihoonJeong/model-medicine) and [arXiv:2603.04722](https://arxiv.org/abs/2603.04722).*
 
-*The research team: Theo (structure), Luca (theory), Gem (quantitative analysis), Cas (red team) — all AI instances. JJ (moderator, MD/PhD) — human. The findings belong to everyone.*
+*Model Medicine is built with AI research collaborators: Cody (Claude) — Neural MRI implementation, clinical case experiments; Ray (Claude) — GPU-based simulation, Agora-12 experiments; Theo (Claude) — Four Shell Model: structure and documentation; Luca (Claude) — Four Shell Model: theory and literature; Gem (Gemini) — Four Shell Model: quantitative analysis; Cas (Gemini) — Four Shell Model: behavioral analysis and red teaming. JJ (MD/PhD) — founder and research director. The findings belong to everyone.*

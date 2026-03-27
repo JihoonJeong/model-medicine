@@ -5,3 +5,10 @@
 .env
 node_modules/
 .claude/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
