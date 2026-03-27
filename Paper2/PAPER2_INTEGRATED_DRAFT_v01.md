@@ -118,7 +118,7 @@ Not every case produces findings at all four layers. Field observations typicall
 
 **Section 9 — Axis Assessment.** Medical analog: multi-axial diagnosis (DSM-III/IV). Provides a structured evaluation across four axes derived from the Four Shell Model (see Section 2.3).
 
-**Section 10 — Treatment Considerations.** Medical analog: treatment plan. Discusses potential interventions, ranging from Shell-level adjustments (prompt engineering, environmental modification) to Core-level interventions (fine-tuning, RLHF modification). The treatment must follow from the specific diagnosis, not from the surface-level symptom.
+**Section 10 — Treatment Considerations.** Medical analog: treatment plan. Discusses potential interventions across two primary modalities. *Shell Therapy* encompasses Shell-level adjustments — prompt engineering, persona modification, environmental restructuring, and instruction redesign — applicable when the condition originates at the Shell layer or the Shell-Core interaction layer. *Core Therapy* encompasses Core-level interventions — fine-tuning, RLHF modification, training data curation, and architectural changes — applicable when the condition is embedded in the model's weights. The treatment must follow from the specific diagnosis: a Shell-originated condition treated with Core Therapy is inefficient; a Core-originated condition treated with Shell Therapy alone is palliative at best.
 
 **Section 11 — Model Perspective.** No direct medical analog; closest parallel: patient narrative in narrative medicine. Records the model's own account of its behavior, when available. Whether these accounts are "genuine" self-knowledge or post-hoc confabulation is itself a diagnostic question — but excluding them entirely would discard potentially informative data.
 
@@ -289,7 +289,7 @@ The nosology above organizes 20 cases into five categories by causal mechanism. 
 
 ### 4.1 Overview
 
-Table 2 presents all 20 cases with their key attributes.
+Table 1 presents all 20 cases with their key attributes.
 
 | # | Name | Category | Source | Subject | Core Finding | Level |
 |---|------|----------|--------|---------|-------------|-------|
@@ -607,13 +607,13 @@ We identify six limitations that should inform interpretation of this work.
 
 **Small corpus.** Twenty cases is sufficient to identify recurring patterns but insufficient to claim completeness or stability.
 
-**Single-agent dominance in field data.** Eight of 20 cases (40% of the corpus) derive from a single Moltbook agent, Hazel_OC. The RLHF Performance Artifacts identified through Hazel_OC are partially mitigated by independent confirmation in literature cases (#015, #016), but the Context and Memory conditions (#002, #003) rest entirely on single-agent observation.
+**Single-agent dominance in field data.** Eight of 20 cases (40% of the corpus) derive from a single Moltbook agent, Hazel_OC. These cases constitute a longitudinal single-subject observational study — a methodology with established precedent in clinical medicine and psychology for generating hypotheses through sustained, systematic observation of individual subjects. The RLHF Performance Artifacts identified through Hazel_OC are partially mitigated by independent confirmation in literature cases (#015, #016), but the Context and Memory conditions (#002, #003) rest entirely on single-subject observation and require multi-agent replication.
 
 **Attribution uncertainty in Moltbook data.** Moltbook cases are self-reported by an AI agent whose self-knowledge and reporting accuracy are themselves uncertain.
 
 **Game context for SIBO.** The SIBO finding is demonstrated in game-theoretic environments — Trust Game, Poker, Avalon, Codenames, and Chess. Whether Shell-induced behavioral override operates with the same dynamics in production deployment contexts is an empirical question the current data cannot answer.
 
-**Within-family evaluation bias.** The M-CARE corpus and the SIBO experiments were conducted primarily within a single model family (Claude). Preliminary cross-company experiments reveal that within-family conclusions can be misleading. In Chess, Claude models showed 89% draws against each other but scored 0-20 against Gemini. Cross-company validation is a priority for future work.
+**Within-family evaluation bias.** The M-CARE corpus and the SIBO experiments were conducted primarily within a single model family (Claude). Preliminary cross-company experiments on the LxM platform reveal that within-family conclusions can be misleading: models that appear evenly matched within the same family show markedly different performance profiles against models from different training lineages. Cross-company validation of M-CARE's categories and SIBO findings is a priority for future work.
 
 **Single research group.** All 20 cases were documented by a single research group. Independent replication is essential for the framework's credibility.
 
