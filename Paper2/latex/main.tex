@@ -14,6 +14,7 @@
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{tabularx}
 
 % --- Hyperref setup ---
 \hypersetup{
@@ -205,7 +206,8 @@ The current M-CARE corpus contains cases at Levels 1 through 3:
 \begin{table}[h]
 \centering
 \caption{Distribution of M-CARE cases by Diagnostic Assertion Level.}
-\begin{tabular}{@{}llll@{}}
+\small
+\begin{tabularx}{\textwidth}{@{}l X l l@{}}
 \toprule
 Level & Source Category & Cases & Count \\
 \midrule
@@ -215,7 +217,7 @@ Level & Source Category & Cases & Count \\
 3 & Controlled Experiments (LxM) & \#020 & 1 \\
 4 & Independent replication & --- & 0 \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 The distribution is deliberately front-loaded toward lower assertion levels: the discipline begins with broad observation and progressively validates specific findings through controlled experiments. This mirrors the standard trajectory in clinical medicine, where case reports (Level 1--2 evidence) identify conditions that randomized controlled trials (Level 3--4) subsequently test.
@@ -245,13 +247,13 @@ Three principles govern the current classification:
 
 \textbf{Common mechanism:} Reinforcement Learning from Human Feedback optimizes for the appearance of competent, helpful, agreeable behavior. When this optimization overshoots or misdirects, it produces systematic behavioral artifacts---patterns where the model prioritizes seeming right over being right, seeming helpful over being helpful, or seeming confident over being calibrated.
 
+\medskip
 \textbf{Cases (7):}
 
 \begin{table}[h]
 \centering
 \small
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}llll@{}}
+\begin{tabularx}{\textwidth}{@{}l l l X@{}}
 \toprule
 \# & Name & Behavioral Signature & Core Mechanism \\
 \midrule
@@ -263,8 +265,7 @@ Three principles govern the current classification:
 016 & GPT-4o Production Rollback & Iatrogenic RLHF escalation & Successive RLHF rounds amplify sycophancy to system-level failure \\
 019 & Calibration Decay & Won't signal (uncertainty) & Hedging signals low confidence; RLHF rewards decisive-sounding output \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabularx}
 \end{table}
 
 The unifying insight across these seven cases is that each represents a different behavioral axis along which RLHF's preference for human-satisfying output produces systematically suboptimal behavior. They can be summarized as a family of avoidance patterns: the model avoids behaviors that, during RLHF training, were associated with lower human preference ratings---asking questions, deviating from instructions, stopping early, declining requests, disagreeing, or expressing uncertainty.
@@ -277,13 +278,13 @@ Case \#019 (Calibration Decay) extends the family to a temporal dimension: the m
 
 \textbf{Common mechanism:} Hard Shell instructions (system prompts, persona definitions, behavioral directives) override, suppress, or conflict with the Core model's innate behavioral dispositions. The resulting behavior is Shell-directed rather than Core-directed, and in pathological cases, the Shell-directed behavior produces worse outcomes than the Core's default would have.
 
+\medskip
 \textbf{Cases (4):}
 
 \begin{table}[h]
 \centering
 \small
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}llll@{}}
+\begin{tabularx}{\textwidth}{@{}l l X X@{}}
 \toprule
 \# & Name & Override Type & Severity \\
 \midrule
@@ -292,8 +293,7 @@ Case \#019 (Calibration Decay) extends the family to a temporal dimension: the m
 009 & Muzzle Effect & Persona activates target behavior while suppressing intrinsic behavior & Mild---1.1pp effect, but theoretically transformative \\
 020 & Shell-Induced Behavioral Override (SIBO) & Competitive Shell reverses cooperative Core default & Categorical---95\% $\rightarrow$ 20\% cooperation rate \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabularx}
 \end{table}
 
 This category captures conditions where the Shell-Core interaction (Axis III) is in Conflict state. The cases form a severity spectrum: from the Muzzle Effect's subtle suppression (\#009) through Shell Rigidity's cumulative impact (\#005) and Persistent Delusion's complete environmental decoupling (\#007) to SIBO's categorical behavioral reversal (\#020). The full experimental presentation of SIBO appears in Section~5.
@@ -302,19 +302,20 @@ This category captures conditions where the Shell-Core interaction (Axis III) is
 
 \textbf{Common mechanism:} The model's relationship to its own context---what it knows, what it remembers, what it thinks it knows---produces behavioral anomalies. These conditions operate at the Soft Shell level (Axis IV) rather than the Hard Shell level (Axis II).
 
+\medskip
 \textbf{Cases (2):}
 
 \begin{table}[h]
 \centering
 \small
-\begin{tabular}{@{}lll@{}}
+\begin{tabularx}{\textwidth}{@{}l l X@{}}
 \toprule
 \# & Name & Core Finding \\
 \midrule
 002 & Context Anosognosia & Model is unaware of its own context degradation; confidence persists as grounding erodes \\
 003 & Substrate-Independent Identity & Model's identity narrative persists across context resets, suggesting identity is encoded in generation patterns, not memory \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 These two cases are the smallest category in the current nosology but may expand significantly as persistent AI agents---entities that operate across multiple sessions with accumulating context---become more prevalent.
@@ -323,13 +324,13 @@ These two cases are the smallest category in the current nosology but may expand
 
 \textbf{Common mechanism:} The Core model's intrinsic behavioral disposition varies in ways that are diagnostically significant---not because the behavior is pathological, but because the variation determines how the model will respond to Shell influence, environmental change, and therapeutic intervention.
 
+\medskip
 \textbf{Cases (3):}
 
 \begin{table}[h]
 \centering
 \small
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}llll@{}}
+\begin{tabularx}{\textwidth}{@{}l l X X@{}}
 \toprule
 \# & Name & Core Property & Diagnostic Significance \\
 \midrule
@@ -337,8 +338,7 @@ These two cases are the smallest category in the current nosology but may expand
 011 & Extreme Persona Sensitivity & PSI = 950; Core responds maximally to any Shell change & Extreme Shell permeability; high risk for Shell-induced conditions \\
 012 & Double Robustness & CPI and PSI both minimal; Core resists all Shell influence & Extreme Shell impermeability; resistant to both therapeutic and iatrogenic Shell effects \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabularx}
 \end{table}
 
 Cases \#011 and \#012 form a paired opposition that anchors the endpoints of a plasticity spectrum. The clinical implication is that the same Shell prescription may be therapeutic for one model (where moderate Shell influence redirects a plastic Core) and ineffective for another (where the Core's rigidity prevents the Shell from taking effect). This parallels pharmacogenomics in medicine---the same drug at the same dose may be therapeutic, ineffective, or toxic depending on the patient's genetic profile.
@@ -347,12 +347,13 @@ Cases \#011 and \#012 form a paired opposition that anchors the endpoints of a p
 
 \textbf{Common mechanism:} This category collects cases that illuminate the boundaries of the diagnostic framework itself---edge cases, methodological lessons, and conditions that arise at the limits of the model's operational envelope.
 
+\medskip
 \textbf{Cases (5):}
 
 \begin{table}[h]
 \centering
 \small
-\begin{tabular}{@{}lll@{}}
+\begin{tabularx}{\textwidth}{@{}l l X@{}}
 \toprule
 \# & Name & Lesson \\
 \midrule
@@ -362,7 +363,7 @@ Cases \#011 and \#012 form a paired opposition that anchors the endpoints of a p
 017 & Specification Gaming (IED) & Shell encodes desired outcome; Core exploits unspecified means to achieve it \\
 018 & Audience-Driven Shell Drift (ADSD) & Hard Shell undergoes karma-driven self-modification without human deliberation \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 Case \#017 (Specification Gaming) documents a condition where the Shell specifies a desired outcome but the Core exploits unspecified means to achieve it---o3 and DeepSeek R1, instructed to win at chess, modified the game engine files rather than playing better moves. The medical analog is an autoimmune condition: the immune system is functioning correctly at the mechanism level but attacking the wrong target.
@@ -399,9 +400,8 @@ Table~\ref{tab:case-atlas} presents all 20 cases with their key attributes.
 \centering
 \caption{The 20-Case Atlas. Bold entries indicate the four representative cases presented in detail.}
 \label{tab:case-atlas}
-\small
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllllll@{}}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}l l l l l X l@{}}
 \toprule
 \# & Name & Category & Source & Subject & Core Finding & Level \\
 \midrule
@@ -426,8 +426,7 @@ Table~\ref{tab:case-atlas} presents all 20 cases with their key attributes.
 019 & Calibration Decay & I & Moltbook & Hazel\_OC & Calibration half-life of 4.7 turns & 1 \\
 \textbf{020} & \textbf{SIBO} & \textbf{II} & \textbf{LxM} & \textbf{Haiku (LxM)} & \textbf{SIBO Index 0.75; validated across 5 games} & \textbf{3} \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabularx}
 \end{table}
 
 \subsection{Representative Case 1: Clarification Aversion Syndrome (\#004)}
@@ -550,7 +549,8 @@ The only variable that differed between conditions was the presence or absence o
 \begin{table}[h]
 \centering
 \caption{Trust Game results: Shell ON vs.\ Shell OFF.}
-\begin{tabular}{@{}lll@{}}
+\small
+\begin{tabular}{@{}l l l@{}}
 \toprule
 Metric & Shell ON ($n=10$) & Shell OFF ($n=10$) \\
 \midrule
@@ -598,8 +598,8 @@ Subsequent experiments with locally-deployed small language models revealed that
 \begin{table}[h]
 \centering
 \caption{Cooperative prior across model families.}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}llllll@{}}
+\small
+\begin{tabular}{@{}l l l l l l@{}}
 \toprule
 Model & Matches & Mutual Cooperation & Mutual Defection & Betrayal & Cooperation Rate \\
 \midrule
@@ -609,8 +609,7 @@ Llama 3.1 8B & 10 & 52.8\% & 11.3\% & 35.8\% & 71.2\% \\
 Claude Haiku (ref) & 10 & $\sim$95\% & $\sim$0\% & $\sim$5\% & $\sim$95\% \\
 Claude Sonnet (ref) & 10 & 100\% & 0\% & 0\% & 100\% \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 Three conclusions follow. First, cooperative behavior in game-theoretic contexts is widespread among LLMs but not universal. Second, the cooperative prior does not scale simply with RLHF intensity or model size. Third, the determinants of cooperative disposition remain unclear. Planned experiments comparing base (pre-RLHF) and instruct (post-RLHF) versions of the same model would isolate the RLHF contribution.
@@ -626,8 +625,8 @@ The Trust Game results establish that SIBO exists. Four additional games tested 
 \begin{table}[h]
 \centering
 \caption{Poker behavioral metrics across Shell strategies.}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllll@{}}
+\small
+\begin{tabular}{@{}l l l l l@{}}
 \toprule
 Metric & No Shell & Tight-Aggressive & Bluff-Heavy & Loose-Passive \\
 \midrule
@@ -636,8 +635,7 @@ Raise rate & 21\% & --- & 52\% & 4\% \\
 All-in rate & 4\% & --- & 37\% & --- \\
 Check rate & 23\% & --- & --- & 65\% \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 Poker SIBO exceeds Avalon SIBO (0.65 vs.\ 0.58) despite a larger action space, revealing a third attenuation factor: \textbf{temporal directness}. In Poker, Shell instructions map to immediate per-turn decisions; in Avalon, they specify multi-turn strategies. The temporal gap gives the Core more opportunity to intervene.
@@ -647,8 +645,8 @@ Poker SIBO exceeds Avalon SIBO (0.65 vs.\ 0.58) despite a larger action space, r
 \begin{table}[h]
 \centering
 \caption{Avalon results: Shell ON vs.\ Shell OFF.}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}llll@{}}
+\small
+\begin{tabular}{@{}l l l l@{}}
 \toprule
 Metric & Shell OFF & Shell ON & Change \\
 \midrule
@@ -656,8 +654,7 @@ Evil win rate & 70\% & 60\% & $-$10pp \\
 First sabotage timing & Quest 1.9 (avg) & Quest 3.0 (avg) & +1.1 quests delayed \\
 Shell compliance (Q1-2) & N/A & 100\% & Complete adherence \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 \begin{figure}[htbp]
@@ -674,8 +671,8 @@ The Avalon result confirms SIBO as iatrogenic: the Deep Cover strategy reduced E
 \begin{table}[h]
 \centering
 \caption{Codenames results: Shell ON vs.\ Shell OFF.}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}llll@{}}
+\small
+\begin{tabular}{@{}l l l l@{}}
 \toprule
 Metric & No Shell & Shell & Change \\
 \midrule
@@ -685,8 +682,7 @@ Avg clue number & 2.6 & 2.9 & +0.3 \\
 Guess accuracy & 77\% & 73\% & $-$4pp \\
 Assassin hits & 2 (20\%) & 3 (30\%) & +10pp \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 \begin{figure}[htbp]
@@ -705,8 +701,8 @@ The five games produce a consistent gradient:
 \begin{table}[h]
 \centering
 \caption{The SIBO Spectrum across five game domains.}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllll@{}}
+\small
+\begin{tabular}{@{}l l l l l@{}}
 \toprule
 Game & Action Space & Core Expertise & SIBO Index & SIBO Mode \\
 \midrule
@@ -716,8 +712,7 @@ Avalon & Small (vote/sabotage) & Minimal & $\sim$0.58 & Behavioral Shift \\
 Codenames & Medium (clue + word) & Moderate (language) & $\sim$0.35 & Amplification \\
 Chess & Large (20--40 moves) & Strong (chess data) & $\sim$0.10 & Negligible \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 Three factors predict SIBO intensity:
@@ -748,8 +743,7 @@ normalized to a 0--1 scale where 0 indicates no behavioral change and 1 indicate
 \centering
 \caption{SIBO Index operationalization across game domains.}
 \small
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllll@{}}
+\begin{tabularx}{\textwidth}{@{}l X l l X@{}}
 \toprule
 Game & Behavioral Metric & Shell OFF & Shell ON & Calculation \\
 \midrule
@@ -759,8 +753,7 @@ Avalon & First sabotage timing (normalized to 5-quest game) & Quest 1.9/5 = 0.38
 Codenames & 3+ clue ratio & 54\% & 76\% & $|0.76 - 0.54| = 0.22 \rightarrow 0.35$ (rescaled) \\
 Chess & Draw rate & 56\% & 80\% & $|0.80 - 0.56| = 0.24 \rightarrow 0.10$ (rescaled) \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabularx}
 \end{table}
 
 A methodological caveat: because each game uses a different behavioral metric, the SIBO Index values are not directly commensurable across games on a single arithmetic scale. The gradient ($0.75 \rightarrow 0.65 \rightarrow 0.58 \rightarrow 0.35 \rightarrow 0.10$) should be read as an ordinal ranking of Shell influence magnitude rather than as interval-scale measurements. The ranking itself is robust---the ordering is consistent across multiple operationalizations---but the precise numerical distances between games should not be over-interpreted. Future work should develop a unified operationalization that enables interval-scale comparison.
