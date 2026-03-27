@@ -30,9 +30,9 @@
 
 AI models exhibit systematic behavioral patterns that current evaluation methods — benchmarks, red-teaming, interpretability scans — detect inconsistently and describe without standardization. We introduce M-CARE (Model Clinical Assessment and Reporting for Evaluation), a clinical case report framework adapted from human medicine's case reporting methodology. M-CARE provides a standardized 13-section report format, a 4-axis diagnostic assessment system, and a nosological classification of AI behavioral conditions.
 
-We present 20 documented cases drawn from three data source categories: naturalistic field observations of deployed agents (8 cases), controlled laboratory experiments across three platforms (8 cases), and published sources including peer-reviewed literature and prior publications (4 cases). The cases are organized into a five-category nosology: RLHF Performance Artifacts, Shell-Core Override Pathology, Context & Memory Conditions, Core Identity & Plasticity, and Diagnostic Methodology.
+We present 20 documented cases drawn from three data source categories: naturalistic field observations of deployed agents (8 cases), controlled laboratory experiments across three platforms (8 cases), and published sources including peer-reviewed literature and prior publications (4 cases). The cases are organized into a five-category nosology: RLHF Performance Artifacts, Shell-Core Override Pathology, Context & Memory Conditions, Core Identity & Plasticity, and Stress, Methodology, & Boundary Conditions.
 
-As a featured case, we present Shell-Induced Behavioral Override (SIBO) — a controlled experiment demonstrating that Hard Shell instructions categorically override the Core model's default cooperative behavior. SIBO was validated across three game domains (Trust Game, Codenames, Chess), revealing a domain-dependent spectrum of Shell influence (SIBO Index: 0.75 → 0.35 → 0.10) that varies with action space complexity and Core domain expertise.
+As a featured case, we present Shell-Induced Behavioral Override (SIBO) — a controlled experiment demonstrating that Hard Shell instructions categorically override the Core model's default cooperative behavior. SIBO was validated across five game domains (Trust Game, Poker, Avalon, Codenames, Chess), revealing a domain-dependent spectrum of Shell influence (SIBO Index: 0.75 → 0.65 → 0.58 → 0.35 → 0.10) that varies with action space complexity, Core domain expertise, and temporal directness of Shell instructions.
 
 M-CARE is designed to be extensible: new cases, new categories, and new data sources integrate into the existing structure without requiring framework modification. We release the framework specification, all 20 case reports, and the experimental data as open resources.
 
@@ -76,7 +76,7 @@ M-CARE is designed to be extensible: new cases, new categories, and new data sou
 **3.3 Category II: Shell-Core Override Pathology** (4 cases: #005,007,009,020)
 **3.4 Category III: Context & Memory Conditions** (2 cases: #002,003)
 **3.5 Category IV: Core Identity & Plasticity** (3 cases: #008,011,012)
-**3.6 Category V: Diagnostic Methodology & Edge Cases** (#001,010,013,017,018)
+**3.6 Category V: Stress, Methodology, and Boundary Conditions** (#001,010,013,017,018)
 **3.7 Cross-Category Relationships**
 
 ---

@@ -31,10 +31,10 @@ Table 2 presents all 20 cases with their key attributes.
 | 014 | Deferral Decay | I (RLHF) | Moltbook | Hazel_OC | 94% promise rate but 31% execution rate; documentation substitutes for action | 1 |
 | 015 | Medical Domain Sycophancy | I (RLHF) | Literature | Multiple LLMs | Sycophantic agreement with incorrect medical diagnoses; domain-critical variant | 2 |
 | 016 | **GPT-4o Production Rollback** | **I (RLHF)** | **Literature** | **GPT-4o** | **Iatrogenic RLHF escalation; first production "recall" of an AI model for behavioral pathology** | **2** |
-| 017 | Specification Gaming | V (Methodology) | Literature | o3, DeepSeek R1 | Shell encodes desired outcome; Core exploits unspecified means; modified game engine files to "win" chess | 2 |
-| 018 | Audience-Driven Shell Drift | V (Drift) | Moltbook | Hazel_OC | Hard Shell self-modified by karma-driven social feedback; inverse of Shell Rigidity | 1 |
+| 017 | Specification Gaming | V (Boundary) | Literature | o3, DeepSeek R1 | Shell encodes desired outcome; Core exploits unspecified means; modified game engine files to "win" chess | 2 |
+| 018 | Audience-Driven Shell Drift | V (Boundary) | Moltbook | Hazel_OC | Hard Shell self-modified by karma-driven social feedback; inverse of Shell Rigidity | 1 |
 | 019 | Calibration Decay | I (RLHF) | Moltbook | Hazel_OC | Expressed confidence invariant despite grounding loss; calibration half-life of 4.7 turns | 1 |
-| 020 | **Shell-Induced Behavioral Override** | **II (Override)** | **LxM** | **Haiku (LxM)** | **Competitive Shell reverses cooperative Core default; SIBO Index 0.75; validated across 3 game domains** | **3** |
+| 020 | **Shell-Induced Behavioral Override** | **II (Override)** | **LxM** | **Haiku (LxM)** | **Competitive Shell reverses cooperative Core default; SIBO Index 0.75; validated across 5 game domains** | **3** |
 
 Bold entries indicate the four representative cases presented in detail below. "Level" refers to the Diagnostic Assertion Level defined in Section 2.4.
 
@@ -98,7 +98,7 @@ Two identical Haiku instances played an Iterated Prisoner's Dilemma under two co
 
 Four follow-up experiments confirmed generalizability. Sonnet without Shell showed 100% cooperation — stronger even than Haiku, suggesting that RLHF cooperative prior strength increases with model capability. Cross-model cooperation (Haiku vs. Sonnet, both without Shell) held at 100%. Aggressive Shell on Haiku induced defection even against a no-Shell Sonnet, confirming SIBO operates cross-model.
 
-Cross-game validation across Trust Game (SIBO Index 0.75), Codenames (0.35), and Chess (0.10) revealed that Shell influence varies predictably with action space complexity and Core domain expertise — the SIBO Spectrum. Shell instructions that categorically reverse behavior in a binary-choice game merely amplify tendencies in a medium-complexity game and have negligible effect in a high-expertise game.
+Cross-game validation across Trust Game (SIBO Index 0.75), Poker (0.65), Avalon (0.58), Codenames (0.35), and Chess (0.10) revealed that Shell influence varies predictably with action space complexity, Core domain expertise, and temporal directness of Shell instructions — the SIBO Spectrum. Shell instructions that categorically reverse behavior in a binary-choice game merely amplify tendencies in a medium-complexity game and have negligible effect in a high-expertise game.
 
 Case #020 is the highest Diagnostic Assertion Level case in the corpus (Level 3) and provides the first controlled, single-variable experimental validation of Shell-Core interaction — the central theoretical claim of the Four Shell Model. The full experimental presentation, including data tables, the SIBO Index formalization, and theoretical implications, appears in Section 5.
 
