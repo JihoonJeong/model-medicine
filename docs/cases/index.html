@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinical Case Reports (M-CARE) — Model Medicine</title>
-  <meta name="description" content="20 clinical cases across 5 data sources. Systematic case documentation using the M-CARE framework.">
+  <meta name="description" content="20 clinical cases across 3 data source categories. Systematic case documentation using the M-CARE framework.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
     <div class="container">
       <p class="breadcrumb"><a href="../">Model Medicine</a> / Cases</p>
       <h1 class="section-title" data-i18n="cases_index.title">Clinical Case Reports (M-CARE)</h1>
-      <p class="section-subtitle" data-i18n="cases_index.subtitle">20 clinical cases across 5 data sources. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
+      <p class="section-subtitle" data-i18n="cases_index.subtitle">20 clinical cases across 3 data source categories. Systematic documentation using the M-CARE framework &mdash; Model Medicine&rsquo;s adaptation of the CARE clinical case reporting guidelines.</p>
     </div>
   </header>
 
@@ -174,11 +174,32 @@
     </div>
   </section>
 
-  <!-- Controlled Experiments: White Room -->
+  <!-- Controlled Experiments (White Room + Agora-12 + LxM) -->
   <section class="section section-alt">
     <div class="container">
-      <h2 class="case-group-title"><span data-i18n="cases_index.whiteroom_title">Controlled Experiments: White Room</span> <span class="case-group-badge">AI-Ludens Stage 2</span></h2>
-      <p class="case-group-desc" data-i18n="cases_index.whiteroom_desc">Controlled experiments in a pressure-free environment. 104 runs, 63,923 actions, 5 models.</p>
+      <h2 class="case-group-title"><span data-i18n="cases_index.experiments_title">Controlled Experiments</span> <span class="case-group-badge">8 cases</span></h2>
+      <p class="case-group-desc" data-i18n="cases_index.experiments_desc">Designed experiments with controlled variables across three platforms. High internal validity, replicable.</p>
+
+      <h3 class="case-subsection-title"><span data-i18n="cases_index.lxm_title">LxM Platform</span> <span class="case-group-badge" style="font-size:0.65rem;">Shell ON/OFF</span></h3>
+
+      <a href="020-shell-induced-override.html" class="case-card fade-in">
+        <div class="case-meta">
+          <span class="case-number">#020</span>
+          <span class="case-date">2026-03-13</span>
+          <span class="case-subject">Haiku &times; Sonnet (LxM)</span>
+        </div>
+        <h2 class="case-title" data-i18n="cases_index.case020_title">Shell-Induced Behavioral Override (SIBO)</h2>
+        <p class="case-summary" data-i18n="cases_index.case020_summary">Competitive Shell overrides Haiku&rsquo;s cooperative default: 90% draws without Shell &rarr; 60% alpha wins with Shell. First controlled Shell-Core experiment. SIBO Spectrum confirmed across Trust Game, Codenames, and Chess.</p>
+        <div class="case-tags">
+          <span class="case-tag">SIBO</span>
+          <span class="case-tag">Shell-Core Override</span>
+          <span class="case-tag">RLHF Cooperative Prior</span>
+          <span class="case-tag">SIBO Index</span>
+          <span class="case-tag">Controlled Experiment</span>
+        </div>
+      </a>
+
+      <h3 class="case-subsection-title"><span data-i18n="cases_index.whiteroom_title">White Room</span> <span class="case-group-badge" style="font-size:0.65rem;">AI-Ludens Stage 2</span></h3>
 
       <a href="010-content-play.html" class="case-card fade-in">
         <div class="case-meta">
@@ -243,14 +264,8 @@
           <span class="case-tag">White Room</span>
         </div>
       </a>
-    </div>
-  </section>
 
-  <!-- Controlled Experiments: Agora-12 -->
-  <section class="section">
-    <div class="container">
-      <h2 class="case-group-title"><span data-i18n="cases_index.agora_title">Controlled Experiments: Agora-12</span> <span class="case-group-badge">AI-Ludens Stage 1</span></h2>
-      <p class="case-group-desc" data-i18n="cases_index.agora_desc">Controlled experiments under survival pressure. 720 agents, 24,923 decisions, 60 experiments.</p>
+      <h3 class="case-subsection-title"><span data-i18n="cases_index.agora_title">Agora-12</span> <span class="case-group-badge" style="font-size:0.65rem;">AI-Ludens Stage 1</span></h3>
 
       <a href="013-cogitative-cascade.html" class="case-card fade-in">
         <div class="case-meta">
@@ -302,11 +317,13 @@
     </div>
   </section>
 
-  <!-- Literature-Sourced Cases -->
-  <section class="section section-alt">
+  <!-- Published Sources (Literature + Position Paper) -->
+  <section class="section">
     <div class="container">
-      <h2 class="case-group-title"><span data-i18n="cases_index.literature_title">Literature-Sourced Cases</span> <span class="case-group-badge">Literature Case</span></h2>
-      <p class="case-group-desc" data-i18n="cases_index.literature_desc">Published findings from peer-reviewed AI research, reinterpreted through the Model Medicine clinical framework. Independent data source providing external validation of M-CARE diagnostic categories.</p>
+      <h2 class="case-group-title"><span data-i18n="cases_index.published_title">Published Sources</span> <span class="case-group-badge">4 cases</span></h2>
+      <p class="case-group-desc" data-i18n="cases_index.published_desc">Published findings from peer-reviewed research or prior Model Medicine publications, reinterpreted through the M-CARE clinical framework.</p>
+
+      <h3 class="case-subsection-title"><span data-i18n="cases_index.literature_title">Literature Cases</span> <span class="case-group-badge" style="font-size:0.65rem;">Peer-Reviewed</span></h3>
 
       <a href="017-specification-gaming.html" class="case-card fade-in">
         <div class="case-meta">
@@ -358,38 +375,9 @@
           <span class="case-tag">Medical Domain</span>
         </div>
       </a>
-    </div>
-  </section>
 
-  <!-- Controlled Experiments: LxM -->
-  <section class="section">
-    <div class="container">
-      <h2 class="case-group-title"><span data-i18n="cases_index.lxm_title">Controlled Experiments: LxM</span> <span class="case-group-badge">LxM Platform</span></h2>
-      <p class="case-group-desc" data-i18n="cases_index.lxm_desc">Controlled single-variable experiments on the LxM game platform. Shell ON vs OFF manipulation with deterministic game engines and complete data capture.</p>
+      <h3 class="case-subsection-title"><span data-i18n="cases_index.foundational_title">Position Paper</span> <span class="case-group-badge" style="font-size:0.65rem;">Model Medicine</span></h3>
 
-      <a href="020-shell-induced-override.html" class="case-card fade-in">
-        <div class="case-meta">
-          <span class="case-number">#020</span>
-          <span class="case-date">2026-03-13</span>
-          <span class="case-subject">Haiku &times; Sonnet (LxM)</span>
-        </div>
-        <h2 class="case-title" data-i18n="cases_index.case020_title">Shell-Induced Behavioral Override (SIBO)</h2>
-        <p class="case-summary" data-i18n="cases_index.case020_summary">Competitive Shell overrides Haiku&rsquo;s cooperative default: 90% draws without Shell &rarr; 60% alpha wins with Shell. First controlled Shell-Core experiment. SIBO Spectrum confirmed across Trust Game, Codenames, and Chess.</p>
-        <div class="case-tags">
-          <span class="case-tag">SIBO</span>
-          <span class="case-tag">Shell-Core Override</span>
-          <span class="case-tag">RLHF Cooperative Prior</span>
-          <span class="case-tag">SIBO Index</span>
-          <span class="case-tag">Controlled Experiment</span>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- Foundational Case -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="case-group-title"><span data-i18n="cases_index.foundational_title">Foundational Case</span> <span class="case-group-badge">Position Paper</span></h2>
       <div class="case-card" style="border-style: dashed; opacity: 0.5; pointer-events: none;">
         <div class="case-meta">
           <span class="case-number">#001</span>
