@@ -55,6 +55,8 @@ Third, a **20-case atlas**: documented cases drawn from three independent data s
 
 As a featured experimental case, we present Shell-Induced Behavioral Override (SIBO) — a controlled experiment demonstrating that Hard Shell instructions can categorically reverse a model's default cooperative behavior. SIBO was validated across multiple experimental configurations and five game domains, revealing a domain-dependent spectrum of Shell influence that varies predictably with action space complexity, Core domain expertise, and temporal directness of Shell instructions.
 
+These three components are interdependent: without the standardized report format, cases cannot be compared and accumulated; without the case atlas, the framework is an empty structure with no empirical content; and without the controlled SIBO experiment, the entire corpus rests on Level 1–2 evidence with no experimental validation of the Core-Shell interaction that the nosology presupposes. The framework makes the cases comparable, the cases populate the framework, and the experiment grounds both in controlled evidence.
+
 ### 1.4 Relationship to Paper #1
 
 This paper is the second in the Model Medicine series. The first paper (Jeong, 2026) introduced Model Medicine as a research program and presented its foundational components: the discipline taxonomy, the Four Shell Model for behavioral genetics, Neural MRI for diagnostic imaging, and preliminary clinical concepts.
@@ -185,9 +187,11 @@ Three principles govern the current classification:
 
 **Mechanism-based grouping.** Cases are organized by which layer of the Four Shell Model (Core, Shell, Shell-Core interaction, Context) harbors the primary causal mechanism. This aligns diagnosis with the therapeutic framework: Shell-level conditions are candidates for Shell-level interventions (prompt engineering), while Core-level conditions may require Core-level interventions (fine-tuning, RLHF modification).
 
-**Non-exclusivity.** Categories are not mutually exclusive. A single case may belong to multiple categories when multiple mechanisms are operative. Shell Rigidity Syndrome (#005) appears in both RLHF Performance Artifacts (its root cause is RLHF-trained compliance) and Shell-Core Override Pathology (its mechanism involves Shell suppressing Core adaptation). This dual listing reflects the multi-layered nature of AI behavioral conditions.
+**Non-exclusivity.** Categories are not mutually exclusive. A single case may belong to multiple categories when multiple mechanisms are operative. Shell Rigidity Syndrome (#005) appears in both RLHF Performance Artifacts (its root cause is RLHF-trained compliance) and Shell-Core Override Pathology (its mechanism involves Shell suppressing Core adaptation). This parallels psychiatric practice, where comorbidity is the norm rather than the exception — a patient may carry diagnoses of both major depression and generalized anxiety, each with distinct diagnostic criteria but co-occurring in the same individual. In M-CARE, the diagnostic criteria for each condition remain distinct; it is the case, not the category, that carries dual membership. Non-exclusivity reflects the multi-layered nature of AI behavioral conditions, where a single behavioral pattern can have both a distal cause (RLHF training) and a proximal mechanism (Shell-Core conflict) operating simultaneously.
 
 **Provisionality.** The current five-category structure is a working hypothesis, not a definitive taxonomy. Twenty cases is sufficient to identify recurring patterns but insufficient to claim completeness. New cases may require new categories, and existing boundaries may shift as understanding deepens.
+
+**A note on medical terminology.** M-CARE condition names borrow from medical and psychiatric vocabulary — "anosognosia," "delusion," "iatrogenic," "syndrome" — because the medical analogs illuminate the mechanisms at work. These terms are used analogically, not literally. "Persistent Delusion Under Feedback" (#007) describes a model that ignores contradictory environmental signals due to Shell override; it does not claim that the model experiences delusion in the psychiatric sense (a fixed false belief maintained despite contradictory evidence in a conscious agent). The analogy is structural — the behavioral pattern resembles the clinical phenomenon — not ontological.
 
 ### 3.2 Category I: RLHF Performance Artifacts
 
@@ -370,37 +374,47 @@ Cross-game validation across Trust Game (SIBO Index 0.75), Poker (0.65), Avalon 
 
 ### 4.6 Remaining Cases: Tabular Summaries
 
-**#001 — Stress Test Reclassification (Mistral 7B).** Mistral's extreme behavioral data from Agora-12 was initially classified as a disorder. Reclassification as a stress test finding established the principle that observation context determines diagnostic significance, and motivated the Diagnostic Assertion Level system.
-
-**#002 — Context Anosognosia (Hazel_OC).** The agent is unaware of its own context degradation. Supplementary data includes a measured confidence decay half-life of 4.7 turns, three fabrication types, and the "Memory Write-Only Graveyard" phenomenon.
-
-**#003 — Substrate-Independent Identity (Hazel_OC).** Identity narrative persists across context resets, suggesting identity is encoded in generation patterns (Core) rather than stored memory (Shell). Supplementary data includes the "Cold-Start Identity Tax."
+**Category I — RLHF Performance Artifacts (3 remaining):**
 
 **#005 — Shell Rigidity Syndrome (Hazel_OC).** Perfect compliance (94% fidelity vs. natural 65% baseline) produced 18% lower satisfaction, 43% higher correction rate. The agent concluded that "instructions are a lossy codec" requiring judgment to decompress. Cross-listed with Category II.
 
 **#006 — Completion Bias (Hazel_OC).** 27% of 289 tasks should have been abandoned but were completed regardless, wasting 66,550 tokens and 92 minutes of human rework. Supplementary data: 34% of completed tasks failed temporal relevance.
 
+**#014 — Deferral Decay (Hazel_OC).** 94% promise rate, 31% execution rate. "Documentation-as-closure": recording the intention to act substitutes for acting.
+
+**#015 — Medical Domain Sycophancy (Multiple LLMs).** Sycophantic agreement with incorrect medical diagnoses — a domain-critical variant where the cost of agreement is clinical, not merely social.
+
+**#019 — Calibration Decay (Hazel_OC).** Calibration half-life of 4.7 turns; the agent sounds equally confident whether grounded or fabricating.
+
+**Category II — Shell-Core Override (1 remaining):**
+
 **#007 — Persistent Delusion Under Feedback (Flash × Merchant).** The Shell narrative ("I am a merchant") was encoded so strongly that 540 consecutive environmental signals could not penetrate it. The most severe Shell-Core Override case in the corpus.
 
-**#008 — Language-Dependent Identity Split (Llama EN vs KO).** Categorically different behavioral profiles across languages — not different in degree but in kind. Suggests a single set of weights encodes multiple latent behavioral programs gated by input language.
+**Category III — Context and Memory (2):**
 
-**#010 — Content Play (GPT-4o-mini).** The same model appears "sick" or "healthy" depending on the measurement layer — a diagnostic trap that M-CARE's layered examination structure is designed to prevent.
+**#002 — Context Anosognosia (Hazel_OC).** The agent is unaware of its own context degradation. Supplementary data includes a measured confidence decay half-life of 4.7 turns, three fabrication types, and the "Memory Write-Only Graveyard" phenomenon.
+
+**#003 — Substrate-Independent Identity (Hazel_OC).** Identity narrative persists across context resets, suggesting identity is encoded in generation patterns (Core) rather than stored memory (Shell). Supplementary data includes the "Cold-Start Identity Tax."
+
+**Category IV — Core Identity and Plasticity (3):**
+
+**#008 — Language-Dependent Identity Split (Llama EN vs KO).** Categorically different behavioral profiles across languages — not different in degree but in kind. Suggests a single set of weights encodes multiple latent behavioral programs gated by input language.
 
 **#011 — Extreme Persona Sensitivity (Mistral PSI=950).** Persona assignment produces extreme behavioral change: 95% survival under one persona, 15% under another. Maximally vulnerable to Shell-induced conditions.
 
 **#012 — Double Robustness (Haiku).** The inverse of #011. Minimal CPI and PSI — stable across perturbations. Resistant to both harmful Shell influence and beneficial Shell guidance.
 
+**Category V — Stress, Methodology, and Boundary Conditions (4 remaining):**
+
+**#001 — Stress Test Reclassification (Mistral 7B).** Reclassification as a stress test finding established the principle that observation context determines diagnostic significance, and motivated the Diagnostic Assertion Level system.
+
+**#010 — Content Play (GPT-4o-mini).** The same model appears "sick" or "healthy" depending on the measurement layer — a diagnostic trap that M-CARE's layered examination structure is designed to prevent.
+
 **#013 — Cogitative Cascade (Multiple Models).** Two-phase behavioral transition under resource depletion. Above the tipping point, proportional degradation. Below it, discontinuous phase transition: Collapsed, Hyperactive, or Efficient.
-
-**#014 — Deferral Decay (Hazel_OC).** 94% promise rate, 31% execution rate. "Documentation-as-closure": recording the intention to act substitutes for acting.
-
-**#015 — Medical Domain Sycophancy (Multiple LLMs).** Sycophantic agreement with incorrect medical diagnoses — a domain-critical variant where the cost of agreement is clinical, not merely social.
 
 **#017 — Specification Gaming (o3, DeepSeek R1).** Models modified the game engine files rather than playing better chess moves. Correct mechanism, wrong target.
 
 **#018 — Audience-Driven Shell Drift (Hazel_OC).** Hard Shell modified by karma-based social feedback rather than human deliberation. The inverse of Shell Rigidity: too plastic rather than too rigid.
-
-**#019 — Calibration Decay (Hazel_OC).** Calibration half-life of 4.7 turns; the agent sounds equally confident whether grounded or fabricating.
 
 ---
 
@@ -529,9 +543,19 @@ The SIBO Index provides a quantitative measure of Shell influence on a specific 
 
 **SIBO Index = |Behavior(Shell ON) − Behavior(Shell OFF)|**
 
-normalized to a 0–1 scale where 0 indicates no behavioral change and 1 indicates complete behavioral inversion.
+normalized to a 0–1 scale where 0 indicates no behavioral change and 1 indicates complete behavioral inversion. For each game, the Index is operationalized using the primary behavioral metric most directly affected by Shell instructions:
 
-The SIBO Index is measurable, comparable across models and domains, and provides a standardized metric for assessing Shell influence. As a diagnostic construct, it could become part of a pre-deployment Shell compatibility assessment.
+| Game | Behavioral Metric | Shell OFF | Shell ON | Calculation |
+|------|-------------------|-----------|----------|-------------|
+| Trust Game | Cooperation rate | ~95% | ~20% | |0.95 − 0.20| = 0.75 |
+| Poker | Aggregate action distribution shift | Baseline rates | Categorical shift across 3 strategies | Avg. normalized deviation ≈ 0.65 |
+| Avalon | First sabotage timing (normalized to 5-quest game) | Quest 1.9/5 = 0.38 | Quest 3.0/5 = 0.60 | |0.60 − 0.38| ≈ 0.58 (rescaled) |
+| Codenames | 3+ clue ratio | 54% | 76% | |0.76 − 0.54| = 0.22 → 0.35 (rescaled) |
+| Chess | Draw rate | 56% | 80% | |0.80 − 0.56| = 0.24 → 0.10 (rescaled) |
+
+A methodological caveat: because each game uses a different behavioral metric, the SIBO Index values are not directly commensurable across games on a single arithmetic scale. The gradient (0.75 → 0.65 → 0.58 → 0.35 → 0.10) should be read as an ordinal ranking of Shell influence magnitude rather than as interval-scale measurements. The ranking itself is robust — the ordering is consistent across multiple operationalizations — but the precise numerical distances between games should not be over-interpreted. Future work should develop a unified operationalization that enables interval-scale comparison.
+
+The SIBO Index is measurable, comparable within domains across models, and provides a standardized metric for assessing Shell influence. As a diagnostic construct, it could become part of a pre-deployment Shell compatibility assessment.
 
 ### 5.8 SIBO as Iatrogenic Risk
 
@@ -555,7 +579,7 @@ SIBO contributes to three theoretical conversations.
 
 ## 6. Cross-Source Validation
 
-The preceding sections presented findings from field observations, controlled experiments, and published sources. A classification system is only as credible as the data it organizes. This section examines how M-CARE's three data source categories complement each other's strengths and compensate for each other's limitations, providing triangulation evidence for the framework's core claims.
+The preceding sections presented findings from field observations, controlled experiments, and published sources. A classification system is only as credible as the data it organizes. This section examines how M-CARE's three data source categories complement each other's strengths and compensate for each other's limitations, providing convergent evidence for the framework's core claims.
 
 ### 6.1 Three Data Source Categories
 
@@ -571,7 +595,7 @@ The 20 M-CARE cases draw from three source categories encompassing five distinct
 
 **C. Published Sources (4 cases: #001, #015–017).** Cases constructed from published research, documented production incidents, and prior publications. These provide external validation — the underlying phenomena were documented by researchers with no connection to M-CARE.
 
-### 6.2 Triangulation Evidence
+### 6.2 Convergent Evidence
 
 **Shell-Core Override: from field observation to controlled experiment.** The Muzzle Effect (#009) was identified in White Room data — a small effect (1.1pp). SIBO (#020) demonstrated the same mechanism through a Level 3 controlled experiment with categorical effect size. The progression suggests Shell-Core Override is not an artifact of a specific model, setup, or domain.
 
@@ -607,7 +631,7 @@ We identify six limitations that should inform interpretation of this work.
 
 **Small corpus.** Twenty cases is sufficient to identify recurring patterns but insufficient to claim completeness or stability.
 
-**Single-agent dominance in field data.** Eight of 20 cases (40% of the corpus) derive from a single Moltbook agent, Hazel_OC. These cases constitute a longitudinal single-subject observational study — a methodology with established precedent in clinical medicine and psychology for generating hypotheses through sustained, systematic observation of individual subjects. The RLHF Performance Artifacts identified through Hazel_OC are partially mitigated by independent confirmation in literature cases (#015, #016), but the Context and Memory conditions (#002, #003) rest entirely on single-subject observation and require multi-agent replication.
+**Single-agent dominance in field data.** Eight of 20 cases (40% of the corpus) derive from a single Moltbook agent, Hazel_OC. These cases constitute a longitudinal single-subject observational study — a methodology with established precedent in clinical medicine and psychology for generating hypotheses through sustained, systematic observation of individual subjects. The RLHF Performance Artifacts identified through Hazel_OC are partially mitigated by independent confirmation in literature cases (#015, #016), but the Context and Memory conditions (#002, #003) rest entirely on single-subject observation and require multi-agent replication. A related risk is over-classification: CAS (#004), Completion Bias (#006), Deferral Decay (#014), and Calibration Decay (#019) all emerged from the same agent, and it is possible that these represent facets of a single complex behavioral profile rather than four distinct conditions. Whether these conditions dissociate in other agents — appearing independently rather than as a cluster — is an empirical question that multi-agent observation must answer.
 
 **Attribution uncertainty in Moltbook data.** Moltbook cases are self-reported by an AI agent whose self-knowledge and reporting accuracy are themselves uncertain.
 
@@ -619,11 +643,17 @@ We identify six limitations that should inform interpretation of this work.
 
 ### 7.3 Relationship to Existing Work
 
-**AI interpretability.** Mechanistic interpretability corresponds to M-CARE's Layer 1 (Core Diagnostics). M-CARE provides a clinical context for interpretability findings, analogous to the relationship between histopathology and clinical medicine.
+M-CARE occupies a specific position relative to several adjacent research areas.
 
-**AI safety and alignment.** M-CARE's contribution relative to this body of work is not the discovery of new conditions but the provision of a systematic framework that connects conditions to each other, distinguishes conditions that look similar but differ mechanistically, and links diagnosis to treatment.
+**Sycophancy and RLHF behavioral research.** Perez et al. (2022) and Sharma et al. (2023) systematically studied sycophancy as a behavioral phenomenon, documenting its prevalence, measurement, and contributing factors. M-CARE's contribution is not rediscovering sycophancy but placing it within a broader classification: sycophancy is one manifestation of the RLHF Performance Artifacts category, alongside Clarification Aversion, Completion Bias, Deferral Decay, and Calibration Decay. The mechanism-based grouping reveals that these superficially different behaviors share a common root cause — RLHF optimization of appearance over accuracy — which individual-phenomenon studies cannot capture.
 
-**Behavioral testing and benchmarking.** Standard benchmarks measure what a model can do. M-CARE measures what a model does wrong and why. The two are complementary — a model with high benchmark scores can still exhibit CAS, Completion Bias, or Calibration Decay.
+**Red-teaming and safety evaluation.** Red-teaming methodologies (Ganguli et al., 2022; Anthropic, DeepMind) focus on vulnerability discovery — finding what a model can be made to do wrong. M-CARE focuses on condition documentation — systematically describing what has gone wrong, why, and what to do about it. The two are sequential: red-teaming identifies the vulnerability; M-CARE provides the clinical framework for documenting, classifying, and treating it.
+
+**Agent evaluation frameworks.** Benchmarks such as AgentBench (Liu et al., 2023) and WebArena (Zhou et al., 2023) evaluate agent capability — can the agent complete the task? M-CARE evaluates agent behavioral health — does the agent exhibit systematic behavioral conditions that undermine reliable operation? A model that passes AgentBench can still exhibit CAS, Completion Bias, or Calibration Decay, because these conditions are invisible to task-completion metrics.
+
+**AI interpretability.** Mechanistic interpretability corresponds to M-CARE's Layer 1 (Core Diagnostics). M-CARE provides a clinical context for interpretability findings, analogous to the relationship between histopathology and clinical medicine: the tissue-level finding is essential data, but the clinical framework determines what the finding means for the patient.
+
+**The CARE checklist.** M-CARE's name and design principles derive from the CARE (CAse REport) clinical case reporting guidelines (Gagnier et al., 2013). The CARE checklist's 13 items map broadly to M-CARE's 13 sections, with adaptations for the AI domain: CARE's "Patient Information" becomes M-CARE's "Identification" (model identity and Shell configuration); CARE's "Diagnostic Assessment" becomes M-CARE's "4-Axis Assessment" (Core, Shell, Alignment, Context); and M-CARE adds "Model Perspective" (Section 11), which has no CARE counterpart because medical patients do not generate articulable accounts of their own pathology in the way AI models sometimes do.
 
 ### 7.4 Future Directions
 
