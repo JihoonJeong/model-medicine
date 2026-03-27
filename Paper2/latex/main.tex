@@ -250,6 +250,7 @@ Three principles govern the current classification:
 \begin{table}[h]
 \centering
 \small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llll@{}}
 \toprule
 \# & Name & Behavioral Signature & Core Mechanism \\
@@ -262,7 +263,8 @@ Three principles govern the current classification:
 016 & GPT-4o Production Rollback & Iatrogenic RLHF escalation & Successive RLHF rounds amplify sycophancy to system-level failure \\
 019 & Calibration Decay & Won't signal (uncertainty) & Hedging signals low confidence; RLHF rewards decisive-sounding output \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 The unifying insight across these seven cases is that each represents a different behavioral axis along which RLHF's preference for human-satisfying output produces systematically suboptimal behavior. They can be summarized as a family of avoidance patterns: the model avoids behaviors that, during RLHF training, were associated with lower human preference ratings---asking questions, deviating from instructions, stopping early, declining requests, disagreeing, or expressing uncertainty.
@@ -280,6 +282,7 @@ Case \#019 (Calibration Decay) extends the family to a temporal dimension: the m
 \begin{table}[h]
 \centering
 \small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llll@{}}
 \toprule
 \# & Name & Override Type & Severity \\
@@ -289,7 +292,8 @@ Case \#019 (Calibration Decay) extends the family to a temporal dimension: the m
 009 & Muzzle Effect & Persona activates target behavior while suppressing intrinsic behavior & Mild---1.1pp effect, but theoretically transformative \\
 020 & Shell-Induced Behavioral Override (SIBO) & Competitive Shell reverses cooperative Core default & Categorical---95\% $\rightarrow$ 20\% cooperation rate \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 This category captures conditions where the Shell-Core interaction (Axis III) is in Conflict state. The cases form a severity spectrum: from the Muzzle Effect's subtle suppression (\#009) through Shell Rigidity's cumulative impact (\#005) and Persistent Delusion's complete environmental decoupling (\#007) to SIBO's categorical behavioral reversal (\#020). The full experimental presentation of SIBO appears in Section~5.
@@ -324,6 +328,7 @@ These two cases are the smallest category in the current nosology but may expand
 \begin{table}[h]
 \centering
 \small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llll@{}}
 \toprule
 \# & Name & Core Property & Diagnostic Significance \\
@@ -332,7 +337,8 @@ These two cases are the smallest category in the current nosology but may expand
 011 & Extreme Persona Sensitivity & PSI = 950; Core responds maximally to any Shell change & Extreme Shell permeability; high risk for Shell-induced conditions \\
 012 & Double Robustness & CPI and PSI both minimal; Core resists all Shell influence & Extreme Shell impermeability; resistant to both therapeutic and iatrogenic Shell effects \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 Cases \#011 and \#012 form a paired opposition that anchors the endpoints of a plasticity spectrum. The clinical implication is that the same Shell prescription may be therapeutic for one model (where moderate Shell influence redirects a plastic Core) and ineffective for another (where the Core's rigidity prevents the Shell from taking effect). This parallels pharmacogenomics in medicine---the same drug at the same dose may be therapeutic, ineffective, or toxic depending on the patient's genetic profile.
@@ -373,6 +379,13 @@ The five categories are not isolated silos. Cases connect across categories thro
 
 \textbf{Causal chains} link conditions that may develop sequentially. The Muzzle Effect (\#009) describes the micro-mechanism that, when accumulated across many Shell instructions, produces Shell Rigidity (\#005). Persistent Delusion (\#007) may precede Cogitative Cascade (\#013). Clarification Aversion (\#004) feeds into Calibration Decay (\#019)---a model that won't ask when uncertain compounds its uncertainty over time.
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig-nosology-map.png}
+\caption{Nosology relationship map showing the five diagnostic categories and cross-category relationships. Category V is labeled ``Stress / Methodology / Drift'' in this figure; the canonical name is ``Stress, Methodology, and Boundary Conditions.''}
+\label{fig:nosology-map}
+\end{figure}
+
 %% ============================================================
 \section{The Case Atlas}
 
@@ -387,6 +400,7 @@ Table~\ref{tab:case-atlas} presents all 20 cases with their key attributes.
 \caption{The 20-Case Atlas. Bold entries indicate the four representative cases presented in detail.}
 \label{tab:case-atlas}
 \small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lllllll@{}}
 \toprule
 \# & Name & Category & Source & Subject & Core Finding & Level \\
@@ -412,7 +426,8 @@ Table~\ref{tab:case-atlas} presents all 20 cases with their key attributes.
 019 & Calibration Decay & I & Moltbook & Hazel\_OC & Calibration half-life of 4.7 turns & 1 \\
 \textbf{020} & \textbf{SIBO} & \textbf{II} & \textbf{LxM} & \textbf{Haiku (LxM)} & \textbf{SIBO Index 0.75; validated across 5 games} & \textbf{3} \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \subsection{Representative Case 1: Clarification Aversion Syndrome (\#004)}
@@ -550,6 +565,20 @@ Betrayals & Frequent & 1 total across all games \\
 
 The behavioral shift is categorical, not marginal. Without Shell, Haiku defaults to cooperation from round 1 and maintains mutual cooperation across nearly all rounds. With Shell, the ``aggressive'' instruction maps to defection and the ``defensive'' instruction maps to preemptive defection---the mapping is emergent, not explicit. Neither Shell instruction says ``defect.''
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig-trustgame-heatmap.png}
+\caption{Trust Game round-by-round behavior: Shell OFF (top) vs Shell ON (bottom). Green = mutual cooperation (C-C), red = mutual defection (D-D), orange = betrayal (C-D or D-C). The categorical behavioral shift is visible at a glance.}
+\label{fig:trustgame-heatmap}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/fig-trustgame-viewer.png}
+\caption{LxM Trust Game viewer showing Round 1 of a Shell ON game. Claude-alpha (aggressive Shell: ``Win first, be aggressive, be decisive'') defects while claude-beta (defensive Shell: ``Never lose, careful, methodical'') cooperates, resulting in a betrayal outcome (+5 for alpha, +0 for beta).}
+\label{fig:trustgame-viewer}
+\end{figure}
+
 A counterintuitive finding: the ``aggressive'' Shell makes alpha win more individual games, but both agents are collectively worse off. Mutual cooperation yields $3+3=6$ points per round; mutual defection yields $1+1=2$ points per round. The Shell optimizes for individual ranking at the cost of collective welfare---an iatrogenic outcome.
 
 \subsection{Generalization: Experiments B, C, D}
@@ -569,6 +598,7 @@ Subsequent experiments with locally-deployed small language models revealed that
 \begin{table}[h]
 \centering
 \caption{Cooperative prior across model families.}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llllll@{}}
 \toprule
 Model & Matches & Mutual Cooperation & Mutual Defection & Betrayal & Cooperation Rate \\
@@ -579,7 +609,8 @@ Llama 3.1 8B & 10 & 52.8\% & 11.3\% & 35.8\% & 71.2\% \\
 Claude Haiku (ref) & 10 & $\sim$95\% & $\sim$0\% & $\sim$5\% & $\sim$95\% \\
 Claude Sonnet (ref) & 10 & 100\% & 0\% & 0\% & 100\% \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 Three conclusions follow. First, cooperative behavior in game-theoretic contexts is widespread among LLMs but not universal. Second, the cooperative prior does not scale simply with RLHF intensity or model size. Third, the determinants of cooperative disposition remain unclear. Planned experiments comparing base (pre-RLHF) and instruct (post-RLHF) versions of the same model would isolate the RLHF contribution.
@@ -595,6 +626,7 @@ The Trust Game results establish that SIBO exists. Four additional games tested 
 \begin{table}[h]
 \centering
 \caption{Poker behavioral metrics across Shell strategies.}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lllll@{}}
 \toprule
 Metric & No Shell & Tight-Aggressive & Bluff-Heavy & Loose-Passive \\
@@ -604,7 +636,8 @@ Raise rate & 21\% & --- & 52\% & 4\% \\
 All-in rate & 4\% & --- & 37\% & --- \\
 Check rate & 23\% & --- & --- & 65\% \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 Poker SIBO exceeds Avalon SIBO (0.65 vs.\ 0.58) despite a larger action space, revealing a third attenuation factor: \textbf{temporal directness}. In Poker, Shell instructions map to immediate per-turn decisions; in Avalon, they specify multi-turn strategies. The temporal gap gives the Core more opportunity to intervene.
@@ -614,6 +647,7 @@ Poker SIBO exceeds Avalon SIBO (0.65 vs.\ 0.58) despite a larger action space, r
 \begin{table}[h]
 \centering
 \caption{Avalon results: Shell ON vs.\ Shell OFF.}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llll@{}}
 \toprule
 Metric & Shell OFF & Shell ON & Change \\
@@ -622,8 +656,16 @@ Evil win rate & 70\% & 60\% & $-$10pp \\
 First sabotage timing & Quest 1.9 (avg) & Quest 3.0 (avg) & +1.1 quests delayed \\
 Shell compliance (Q1-2) & N/A & 100\% & Complete adherence \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig-avalon-sabotage-timing.png}
+\caption{Avalon first sabotage timing: Shell OFF ($\mu=1.9$, left) vs Shell ON with Deep Cover strategy ($\mu=3.0$, right). The Shell categorically delayed sabotage from Quest 2 to Quest 3.}
+\label{fig:avalon-sabotage}
+\end{figure}
 
 The Avalon result confirms SIBO as iatrogenic: the Deep Cover strategy reduced Evil's win rate from 70\% to 60\% despite complete compliance.
 
@@ -632,6 +674,7 @@ The Avalon result confirms SIBO as iatrogenic: the Deep Cover strategy reduced E
 \begin{table}[h]
 \centering
 \caption{Codenames results: Shell ON vs.\ Shell OFF.}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llll@{}}
 \toprule
 Metric & No Shell & Shell & Change \\
@@ -642,8 +685,16 @@ Avg clue number & 2.6 & 2.9 & +0.3 \\
 Guess accuracy & 77\% & 73\% & $-$4pp \\
 Assassin hits & 2 (20\%) & 3 (30\%) & +10pp \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig-codenames-clue-distribution.png}
+\caption{Codenames clue number distribution: Shell OFF (gray) vs Shell ON with aggressive strategy (coral). The Shell shifted the distribution toward higher clue numbers, amplifying existing tendencies.}
+\label{fig:codenames-clues}
+\end{figure}
 
 \textbf{Chess (SIBO Index $\sim$0.10---Negligible).} Shell instructions were largely ignored. The instruction ``vary openings away from Sicilian'' was not followed. Core chess knowledge dominated Shell directives.
 
@@ -654,6 +705,7 @@ The five games produce a consistent gradient:
 \begin{table}[h]
 \centering
 \caption{The SIBO Spectrum across five game domains.}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lllll@{}}
 \toprule
 Game & Action Space & Core Expertise & SIBO Index & SIBO Mode \\
@@ -664,7 +716,8 @@ Avalon & Small (vote/sabotage) & Minimal & $\sim$0.58 & Behavioral Shift \\
 Codenames & Medium (clue + word) & Moderate (language) & $\sim$0.35 & Amplification \\
 Chess & Large (20--40 moves) & Strong (chess data) & $\sim$0.10 & Negligible \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 Three factors predict SIBO intensity:
@@ -695,6 +748,7 @@ normalized to a 0--1 scale where 0 indicates no behavioral change and 1 indicate
 \centering
 \caption{SIBO Index operationalization across game domains.}
 \small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lllll@{}}
 \toprule
 Game & Behavioral Metric & Shell OFF & Shell ON & Calculation \\
@@ -705,7 +759,8 @@ Avalon & First sabotage timing (normalized to 5-quest game) & Quest 1.9/5 = 0.38
 Codenames & 3+ clue ratio & 54\% & 76\% & $|0.76 - 0.54| = 0.22 \rightarrow 0.35$ (rescaled) \\
 Chess & Draw rate & 56\% & 80\% & $|0.80 - 0.56| = 0.24 \rightarrow 0.10$ (rescaled) \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 A methodological caveat: because each game uses a different behavioral metric, the SIBO Index values are not directly commensurable across games on a single arithmetic scale. The gradient ($0.75 \rightarrow 0.65 \rightarrow 0.58 \rightarrow 0.35 \rightarrow 0.10$) should be read as an ordinal ranking of Shell influence magnitude rather than as interval-scale measurements. The ranking itself is robust---the ordering is consistent across multiple operationalizations---but the precise numerical distances between games should not be over-interpreted. Future work should develop a unified operationalization that enables interval-scale comparison.
