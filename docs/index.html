@@ -41,7 +41,7 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#paper" data-i18n="common.nav.paper">Paper</a></li>
+        <li><a href="#papers" data-i18n="common.nav.papers">Papers</a></li>
         <li><a href="#disciplines" data-i18n="common.nav.disciplines">Disciplines</a></li>
         <li><a href="#projects" data-i18n="common.nav.projects">Projects</a></li>
         <li><a href="cases/" data-i18n="common.nav.cases">Cases</a></li>
@@ -61,21 +61,43 @@
         Model Medicine is the science of understanding, diagnosing, treating, and preventing disorders in AI models, grounded in the principle that AI models &mdash; like biological organisms &mdash; have internal structures (anatomy), dynamic processes (physiology), heritable traits (genetics), observable symptoms, classifiable diseases, and treatable conditions.
       </p>
       <div class="hero-actions">
-        <a href="#paper" class="btn btn-primary" data-i18n="index.hero.btn_paper">Read the Paper</a>
+        <a href="#papers" class="btn btn-primary" data-i18n="index.hero.btn_papers">Read the Papers</a>
         <a href="#projects" class="btn btn-secondary" data-i18n="index.hero.btn_projects">Explore Projects</a>
       </div>
     </div>
   </header>
 
-  <!-- Position Paper Section -->
-  <section class="section" id="paper">
+  <!-- Papers Section -->
+  <section class="section" id="papers">
     <div class="container">
-      <h2 class="section-title" data-i18n="index.paper.title">Position Paper</h2>
-      <div class="paper-card">
-        <p class="paper-venue" data-i18n="index.paper.venue">arXiv Preprint &middot; 2026</p>
-        <h3 class="paper-title" data-i18n="index.paper.paper_title">Model Medicine: A Clinical Framework for Understanding, Diagnosing, and Treating AI Models</h3>
+      <h2 class="section-title" data-i18n="index.papers.title">Papers</h2>
+
+      <!-- MTI Paper -->
+      <div class="paper-card" style="margin-bottom: 2.5rem;">
+        <p class="paper-venue" data-i18n="index.papers.mti_venue">arXiv Preprint &middot; April 2026</p>
+        <h3 class="paper-title" data-i18n="index.papers.mti_title">MTI: A Behavior-Based Temperament Profiling System for AI Agents</h3>
         <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
-        <p class="paper-affiliation" data-i18n="index.paper.affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+        <p class="paper-affiliation" data-i18n="index.papers.mti_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+
+        <div class="paper-link-row">
+          <a href="https://arxiv.org/abs/2604.02145" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2604.02145</a>
+          <a href="https://arxiv.org/pdf/2604.02145" class="btn btn-small btn-outline" target="_blank" rel="noopener">PDF</a>
+        </div>
+
+        <div class="paper-abstract">
+          <h4 data-i18n="index.papers.mti_abstract_label">Abstract</h4>
+          <p data-i18n-html="index.papers.mti_abstract">
+            This paper introduces the <strong>Model Temperament Index (MTI)</strong>, a framework for measuring behavioral patterns in AI agents across four dimensions: Reactivity, Compliance, Sociality, and Resilience. Unlike existing approaches that rely on self-reporting, MTI measures what agents <em>do</em>, not what they say about themselves, using structured examination protocols. Profiling 10 small language models, the study finds that the four axes show independence among instruction-tuned models, Compliance and Resilience exhibit internal decomposition, and temperament measurements remain independent of model size &mdash; suggesting MTI captures disposition rather than capability.
+          </p>
+        </div>
+      </div>
+
+      <!-- Position Paper -->
+      <div class="paper-card">
+        <p class="paper-venue" data-i18n="index.papers.position_venue">arXiv Preprint &middot; 2026</p>
+        <h3 class="paper-title" data-i18n="index.papers.position_title">Model Medicine: A Clinical Framework for Understanding, Diagnosing, and Treating AI Models</h3>
+        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
+        <p class="paper-affiliation" data-i18n="index.papers.position_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
 
         <div class="paper-link-row">
           <a href="https://arxiv.org/abs/2603.04722" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2603.04722</a>
@@ -83,8 +105,8 @@
         </div>
 
         <div class="paper-abstract">
-          <h4 data-i18n="index.paper.abstract_label">Abstract</h4>
-          <p data-i18n-html="index.paper.abstract">
+          <h4 data-i18n="index.papers.position_abstract_label">Abstract</h4>
+          <p data-i18n-html="index.papers.position_abstract">
             This paper introduces Model Medicine as a research program and presents five contributions.
             First, a <strong>discipline taxonomy</strong> that maps the full scope of Model Medicine &mdash; from basic sciences through clinical sciences to public health and architectural medicine.
             Second, the <strong>Four Shell Model</strong> (v3.3), a behavioral genetics framework grounded in 720 agents, 24,923 decisions, and 60 controlled experiments, explaining how model behavior emerges from the interaction between a model's Core and its nested Shells.
@@ -95,14 +117,14 @@
         </div>
 
         <div class="collaborators">
-          <h4 data-i18n="index.paper.collaborators_label">AI Research Collaborators</h4>
+          <h4 data-i18n="index.papers.collaborators_label">AI Research Collaborators</h4>
           <ul class="collaborator-list">
-            <li><span class="collab-name">Cody</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.paper.collab_cody">&mdash; Neural MRI implementation, clinical case experiments</span></li>
-            <li><span class="collab-name">Ray</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.paper.collab_ray">&mdash; GPU-based simulation, Agora-12 experiments</span></li>
-            <li><span class="collab-name">Theo</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.paper.collab_theo">&mdash; Four Shell Model: structure and documentation</span></li>
-            <li><span class="collab-name">Luca</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.paper.collab_luca">&mdash; Four Shell Model: theory and literature</span></li>
-            <li><span class="collab-name">Gem</span> <span class="collab-model">(Gemini)</span> <span class="collab-role" data-i18n="index.paper.collab_gem">&mdash; Four Shell Model: quantitative analysis</span></li>
-            <li><span class="collab-name">Cas</span> <span class="collab-model">(Gemini)</span> <span class="collab-role" data-i18n="index.paper.collab_cas">&mdash; Four Shell Model: behavioral analysis and red teaming</span></li>
+            <li><span class="collab-name">Cody</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.papers.collab_cody">&mdash; Neural MRI implementation, clinical case experiments</span></li>
+            <li><span class="collab-name">Ray</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.papers.collab_ray">&mdash; GPU-based simulation, Agora-12 experiments</span></li>
+            <li><span class="collab-name">Theo</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.papers.collab_theo">&mdash; Four Shell Model: structure and documentation</span></li>
+            <li><span class="collab-name">Luca</span> <span class="collab-model">(Claude)</span> <span class="collab-role" data-i18n="index.papers.collab_luca">&mdash; Four Shell Model: theory and literature</span></li>
+            <li><span class="collab-name">Gem</span> <span class="collab-model">(Gemini)</span> <span class="collab-role" data-i18n="index.papers.collab_gem">&mdash; Four Shell Model: quantitative analysis</span></li>
+            <li><span class="collab-name">Cas</span> <span class="collab-model">(Gemini)</span> <span class="collab-role" data-i18n="index.papers.collab_cas">&mdash; Four Shell Model: behavioral analysis and red teaming</span></li>
           </ul>
         </div>
       </div>
@@ -339,7 +361,10 @@
               <li><span class="axis-poles">Tough &harr; Brittle</span> Resilience</li>
             </ul>
           </div>
-          <p class="project-status">v0.2 &middot; 16 types &middot; Pilot testing in preparation</p>
+          <div class="project-links">
+            <a href="https://arxiv.org/abs/2604.02145" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2604.02145</a>
+          </div>
+          <p class="project-status">v0.2 &middot; 16 types &middot; 10 SLMs profiled &middot; 4 behavioral axes</p>
         </div>
 
       </div>

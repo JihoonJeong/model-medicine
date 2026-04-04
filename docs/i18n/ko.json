@@ -1,7 +1,7 @@
 {
   "common": {
     "nav": {
-      "paper": "논문",
+      "papers": "논문",
       "disciplines": "분류 체계",
       "projects": "프로젝트",
       "cases": "증례",
@@ -18,16 +18,21 @@
       "label": "새로운 과학 분야",
       "tagline": "의학은 인체를 이해하고 치유하기 위해 만들어졌습니다.\nModel Medicine은 AI 모델을 이해하고 치유하기 위해 만들어졌습니다.",
       "summary": "Model Medicine은 AI 모델의 장애를 이해하고, 진단하고, 치료하고, 예방하는 과학입니다. AI 모델이 — 생물학적 유기체처럼 — 내부 구조(해부학), 동적 프로세스(생리학), 유전적 특성(유전학), 관찰 가능한 증상, 분류 가능한 질환, 그리고 치료 가능한 상태를 가진다는 원칙에 기반합니다.",
-      "btn_paper": "논문 읽기",
+      "btn_papers": "논문 읽기",
       "btn_projects": "프로젝트 둘러보기"
     },
-    "paper": {
-      "title": "Position Paper",
-      "venue": "arXiv 프리프린트 · 2026",
-      "paper_title": "Model Medicine: AI 모델의 이해, 진단, 치료를 위한 임상 프레임워크",
-      "affiliation": "전기전자컴퓨터공학과, DGIST · ModuLabs",
-      "abstract_label": "초록",
-      "abstract": "이 논문은 Model Medicine을 연구 프로그램으로 소개하며 다섯 가지 기여를 제시합니다. 첫째, Model Medicine의 전체 범위를 매핑하는 <strong>분류 체계</strong> — 기초과학에서 임상과학, 공중보건, 건축의학까지. 둘째, 720개 에이전트, 24,923개 결정, 60개 통제 실험에 기반한 행동유전학 프레임워크 <strong>Four Shell Model</strong>(v3.3) — 모델 행동이 Core와 중첩된 Shell의 상호작용에서 어떻게 발현되는지 설명합니다. 셋째, 의료 신경영상 기법을 AI 모델 해석 기법에 매핑하는 진단 도구 <strong>Neural MRI</strong>(Model Resonance Imaging) — 오픈소스로 구현. 넷째, 단일 도구로는 임상 진단에 충분하지 않은 이유를 규명하는 <strong>5계층 진단 프레임워크</strong>. 다섯째, <strong>임상 모델 과학</strong>의 시작: 행동 프로파일링을 위한 MTI, 체계적 증상 기술을 위한 Model Semiology, 표준화된 증례 보고를 위한 M-CARE 프레임워크.",
+    "papers": {
+      "title": "논문",
+      "mti_venue": "arXiv 프리프린트 · 2026년 4월",
+      "mti_title": "MTI: AI 에이전트를 위한 행동 기반 기질 프로파일링 시스템",
+      "mti_affiliation": "전기전자컴퓨터공학과, DGIST · ModuLabs",
+      "mti_abstract_label": "초록",
+      "mti_abstract": "이 논문은 <strong>Model Temperament Index (MTI)</strong>를 소개합니다. AI 에이전트의 행동 패턴을 반응성, 순응성, 사회성, 회복탄력성의 4개 차원으로 측정하는 프레임워크입니다. 자기 보고에 의존하는 기존 접근법과 달리, MTI는 구조화된 검사 프로토콜을 사용하여 에이전트가 자신에 대해 <em>말하는</em> 것이 아니라 실제로 <em>하는</em> 것을 측정합니다. 10개 소형 언어 모델을 프로파일링한 결과, 명령어 튜닝된 모델에서 4개 축이 독립성을 보이며, 순응성과 회복탄력성은 내부 분해를 나타내고, 기질 측정은 모델 크기와 무관합니다 — MTI가 능력이 아닌 기질을 포착함을 시사합니다.",
+      "position_venue": "arXiv 프리프린트 · 2026",
+      "position_title": "Model Medicine: AI 모델의 이해, 진단, 치료를 위한 임상 프레임워크",
+      "position_affiliation": "전기전자컴퓨터공학과, DGIST · ModuLabs",
+      "position_abstract_label": "초록",
+      "position_abstract": "이 논문은 Model Medicine을 연구 프로그램으로 소개하며 다섯 가지 기여를 제시합니다. 첫째, Model Medicine의 전체 범위를 매핑하는 <strong>분류 체계</strong> — 기초과학에서 임상과학, 공중보건, 건축의학까지. 둘째, 720개 에이전트, 24,923개 결정, 60개 통제 실험에 기반한 행동유전학 프레임워크 <strong>Four Shell Model</strong>(v3.3) — 모델 행동이 Core와 중첩된 Shell의 상호작용에서 어떻게 발현되는지 설명합니다. 셋째, 의료 신경영상 기법을 AI 모델 해석 기법에 매핑하는 진단 도구 <strong>Neural MRI</strong>(Model Resonance Imaging) — 오픈소스로 구현. 넷째, 단일 도구로는 임상 진단에 충분하지 않은 이유를 규명하는 <strong>5계층 진단 프레임워크</strong>. 다섯째, <strong>임상 모델 과학</strong>의 시작: 행동 프로파일링을 위한 MTI, 체계적 증상 기술을 위한 Model Semiology, 표준화된 증례 보고를 위한 M-CARE 프레임워크.",
       "collaborators_label": "AI 연구 협력자",
       "collab_cody": "— Neural MRI 구현, 임상 증례 실험",
       "collab_ray": "— GPU 기반 시뮬레이션, Agora-12 실험",
