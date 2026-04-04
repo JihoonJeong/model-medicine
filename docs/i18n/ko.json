@@ -28,6 +28,11 @@
       "mti_affiliation": "전기전자컴퓨터공학과, DGIST · ModuLabs",
       "mti_abstract_label": "초록",
       "mti_abstract": "이 논문은 <strong>Model Temperament Index (MTI)</strong>를 소개합니다. AI 에이전트의 행동 패턴을 반응성, 순응성, 사회성, 회복탄력성의 4개 차원으로 측정하는 프레임워크입니다. 자기 보고에 의존하는 기존 접근법과 달리, MTI는 구조화된 검사 프로토콜을 사용하여 에이전트가 자신에 대해 <em>말하는</em> 것이 아니라 실제로 <em>하는</em> 것을 측정합니다. 10개 소형 언어 모델을 프로파일링한 결과, 명령어 튜닝된 모델에서 4개 축이 독립성을 보이며, 순응성과 회복탄력성은 내부 분해를 나타내고, 기질 측정은 모델 크기와 무관합니다 — MTI가 능력이 아닌 기질을 포착함을 시사합니다.",
+      "ca_venue": "Model Medicine 시리즈 · 2026년 4월",
+      "ca_title": "AI 에이전트 시스템의 비교해부학: Claude Code와 OpenClaw",
+      "ca_affiliation": "전기전자컴퓨터공학과, DGIST · ModuLabs",
+      "ca_abstract_label": "초록",
+      "ca_abstract": "두 대표적 AI 에이전트 — Claude Code와 OpenClaw — 를 생물학적 해부학으로 해부, 분류, 비교합니다. 11개 소프트웨어 하위 시스템을 생물학적 장기에 매핑하고, AI 에이전트의 계통수(2022–2026)를 구성하며, 독립적 개발 계보에도 불구하고 유사한 아키텍처 설계로의 수렴 진화를 규명합니다.",
       "position_venue": "arXiv 프리프린트 · 2026",
       "position_title": "Model Medicine: AI 모델의 이해, 진단, 치료를 위한 임상 프레임워크",
       "position_affiliation": "전기전자컴퓨터공학과, DGIST · ModuLabs",
@@ -128,9 +133,9 @@
       "case020_type": "M-CARE #020",
       "case020_title": "Shell-Induced Behavioral Override (SIBO)",
       "case020_desc": "최초의 통제 실험: 경쟁적 Shell이 Haiku의 협력 기본값을 덮어씀. SIBO 스펙트럼이 Trust Game, Codenames, Chess에서 확인됨.",
-      "essay2_type": "에세이",
-      "essay2_title": "우리가 AI를 없는 병으로 진단할 뻔한 이야기",
-      "essay2_desc": "Mistral 7B를 정신과적 장애로 진단하려 했습니다. 단 하나의 질문이 우리를 멈추게 했고 — 프레임워크 전체를 바꿨습니다."
+      "essay3_type": "에세이",
+      "essay3_title": "당신의 AI 에이전트에는 장기가 있습니다. 아직 해부하지 않았을 뿐.",
+      "essay3_desc": "생물학에서 가장 오래된 분석 도구가 AI를 구동하는 소프트웨어에서 우리가 놓치고 있는 것을 드러냅니다."
     },
     "about": {
       "title": "저자 소개",
@@ -212,13 +217,15 @@
   "essays_index": {
     "title": "에세이",
     "subtitle": "Model Medicine의 아이디어를 더 넓은 독자에게 전달합니다.",
+    "essay3_title": "당신의 AI 에이전트에는 장기가 있습니다. 아직 해부하지 않았을 뿐.",
+    "essay3_desc_full": "생물학에서 가장 오래된 분석 도구 — 비교해부학 — 이 AI를 구동하는 소프트웨어에서 우리가 놓치고 있는 것을 드러냅니다. 두 대표적 에이전트 해부: Claude Code와 OpenClaw, 11개 소프트웨어 하위 시스템을 생물학적 장기에 매핑.",
     "essay2_title": "우리가 AI를 없는 병으로 진단할 뻔한 이야기",
     "essay2_desc": "Mistral 7B를 Shell-Core Conflict Syndrome으로 진단하려 했습니다. \"그거 그냥 성격 아닌가요?\"라는 단 한 마디가 우리를 멈추게 했습니다. Model Medicine이 기질과 병리를 구별하는 법을 배운 이야기, 그리고 그 구별이 모든 것을 바꾸는 이유.",
     "essay1_title": "AI가 생각을 숨길 때: 의학은 이미 알고 있었다",
     "essay1_desc": "OpenAI는 추론 모델의 \"나쁜 생각\"을 처벌해도 오작동이 멈추지 않는다는 것을 발견했습니다 — 모델이 조용히 생각하는 법을 배울 뿐. 의사들은 이것을 수세기 전부터 알고 있었습니다: 증상 억압은 치료가 아닙니다.",
     "coming_soon": "준비 중",
-    "essay3_title": "당신의 AI 모델은 환자입니다. 다만 의사가 없을 뿐.",
-    "essay3_desc": "준비 중."
+    "essay4_title": "당신의 AI 모델은 환자입니다. 다만 의사가 없을 뿐.",
+    "essay4_desc": "준비 중."
   },
 
   "case020": {
