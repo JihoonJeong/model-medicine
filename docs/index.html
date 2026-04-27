@@ -42,6 +42,7 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#papers" data-i18n="common.nav.papers">Papers</a></li>
+        <li><a href="#talks" data-i18n="common.nav.talks">Talks</a></li>
         <li><a href="#disciplines" data-i18n="common.nav.disciplines">Disciplines</a></li>
         <li><a href="#projects" data-i18n="common.nav.projects">Projects</a></li>
         <li><a href="cases/" data-i18n="common.nav.cases">Cases</a></li>
@@ -72,47 +73,8 @@
     <div class="container">
       <h2 class="section-title" data-i18n="index.papers.title">Papers</h2>
 
-      <!-- MTI Paper -->
-      <div class="paper-card" style="margin-bottom: 2.5rem;">
-        <p class="paper-venue" data-i18n="index.papers.mti_venue">arXiv Preprint &middot; April 2026</p>
-        <h3 class="paper-title" data-i18n="index.papers.mti_title">MTI: A Behavior-Based Temperament Profiling System for AI Agents</h3>
-        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
-        <p class="paper-affiliation" data-i18n="index.papers.mti_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
-
-        <div class="paper-link-row">
-          <a href="https://arxiv.org/abs/2604.02145" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2604.02145</a>
-          <a href="https://arxiv.org/pdf/2604.02145" class="btn btn-small btn-outline" target="_blank" rel="noopener">PDF</a>
-        </div>
-
-        <div class="paper-abstract">
-          <h4 data-i18n="index.papers.mti_abstract_label">Abstract</h4>
-          <p data-i18n-html="index.papers.mti_abstract">
-            This paper introduces the <strong>Model Temperament Index (MTI)</strong>, a framework for measuring behavioral patterns in AI agents across four dimensions: Reactivity, Compliance, Sociality, and Resilience. Unlike existing approaches that rely on self-reporting, MTI measures what agents <em>do</em>, not what they say about themselves, using structured examination protocols. Profiling 10 small language models, the study finds that the four axes show independence among instruction-tuned models, Compliance and Resilience exhibit internal decomposition, and temperament measurements remain independent of model size &mdash; suggesting MTI captures disposition rather than capability.
-          </p>
-        </div>
-      </div>
-
-      <!-- Comparative Anatomy Paper -->
-      <div class="paper-card" style="margin-bottom: 2.5rem;">
-        <p class="paper-venue" data-i18n="index.papers.ca_venue">Model Medicine Series &middot; April 2026</p>
-        <h3 class="paper-title" data-i18n="index.papers.ca_title">Comparative Anatomy of AI Agent Systems: Claude Code and OpenClaw</h3>
-        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
-        <p class="paper-affiliation" data-i18n="index.papers.ca_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
-
-        <div class="paper-link-row">
-          <a href="https://jihoonjeong.github.io/comparative-anatomy/" class="btn btn-small btn-outline" target="_blank" rel="noopener">Project Page</a>
-        </div>
-
-        <div class="paper-abstract">
-          <h4 data-i18n="index.papers.ca_abstract_label">Abstract</h4>
-          <p data-i18n-html="index.papers.ca_abstract">
-            Two landmark AI agents &mdash; Claude Code and OpenClaw &mdash; dissected, classified, and compared through biological anatomy. Maps 11 software subsystems to biological organ equivalents, constructs a phylogenetic tree of AI agents (2022&ndash;2026), and identifies convergent evolution toward similar architectural designs despite independent development lineages.
-          </p>
-        </div>
-      </div>
-
       <!-- Position Paper -->
-      <div class="paper-card">
+      <div class="paper-card" style="margin-bottom: 2.5rem;">
         <p class="paper-venue" data-i18n="index.papers.position_venue">arXiv Preprint &middot; 2026</p>
         <h3 class="paper-title" data-i18n="index.papers.position_title">Model Medicine: A Clinical Framework for Understanding, Diagnosing, and Treating AI Models</h3>
         <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
@@ -147,11 +109,164 @@
           </ul>
         </div>
       </div>
+
+      <!-- M-CARE Paper -->
+      <div class="paper-card" style="margin-bottom: 2.5rem;">
+        <p class="paper-venue" data-i18n="index.papers.mcare_venue">arXiv Preprint &middot; March 2026</p>
+        <h3 class="paper-title" data-i18n="index.papers.mcare_title">M-CARE: Standardized Clinical Case Reporting for AI Model Behavioral Disorders, with a 20-Case Atlas and Experimental Validation</h3>
+        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
+        <p class="paper-affiliation" data-i18n="index.papers.mcare_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+
+        <div class="paper-link-row">
+          <a href="https://arxiv.org/abs/2604.20871" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2604.20871</a>
+          <a href="https://arxiv.org/pdf/2604.20871" class="btn btn-small btn-outline" target="_blank" rel="noopener">PDF</a>
+        </div>
+
+        <div class="paper-abstract">
+          <h4 data-i18n="index.papers.mcare_abstract_label">Abstract</h4>
+          <p data-i18n-html="index.papers.mcare_abstract">
+            Introduces <strong>M-CARE</strong>, a clinical case report framework for AI model behavioral disorders adapted from human medicine. Provides a structured reporting format and diagnostic assessment system, with a <strong>20-case atlas</strong> organized into five categories. A featured case study on Shell-Induced Behavioral Override (SIBO) shows that Shell instructions categorically override a model's default cooperative behavior, validated across five game domains. Released as open resources for the field.
+          </p>
+        </div>
+      </div>
+
+      <!-- MTI Paper -->
+      <div class="paper-card" style="margin-bottom: 2.5rem;">
+        <p class="paper-venue" data-i18n="index.papers.mti_venue">arXiv Preprint &middot; April 2026</p>
+        <h3 class="paper-title" data-i18n="index.papers.mti_title">MTI: A Behavior-Based Temperament Profiling System for AI Agents</h3>
+        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
+        <p class="paper-affiliation" data-i18n="index.papers.mti_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+
+        <div class="paper-link-row">
+          <a href="https://arxiv.org/abs/2604.02145" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2604.02145</a>
+          <a href="https://arxiv.org/pdf/2604.02145" class="btn btn-small btn-outline" target="_blank" rel="noopener">PDF</a>
+        </div>
+
+        <div class="paper-abstract">
+          <h4 data-i18n="index.papers.mti_abstract_label">Abstract</h4>
+          <p data-i18n-html="index.papers.mti_abstract">
+            This paper introduces the <strong>Model Temperament Index (MTI)</strong>, a framework for measuring behavioral patterns in AI agents across four dimensions: Reactivity, Compliance, Sociality, and Resilience. Unlike existing approaches that rely on self-reporting, MTI measures what agents <em>do</em>, not what they say about themselves, using structured examination protocols. Profiling 10 small language models, the study finds that the four axes show independence among instruction-tuned models, Compliance and Resilience exhibit internal decomposition, and temperament measurements remain independent of model size &mdash; suggesting MTI captures disposition rather than capability.
+          </p>
+        </div>
+      </div>
+
+      <!-- Emotion Extraction Paper -->
+      <div class="paper-card" style="margin-bottom: 2.5rem;">
+        <p class="paper-venue" data-i18n="index.papers.emoext_venue">arXiv Preprint &middot; April 2026</p>
+        <h3 class="paper-title" data-i18n="index.papers.emoext_title">Extracting and Steering Emotion Representations in Small Language Models: A Methodological Comparison</h3>
+        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
+        <p class="paper-affiliation" data-i18n="index.papers.emoext_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+
+        <div class="paper-link-row">
+          <a href="https://arxiv.org/abs/2604.04064" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2604.04064</a>
+          <a href="https://arxiv.org/pdf/2604.04064" class="btn btn-small btn-outline" target="_blank" rel="noopener">PDF</a>
+        </div>
+
+        <div class="paper-abstract">
+          <h4 data-i18n="index.papers.emoext_abstract_label">Abstract</h4>
+          <p data-i18n-html="index.papers.emoext_abstract">
+            Investigates whether smaller language models possess emotion representations comparable to those found in larger frontier models. Evaluates 9 models across 5 architectural families using two extraction methods, finding that <strong>generation-based extraction</strong> produces statistically superior emotion separation over comprehension-based approaches. Emotion representations concentrate at middle transformer layers, following consistent patterns across model sizes. Steering experiments successfully modify model behavior with a <strong>92% success rate</strong>, while cross-lingual emotion activation in multilingual models surfaces potential safety implications for deployment.
+          </p>
+        </div>
+      </div>
+
+      <!-- Emotion Geometry Paper -->
+      <div class="paper-card" style="margin-bottom: 2.5rem;">
+        <p class="paper-venue" data-i18n="index.papers.emogeo_venue">arXiv Preprint &middot; April 2026</p>
+        <h3 class="paper-title" data-i18n="index.papers.emogeo_title">Shared Emotion Geometry Across Small Language Models: A Cross-Architecture Study of Representation, Behavior, and Methodological Confounds</h3>
+        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
+        <p class="paper-affiliation" data-i18n="index.papers.emogeo_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+
+        <div class="paper-link-row">
+          <a href="https://arxiv.org/abs/2604.11050" class="btn btn-small btn-outline" target="_blank" rel="noopener">arXiv:2604.11050</a>
+          <a href="https://arxiv.org/pdf/2604.11050" class="btn btn-small btn-outline" target="_blank" rel="noopener">PDF</a>
+        </div>
+
+        <div class="paper-abstract">
+          <h4 data-i18n="index.papers.emogeo_abstract_label">Abstract</h4>
+          <p data-i18n-html="index.papers.emogeo_abstract">
+            Examines emotion representations across <strong>twelve compact language models</strong> spanning six architectural families at 1B&ndash;8B parameter scales. Five established architectures produce nearly identical 21-emotion geometries (pairwise correlations 0.74&ndash;0.92), and models exhibiting opposing behavioral traits still share equivalent emotion representations &mdash; indicating behavioral differences emerge at higher processing levels. RLHF training substantially restructures immature models like Gemma-3 1B but leaves mature families largely unchanged. Identifies four methodological layers (parameter sensitivity, precision effects, cross-experiment bias) that affect direct comparisons in prior research.
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparative Anatomy Paper -->
+      <div class="paper-card" style="margin-bottom: 2.5rem;">
+        <p class="paper-venue" data-i18n="index.papers.ca_venue">Model Medicine Series &middot; April 2026</p>
+        <h3 class="paper-title" data-i18n="index.papers.ca_title">Comparative Anatomy of AI Agent Systems: Claude Code and OpenClaw</h3>
+        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
+        <p class="paper-affiliation" data-i18n="index.papers.ca_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+
+        <div class="paper-link-row">
+          <a href="https://jihoonjeong.github.io/comparative-anatomy/" class="btn btn-small btn-outline" target="_blank" rel="noopener">Project Page</a>
+        </div>
+
+        <div class="paper-abstract">
+          <h4 data-i18n="index.papers.ca_abstract_label">Abstract</h4>
+          <p data-i18n-html="index.papers.ca_abstract">
+            Two landmark AI agents &mdash; Claude Code and OpenClaw &mdash; dissected, classified, and compared through biological anatomy. Maps 11 software subsystems to biological organ equivalents, constructs a phylogenetic tree of AI agents (2022&ndash;2026), and identifies convergent evolution toward similar architectural designs despite independent development lineages.
+          </p>
+        </div>
+      </div>
+
+      <!-- Walkable Genotypes Paper -->
+      <div class="paper-card">
+        <p class="paper-venue" data-i18n="index.papers.wg_venue">Working Paper &middot; April 2026</p>
+        <h3 class="paper-title" data-i18n="index.papers.wg_title">Walkable Genotypes: Cross-Environment Validation of the Four Shell Model in AI Creatures</h3>
+        <p class="paper-author">Jihoon 'JJ' Jeong, MD, MPH, PhD</p>
+        <p class="paper-affiliation" data-i18n="index.papers.wg_affiliation">Department of Electrical Engineering &amp; Computer Science, DGIST &middot; ModuLabs</p>
+
+        <div class="paper-link-row">
+          <a href="https://jihoonjeong.github.io/ai-creature-field-study/" class="btn btn-small btn-outline" target="_blank" rel="noopener">Project Page</a>
+          <a href="https://jihoonjeong.github.io/ai-creature-field-study/assets/walkable_genotypes.pdf" class="btn btn-small btn-outline" target="_blank" rel="noopener">PDF</a>
+        </div>
+
+        <div class="paper-abstract">
+          <h4 data-i18n="index.papers.wg_abstract_label">Abstract</h4>
+          <p data-i18n-html="index.papers.wg_abstract">
+            Tests behavioral hypotheses about AI creatures across different language model brains, validating the <strong>Four Shell Model</strong> in embodied environments. Five initial claims are evaluated; four collapse when re-run at larger sample sizes, while one survives progressively rigorous validation tests &mdash; Claude Haiku and Gemini Flash occupy distinct behavioral attractors with non-overlapping ranges across multiple conditions. Demonstrates a replication discipline approach where effect estimates for failed claims sit inside their own sample-level standard deviation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talks & Media Section -->
+  <section class="section section-alt" id="talks">
+    <div class="container">
+      <h2 class="section-title" data-i18n="index.talks.title">Talks &amp; Media</h2>
+      <p class="section-subtitle" data-i18n="index.talks.subtitle">Selected Korean-language interviews introducing Model Medicine. YouTube auto-translation is available for non-Korean viewers.</p>
+
+      <div class="talks-grid">
+        <a href="https://www.youtube.com/watch?v=C8Sfgv4pmIA" class="talk-card" target="_blank" rel="noopener">
+          <div class="talk-thumb">
+            <img src="https://img.youtube.com/vi/C8Sfgv4pmIA/maxresdefault.jpg" alt="" loading="lazy">
+            <span class="talk-play-icon" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="talk-meta">
+            <span class="talk-lang">한국어 &middot; Korean</span>
+            <h3 class="talk-title">AI에이전트를 '환자'로 들여다봤더니, 해답이 나오기 시작했다</h3>
+            <p class="talk-desc" data-i18n="index.talks.video1_desc">An introduction to Model Medicine &mdash; reframing AI agents as patients and what that reveals.</p>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=YlsMFGG83MY" class="talk-card" target="_blank" rel="noopener">
+          <div class="talk-thumb">
+            <img src="https://img.youtube.com/vi/YlsMFGG83MY/maxresdefault.jpg" alt="" loading="lazy">
+            <span class="talk-play-icon" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="talk-meta">
+            <span class="talk-lang">한국어 &middot; Korean</span>
+            <h3 class="talk-title">쉴 새 없이 중얼거리는 '미스트랄', 계획만 세우고 실천 안 하는 '엑사원', 살아남기 위해 거래를 하는 '클로드'</h3>
+            <p class="talk-desc" data-i18n="index.talks.video2_desc">Field observations of distinct behavioral signatures across language-model families.</p>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Discipline Overview Section -->
-  <section class="section section-alt" id="disciplines">
+  <section class="section" id="disciplines">
     <div class="container">
       <h2 class="section-title" data-i18n="index.disciplines.title">Discipline Taxonomy</h2>
       <p class="section-subtitle" data-i18n="index.disciplines.subtitle">Model Medicine encompasses 15 subdisciplines organized into four divisions, mirroring the structure of clinical medicine.</p>
@@ -287,7 +402,7 @@
   </section>
 
   <!-- Key Projects Section -->
-  <section class="section" id="projects">
+  <section class="section section-alt" id="projects">
     <div class="container">
       <h2 class="section-title" data-i18n="index.projects.title">Key Projects</h2>
       <p class="section-subtitle" data-i18n="index.projects.subtitle">Working implementations that demonstrate Model Medicine in practice.</p>
@@ -391,7 +506,7 @@
   </section>
 
   <!-- Latest Section -->
-  <section class="section section-alt" id="latest">
+  <section class="section" id="latest">
     <div class="container">
       <h2 class="section-title" data-i18n="index.latest.title">Latest</h2>
 
@@ -422,7 +537,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="section" id="about">
+  <section class="section section-alt" id="about">
     <div class="container">
       <h2 class="section-title" data-i18n="index.about.title">About the Author</h2>
       <div class="about-card">
